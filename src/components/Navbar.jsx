@@ -1,5 +1,7 @@
 import React from "react";
 
+import SVG from "../assets/svgs/SVG";
+
 const navbar_entries = [
   {
     label: "LET'S TALK",
@@ -7,16 +9,28 @@ const navbar_entries = [
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({ changeCursorVariant, scrollPosition, fill }) => {
   return (
-    <nav className="inline-flex justify-center content-center flex-row absolute top-0 py-6 px-6 w-screen">
-      <div className="flex flex-row justify-end w-full mx-6 max-w-5xl">
+    <nav className="inline-flex fixed justify-center content-center flex-row top-0 py-6 px-6 w-screen z-50">
+      <div className="flex flex-row justify-between w-full max-w-5xl">
+        <a href="/">
+          <SVG variant="sign-sm" fill={fill} />
+        </a>
+        <p>{scrollPosition}</p>
         {navbar_entries.map((entry) => (
-          <button key={entry.label} className="cursor-pointer">
-            <a className="text-sm text-teal-50" href={entry.to}>
+          <a href={entry.to}>
+            <button
+              key={entry.label}
+              className={`flex flec-row gap-4 ${
+                fill === "#F0FDFA" ? "text-teal-50" : "text-teal-950"
+              } cursor-pointer transition-all ease-out duration-500`}
+              onMouseEnter={() => changeCursorVariant("hover")}
+              onMouseLeave={() => changeCursorVariant("default")}
+            >
               {entry.label}
-            </a>
-          </button>
+              <SVG variant="arrow-right" fill={fill} />
+            </button>
+          </a>
         ))}
       </div>
     </nav>

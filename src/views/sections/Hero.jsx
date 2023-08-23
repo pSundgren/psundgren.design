@@ -27,23 +27,21 @@ const item = {
 
 const Hero = () => {
   return (
-    <Section id="hero" bg="bg-waves">
+    <Section id="hero" bg="bg-waves" p="py-36">
       <div className="flex flex-row justify-center w-fill my-[120px]">
         <div className="flex flex-col">
-          <SVG type="sign" fill="rgb(240 253 250)" />
+          <div className="pl-6">
+            <SVG variant="sign" fill="rgb(240 253 250)" />
+          </div>
           <motion.ul
-            className="flex flex-row gap-x-6 pt-8"
+            className="flex flex-row gap-x-10 pt-8"
             variants={container}
             initial="hidden"
             animate="visible"
           >
-            {["UX/UI DESIGNER", "FRONT-END DEVELOPER"].map((index) => (
-              <motion.li
-                key={index}
-                className="flex flex-row gap-x-6"
-                variants={item}
-              >
-                <p className="text-xl text-teal-50">{index}</p>
+            {["UX/UI DESIGNER", "FRONT-END DEV."].map((index) => (
+              <motion.li key={index} variants={item}>
+                <p className="text-sm text-teal-50">{index}</p>
               </motion.li>
             ))}
           </motion.ul>

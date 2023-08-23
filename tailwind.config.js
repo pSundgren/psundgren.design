@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: "GT-Walsheim",
+        secondary: "Playfair Display",
       },
       backgroundImage: {
         waves: "url('./assets/images/waves-gray.jpg')",

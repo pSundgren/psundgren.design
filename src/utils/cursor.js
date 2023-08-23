@@ -25,12 +25,24 @@ export const useVariants = (ref) => {
       opacity: dotOpacity,
       height: 12,
       width: 12,
-      backgroundColor: "#ffffff",
+      backgroundColor: "rgb(20 184 166)",
       x: mouseXPosition,
       y: mouseYPosition,
       transition: {
         type: "spring",
-        mass: 0.2,
+        mass: 0.4,
+      },
+    },
+    hover: {
+      opacity: dotOpacity,
+      height: 24,
+      width: 24,
+      backgroundColor: "rgb(20 184 166)",
+      x: mouseXPosition,
+      y: mouseYPosition,
+      transition: {
+        type: "spring",
+        mass: 0.4,
       },
     },
   };
