@@ -6,23 +6,23 @@ import Section from "../../components/common/Section";
 /* Project image */
 import placeholder_img from "../../assets/images/project_images/placeholder_img.jpg";
 import wp_tech_image from "../../assets/images/project_images/wp_tech.jpeg";
+import time_logger_image from "../../assets/images/project_images/time_logger_image.jpg";
 
 //TODO: Fix these images
-const time_logger_image = null;
 const stormer_image = null;
 const twiceme_image = null;
 
 const PROJECT_LIST = [
   {
     id: "2",
-    title: "A fresh look - tech agency complete rebranding",
+    title: "A fresh look - Tech agency complete rebranding",
     desc: "A complete rebranding of a full-solution tech agency. The project covered setting up a visual identity for the agency, logo & graphical design, UX/UI design for a new website.",
     to: "/",
     styling: "mt-28",
   },
   {
     id: "1",
-    title: "Time logging app - log & manage your work hours",
+    title: "Time logger - An app log & manage your work hours",
     desc: "With capability gaps with external products, a company decided to develop the product themselves. An app for employees to log and manage their work hours, sick leave, & vacation.",
     to: "/",
     styling: "mt-0",
@@ -49,7 +49,7 @@ const PROJECT_LIST = [
 
 const CreativeCatalogue = () => {
   return (
-    <Section p="pt-8 pb-36">
+    <Section p="pt-0 pb-36">
       <div className="flex flex-col gap-14">
         <div>
           <h2 className="text-sm text-gray-400">My works</h2>
@@ -116,7 +116,7 @@ const ProjectImage = ({ id }) => {
           <img
             src={time_logger_image ? time_logger_image : placeholder_img}
             alt="Time logging app project"
-            className={img_styling}
+            className={time_logger_image ? img_styling : null}
           />
         </div>
       );
@@ -126,7 +126,7 @@ const ProjectImage = ({ id }) => {
           <img
             src={wp_tech_image ? wp_tech_image : placeholder_img}
             alt="Tech angency rebranding project"
-            className={img_styling}
+            className={wp_tech_image ? img_styling : null}
           />
         </div>
       );
@@ -136,7 +136,7 @@ const ProjectImage = ({ id }) => {
           <img
             src={stormer_image ? stormer_image : placeholder_img}
             alt="App brainstorming tool project"
-            className={img_styling}
+            className={stormer_image ? img_styling : null}
           />
         </div>
       );
@@ -146,7 +146,7 @@ const ProjectImage = ({ id }) => {
           <img
             src={twiceme_image ? twiceme_image : placeholder_img}
             alt="Tech angency rebranding project"
-            className={img_styling}
+            className={twiceme_image ? img_styling : null}
           />
         </div>
       );
