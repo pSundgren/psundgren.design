@@ -15,8 +15,8 @@ const twiceme_image = null;
 const PROJECT_LIST = [
   {
     id: "2",
-    heading: "A fresh look",
-    subHeading: "Tech agency complete rebranding",
+    heading: "WP Tech rebranding",
+    subHeading: "ech agency complete rebranding",
     desc: "A complete rebranding of a full-solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
     to: "/",
     styling: "mt-28",
@@ -99,10 +99,10 @@ const ProjectCard = ({ id, heading, subHeading, desc, to, styling }) => {
         <div className="flex flex-col space-y-3">
           <div className="flex flex-row space-x-6">
             <div className="flex flex-row items-center space-x-3 mt-6 text-xl font-primary">
-              <h1 className="text-xl font-primary">{`${heading} - ${subHeading}`}</h1>
+              <h1 className="text-2xl lg:text-xl font-primary">{`${heading} - ${subHeading}`}</h1>
             </div>
           </div>
-          <p className="text-gray-600 lg:text-gray-300 group-hover:text-gray-600 transition-all duration-500 ease-out">
+          <p className="text-gray-400 group-hover:text-gray-400 lg:text-gray-300 lg:group-hover:text-gray-600 transition-all duration-500 ease-out">
             {desc}
           </p>
         </div>
@@ -118,7 +118,7 @@ const ProjectCard = ({ id, heading, subHeading, desc, to, styling }) => {
 const ProjectImage = ({ id }) => {
   const img_container = "relative overflow-hidden shadow-md";
   const img_styling =
-    "aspect-auto h-full w-full object-cover object-left-top transition-all duration-500 ease-out group-hover:scale-105";
+    "aspect-auto object-cover object-left-top transition-all duration-500 ease-out lg:group-hover:scale-105";
   switch (id) {
     case "1":
       return (
