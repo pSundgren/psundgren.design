@@ -30,7 +30,7 @@ const Hero = () => {
     <Section id="hero" bg="bg-waves" p="py-36">
       <div className="flex flex-row justify-center w-fill my-[120px]">
         <div className="flex flex-col">
-          <div className="pl-6">
+          <div className="pr-6">
             <SVG variant="sign" fill="rgb(240 253 250)" />
           </div>
           <motion.ul

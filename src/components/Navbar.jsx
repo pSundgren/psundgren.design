@@ -12,13 +12,13 @@ const navbar_entries = [
 const Navbar = ({ changeCursorVariant, scrollPosition, fill }) => {
   return (
     <nav className="inline-flex fixed justify-center content-center flex-row top-0 py-6 px-6 w-screen z-50">
-      <div className="flex flex-row justify-between w-full max-w-5xl">
+      <div className="flex flex-row justify-between w-full max-w-7xl">
         <a href="/">
           <SVG variant="sign-sm" fill={fill} />
         </a>
         <p>{scrollPosition}</p>
         {navbar_entries.map((entry) => (
-          <a href={entry.to}>
+          <a href={entry.to} key={entry.label}>
             <button
               key={entry.label}
               className={`flex flec-row gap-4 ${

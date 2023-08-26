@@ -5,10 +5,11 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: "GT-Walsheim",
+        bold: "GT-Walsheim-Bold",
         secondary: "Playfair Display",
       },
       backgroundImage: {
-        waves: "url('./assets/images/waves-gray.jpg')",
+        waves: "url('./assets/images/waves_gray.jpg')",
       },
       height: {
         "90vh": "calc(100vh * 0.9)",

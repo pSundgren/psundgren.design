@@ -3,7 +3,7 @@ import React from "react";
 /* Components */
 import Hero from "./sections/Hero";
 import Wave from "react-wavify";
-import Section from "../components/common/Section";
+import CreativeCatalogue from "./sections/CreativeCatalogue";
 
 const Home = () => {
   return (
@@ -20,15 +20,7 @@ const Home = () => {
           points: 1,
         }}
       />
-      <Section p="pt-8 pb-36">
-        <div className="">
-          <h2 className="text-sm text-gray-400">My works</h2>
-          <h1 className="text-3xl text-gray-900">
-            <span className="font-primary">Take part of my </span>
-            <span className="font-secondary italic">creative catalogue</span>
-          </h1>
-        </div>
-      </Section>
+      <CreativeCatalogue />
     </>
   );
 };
