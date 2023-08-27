@@ -15,18 +15,17 @@ const twiceme_image = null;
 const PROJECT_LIST = [
   {
     id: "2",
-    heading: "WP Tech",
-    subHeading:
-      "A revisit of a tech agency's entire visual identity. Experience the transformation firsthand on our newly launched website",
-    desc: "A complete rebranding of a full-solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
+    heading: "WP Tech Rebranding",
+    subHeading: "a revisit of a tech agency's visual identity",
+    desc: "a complete rebranding of a full-solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
     to: "/",
     styling: "mt-28",
   },
   {
     id: "1",
-    heading: "Time logger",
+    heading: "Time Logger",
     subHeading:
-      "An app for to allow employees to log and manage their working hours",
+      "an app to allow employees to log and manage their working hours",
     desc: "With capability gaps with external products, a company decided to develop the product themselves. An app for employees to log and manage their work hours, sick leave, and vacation.",
     to: "/",
     styling: "mt-0",
@@ -34,7 +33,7 @@ const PROJECT_LIST = [
   {
     id: "4",
     heading: "Twiceme Technology",
-    subHeading: "Shaping a brand and strategy for the future",
+    subHeading: "shaping a brands visual identity and strategy for the future",
     desc: "Diving deep into stakeholders demands and user behaviour, a strategy a personal safety company was created to ",
     to: "/",
     styling: "mt-28",
@@ -42,8 +41,8 @@ const PROJECT_LIST = [
   {
     id: "3",
     heading: "Stormer",
-    subHeading: "A brainstorming tool for aspiring designers and developers",
-    desc: "A website that generates lifelike app concept, echoing the dynamics of authentic projects. To mirror real-world client demands and to allow aspiring designers and developers to gain practical insight of their liking.",
+    subHeading: "a brainstorming tool for aspiring designers and developers",
+    desc: "a website that generates lifelike app concept, echoing the dynamics of authentic projects. To mirror real-world client demands and to allow aspiring designers and developers to gain practical insight of their liking.",
     to: "/",
     styling: "mt-0",
   },
@@ -100,7 +99,14 @@ const ProjectCard = ({ id, heading, subHeading, desc, to, styling }) => {
         <div className="flex flex-col space-y-3">
           <div className="flex flex-row space-x-6">
             <div className="flex flex-row items-center space-x-0 mt-6 text-xl font-primary">
-              <h1 className="inline-block text-2xl lg:text-xl font-primary">{`${heading} - ${subHeading}`}</h1>
+              {/* 
+             TODO: This is not working as you'd like but maybe come back to it later, at this time you do not like the heading/subheading pariting
+              <h1 className="inline-block text-2xl lg:text-xl font-primary">{`${heading} - ${subHeading}`}</h1> 
+              */}
+              <h1 className="inline-block text-2xl lg:text-xl font-primary">
+                <span>{heading}</span>
+                <span>{` - ${subHeading}`}</span>
+              </h1>
             </div>
           </div>
           <p className="text-gray-400 group-hover:text-gray-400 lg:text-gray-300 lg:group-hover:text-gray-600 transition-all duration-500 ease-out">

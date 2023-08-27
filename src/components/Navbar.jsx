@@ -1,5 +1,6 @@
 import React from "react";
 
+/* Components */
 import SVG from "../assets/svgs/SVG";
 
 const navbar_entries = [
@@ -11,7 +12,7 @@ const navbar_entries = [
 
 const Navbar = ({ changeCursorVariant, scrollPosition, fill }) => {
   return (
-    <nav className="inline-flex fixed justify-center content-center flex-row top-0 py-6 px-6 w-screen z-50 backdrop-blur-md py-3 px-5 rounded-lg bg-gradient-to-br from-gray-50/[0.1] via-gray-50/[0.3]  to-gray-50/[0.1] border border-opacity-30 border-gray-50 shadow-md">
+    <nav className="inline-flex fixed justify-center content-center flex-row top-0 py-3 px-6 w-screen z-50 backdrop-blur-md rounded-lg bg-gradient-to-br from-gray-50/[0.1] via-gray-50/[0.3]  to-gray-50/[0.1] border border-opacity-30 border-gray-50 shadow-md">
       <div className="flex flex-row justify-between w-full max-w-7xl">
         <a
           href="/"
