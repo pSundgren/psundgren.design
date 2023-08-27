@@ -17,7 +17,7 @@ const PROJECT_LIST = [
     id: "2",
     heading: "WP Tech",
     subHeading:
-      "a complete revisit of a tech agency's visual identity. Including a new logotype, brand book, visual assets, and a new web designnpm",
+      "A revisit of a tech agency's entire visual identity. Experience the transformation firsthand on our newly launched website",
     desc: "A complete rebranding of a full-solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
     to: "/",
     styling: "mt-28",
@@ -26,7 +26,7 @@ const PROJECT_LIST = [
     id: "1",
     heading: "Time logger",
     subHeading:
-      "An app for to allow employees to log and manage your work hours",
+      "An app for to allow employees to log and manage their working hours",
     desc: "With capability gaps with external products, a company decided to develop the product themselves. An app for employees to log and manage their work hours, sick leave, and vacation.",
     to: "/",
     styling: "mt-0",
@@ -99,8 +99,8 @@ const ProjectCard = ({ id, heading, subHeading, desc, to, styling }) => {
         <ProjectImage id={id} />
         <div className="flex flex-col space-y-3">
           <div className="flex flex-row space-x-6">
-            <div className="flex flex-row items-center space-x-3 mt-6 text-xl font-primary">
-              <h1 className="text-2xl lg:text-xl font-primary">{`${heading} - ${subHeading}`}</h1>
+            <div className="flex flex-row items-center space-x-0 mt-6 text-xl font-primary">
+              <h1 className="inline-block text-2xl lg:text-xl font-primary">{`${heading} - ${subHeading}`}</h1>
             </div>
           </div>
           <p className="text-gray-400 group-hover:text-gray-400 lg:text-gray-300 lg:group-hover:text-gray-600 transition-all duration-500 ease-out">
@@ -117,7 +117,8 @@ const ProjectCard = ({ id, heading, subHeading, desc, to, styling }) => {
  */
 
 const ProjectImage = ({ id }) => {
-  const img_container = "relative overflow-hidden shadow-md";
+  const img_container =
+    "relative overflow-hidden shadow-md group-hover:shadow-lg transition-all duration-500 ease-out";
   const img_styling =
     "aspect-auto object-cover object-left-top transition-all duration-500 ease-out lg:group-hover:scale-105";
   switch (id) {
