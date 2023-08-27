@@ -15,8 +15,9 @@ const twiceme_image = null;
 const PROJECT_LIST = [
   {
     id: "2",
-    heading: "WP Tech rebranding",
-    subHeading: "ech agency complete rebranding",
+    heading: "WP Tech",
+    subHeading:
+      "a complete revisit of a tech agency's visual identity. Including a new logotype, brand book, visual assets, and a new web designnpm",
     desc: "A complete rebranding of a full-solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
     to: "/",
     styling: "mt-28",
