@@ -98,18 +98,18 @@ const ProjectCard = ({ id, heading, subHeading, desc, to, styling }) => {
         <ProjectImage id={id} />
         <div className="flex flex-col space-y-3">
           <div className="flex flex-row space-x-6">
-            <div className="flex flex-row items-center space-x-0 mt-6 text-xl font-primary">
+            <div className="flex flex-row items-center space-x-0 mt-6 font-primary">
               {/* 
              TODO: This is not working as you'd like but maybe come back to it later, at this time you do not like the heading/subheading pariting
               <h1 className="inline-block text-2xl lg:text-xl font-primary">{`${heading} - ${subHeading}`}</h1> 
               */}
-              <h1 className="inline-block text-2xl lg:text-xl font-primary">
+              <h1 className="inline-block text-2xl lg:text-2xl font-primary">
                 <span>{heading}</span>
                 <span>{` - ${subHeading}`}</span>
               </h1>
             </div>
           </div>
-          <p className="text-gray-400 group-hover:text-gray-400 lg:text-gray-300 lg:group-hover:text-gray-600 transition-all duration-500 ease-out">
+          <p className="text-gray-500 group-hover:text-gray-500 lg:text-gray-400 lg:group-hover:text-gray-600 transition-all duration-500 ease-out">
             {desc}
           </p>
         </div>
