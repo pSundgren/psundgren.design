@@ -4,8 +4,9 @@ import React from "react";
 import Hero from "./sections/Hero";
 import Wave from "react-wavify";
 import CreativeCatalogue from "./sections/CreativeCatalogue";
+import About from "./sections/About";
 
-const Home = () => {
+const Home = ({ changeCursorVariant }) => {
   return (
     <>
       <Hero />
@@ -20,7 +21,8 @@ const Home = () => {
           points: 1,
         }}
       />
-      <CreativeCatalogue />
+      <About />
+      <CreativeCatalogue changeCursorVariant={changeCursorVariant} />
     </>
   );
 };

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 /* Components */
 import Section from "../../components/common/Section";
 import SVG from "../../assets/svgs/SVG";
+import { RevealStaggeredInView } from "../../components/common/Reveal";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -33,18 +34,10 @@ const Hero = () => {
           <div className="pr-6">
             <SVG variant="sign" fill="rgb(240 253 250)" />
           </div>
-          <motion.ul
-            className="flex flex-row gap-x-10 pt-8"
-            variants={container}
-            initial="hidden"
-            animate="visible"
-          >
-            {["UX/UI DESIGNER", "FRONT-END DEV."].map((index) => (
-              <motion.li key={index} variants={item}>
-                <p className="text-sm text-teal-50">{index}</p>
-              </motion.li>
-            ))}
-          </motion.ul>
+          <RevealStaggeredInView motionClass="flex flex-row gap-x-10 pt-8">
+            <p className="text-sm text-teal-50">UX/UI DESIGNER</p>
+            <p className="text-sm text-teal-50">FRONT-END DEV.</p>
+          </RevealStaggeredInView>
         </div>
       </div>
     </Section>

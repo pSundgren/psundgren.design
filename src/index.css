@@ -27,3 +27,8 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}

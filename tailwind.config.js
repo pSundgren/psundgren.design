@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      maxWidth: {
+        "8xl": "1416px",
+      },
       fontFamily: {
         primary: "GT-Walsheim",
         bold: "GT-Walsheim-Bold",

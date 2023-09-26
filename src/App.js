@@ -37,9 +37,9 @@ function App() {
       />
       <Navbar
         changeCursorVariant={changeCursorVariant}
-        fill={scrollPosition <= 500 ? "#F0FDFA" : "#042F2E"}
+        fill={scrollPosition <= 500 ? "light" : "dark"}
       />
-      <Home />
+      <Home changeCursorVariant={changeCursorVariant} />
     </div>
   );
 }

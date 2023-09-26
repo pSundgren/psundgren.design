@@ -4,9 +4,10 @@ import React from "react";
 import Section from "../../components/common/Section";
 
 /* Project image */
-import placeholder_project_image from "../../assets/images/project_images/placeholder_project_image.jpg";
+import placeholder_image from "../../assets/images/placeholder_img.jpg";
 import wp_tech_image from "../../assets/images/project_images/wp_tech.jpeg";
 import time_logger_image from "../../assets/images/project_images/time_logger.jpeg";
+import { RevealEqualInView } from "../../components/common/Reveal";
 
 //TODO: Fix these images
 const stormer_image = null;
@@ -42,7 +43,7 @@ const PROJECT_LIST = [
     id: "3",
     heading: "Stormer",
     subHeading: "a brainstorming tool for aspiring designers and developers",
-    desc: "a website that generates lifelike app concept, echoing the dynamics of authentic projects. To mirror real-world client demands and to allow aspiring designers and developers to gain practical insight of their liking.",
+    desc: "A website that generates lifelike app concept, echoing the dynamics of authentic projects. To mirror real-world client demands and to allow aspiring designers and developers to gain practical insight of their liking.",
     to: "/",
     styling: "mt-0",
   },
@@ -52,28 +53,31 @@ const PROJECT_LIST = [
  * Main section component
  */
 
-const CreativeCatalogue = () => {
+const CreativeCatalogue = ({ changeCursorVariant }) => {
   return (
     <Section p="pt-0 pb-36">
       <div className="flex flex-col gap-14">
         <div>
           <h2 className="text-sm text-gray-400">My works</h2>
-          <h1 className="text-3xl text-gray-900">
-            <span className="font-primary">Take part of my </span>
+          <h1 className="text-4xl text-gray-900">
+            Take part of my{" "}
             <span className="font-secondary italic">creative catalogue</span>
           </h1>
         </div>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-14 gap-y-14">
           {PROJECT_LIST.map((entry) => (
             <div key={entry.heading}>
-              <ProjectCard
-                id={entry.id}
-                heading={entry.heading}
-                subHeading={entry.subHeading}
-                desc={entry.desc}
-                to={entry.to}
-                styling={entry.styling}
-              />
+              <RevealEqualInView>
+                <ProjectCard
+                  id={entry.id}
+                  heading={entry.heading}
+                  subHeading={entry.subHeading}
+                  desc={entry.desc}
+                  to={entry.to}
+                  styling={entry.styling}
+                  changeCursorVariant={changeCursorVariant}
+                />
+              </RevealEqualInView>
             </div>
           ))}
         </ul>
@@ -86,7 +90,15 @@ const CreativeCatalogue = () => {
  * This components reders a card for each projects that's added to the array PROJECT_LIST in this file
  */
 
-const ProjectCard = ({ id, heading, subHeading, desc, to, styling }) => {
+const ProjectCard = ({
+  id,
+  heading,
+  subHeading,
+  desc,
+  to,
+  styling,
+  changeCursorVariant,
+}) => {
   const { innerWidth: width } = window;
   return (
     <li
@@ -94,18 +106,17 @@ const ProjectCard = ({ id, heading, subHeading, desc, to, styling }) => {
         width >= 768 ? styling : "mt-0"
       } transition-all duration-500 ease-out cursor-pointer`}
     >
-      <div className="flex flex-col space-y-6 group">
+      <div
+        className="flex flex-col space-y-6 group"
+        onMouseEnter={() => changeCursorVariant("hover")}
+        onMouseLeave={() => changeCursorVariant("default")}
+      >
         <ProjectImage id={id} />
         <div className="flex flex-col space-y-3">
           <div className="flex flex-row space-x-6">
             <div className="flex flex-row items-center space-x-0 mt-6 font-primary">
-              {/* 
-             TODO: This is not working as you'd like but maybe come back to it later, at this time you do not like the heading/subheading pariting
-              <h1 className="inline-block text-2xl lg:text-xl font-primary">{`${heading} - ${subHeading}`}</h1> 
-              */}
               <h1 className="inline-block text-2xl lg:text-2xl font-primary">
-                <span>{heading}</span>
-                <span>{` - ${subHeading}`}</span>
+                {`${heading} - ${subHeading}`}
               </h1>
             </div>
           </div>
@@ -132,9 +143,7 @@ const ProjectImage = ({ id }) => {
       return (
         <div className={img_container}>
           <img
-            src={
-              time_logger_image ? time_logger_image : placeholder_project_image
-            }
+            src={time_logger_image ? time_logger_image : placeholder_image}
             alt="Time logging app project"
             className={time_logger_image ? img_styling : null}
           />
@@ -144,7 +153,7 @@ const ProjectImage = ({ id }) => {
       return (
         <div className={img_container}>
           <img
-            src={wp_tech_image ? wp_tech_image : placeholder_project_image}
+            src={wp_tech_image ? wp_tech_image : placeholder_image}
             alt="Tech angency rebranding project"
             className={wp_tech_image ? img_styling : null}
           />
@@ -154,7 +163,7 @@ const ProjectImage = ({ id }) => {
       return (
         <div className={img_container}>
           <img
-            src={stormer_image ? stormer_image : placeholder_project_image}
+            src={stormer_image ? stormer_image : placeholder_image}
             alt="App brainstorming tool project"
             className={stormer_image ? img_styling : null}
           />
@@ -164,7 +173,7 @@ const ProjectImage = ({ id }) => {
       return (
         <div className={img_container}>
           <img
-            src={twiceme_image ? twiceme_image : placeholder_project_image}
+            src={twiceme_image ? twiceme_image : placeholder_image}
             alt="Tech angency rebranding project"
             className={twiceme_image ? img_styling : null}
           />
@@ -174,7 +183,7 @@ const ProjectImage = ({ id }) => {
       return (
         <div className={img_container}>
           <img
-            src={placeholder_project_image}
+            src={placeholder_image}
             alt="Could not find presentation file"
             className={img_styling}
           />
