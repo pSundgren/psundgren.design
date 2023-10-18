@@ -13,7 +13,7 @@ const navbar_entries = [
 const Navbar = ({ changeCursorVariant, scrollPosition, fill }) => {
   return (
     <nav className="inline-flex fixed justify-center content-center flex-row top-0 w-screen z-50 py-6 px-6">
-      <div className="flex flex-row justify-between w-full max-w-8xl">
+      <div className="flex flex-row justify-between w-full">
         <a
           href="/"
           onMouseEnter={() => changeCursorVariant("hover")}

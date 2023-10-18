@@ -1,30 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 /* Components */
 import Section from "../../components/common/Section";
 import SVG from "../../assets/svgs/SVG";
 import { RevealStaggeredInView } from "../../components/common/Reveal";
-
-const container = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 0.8,
-      staggerChildren: 0.4,
-    },
-  },
-};
-
-const item = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
 
 const Hero = () => {
   return (

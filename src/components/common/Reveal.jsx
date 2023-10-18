@@ -14,7 +14,7 @@ export const RevealEqualInView = ({ children, motionClass }) => {
       y: 0,
       transition: {
         ease: [0, 0, 0.2, 1],
-        delay: 0.4,
+        delay: 0.6,
         duration: 0.8,
       },
     },
@@ -46,15 +46,18 @@ export const RevealStaggeredInView = ({ children, motionClass }) => {
       opacity: 1,
       transition: {
         ease: [0, 0, 0.2, 1],
-        duration: 0.8,
-        staggerChildren: 0.2,
+        duration: 1,
+        staggerChildren: 0.6,
       },
     },
   };
 
   const item = {
     hidden: { opacity: 0, y: 10 },
-    show: { opacity: 1, y: 0 },
+    show: {
+      opacity: 1,
+      y: 0,
+    },
   };
 
   return (

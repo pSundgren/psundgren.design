@@ -57,14 +57,14 @@ const CreativeCatalogue = ({ changeCursorVariant }) => {
   return (
     <Section p="pt-0 pb-36">
       <div className="flex flex-col gap-14">
-        <div>
+        <di className="space-y-3">
           <h2 className="text-sm text-gray-400">My works</h2>
           <h1 className="text-4xl text-gray-900">
             Take part of my{" "}
             <span className="font-secondary italic">creative catalogue</span>
           </h1>
-        </div>
-        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-14 gap-y-14">
+        </di>
+        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-28 gap-y-14">
           {PROJECT_LIST.map((entry) => (
             <div key={entry.heading}>
               <RevealEqualInView>

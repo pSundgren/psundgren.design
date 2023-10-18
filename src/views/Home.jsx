@@ -21,7 +21,7 @@ const Home = ({ changeCursorVariant }) => {
           points: 1,
         }}
       />
-      <About />
+      <About changeCursorVariant={changeCursorVariant} />
       <CreativeCatalogue changeCursorVariant={changeCursorVariant} />
     </>
   );
