@@ -23,11 +23,13 @@ export const useVariants = (ref) => {
   return {
     default: {
       opacity: dotOpacity,
-      height: 12,
-      width: 12,
-      backgroundColor: "rgb(20 184 166)",
-      x: mouseXPosition,
-      y: mouseYPosition,
+      height: 32,
+      width: 32,
+      borderColor: "#648C8B",
+      borderWidth: "1px",
+      backgroundColor: "rgba(124, 140, 142, 0)",
+      x: mouseXPosition - 12,
+      y: mouseYPosition - 10,
       transition: {
         type: "spring",
         mass: 0.4,
@@ -35,11 +37,13 @@ export const useVariants = (ref) => {
     },
     hover: {
       opacity: dotOpacity,
-      height: 24,
-      width: 24,
-      backgroundColor: "rgb(20 184 166)",
-      x: mouseXPosition,
-      y: mouseYPosition,
+      height: 46,
+      width: 46,
+      borderColor: "#648C8B",
+      borderWidth: "1px",
+      backgroundColor: "rgba(124, 140, 142, 0)",
+      x: mouseXPosition - 18,
+      y: mouseYPosition - 14,
       transition: {
         type: "spring",
         mass: 0.4,

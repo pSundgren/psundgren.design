@@ -36,7 +36,7 @@ const About = ({ changeCursorVariant }) => {
     <Section p="pt-0 pb-64">
       <div className="flex flex-col gap-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-14 gap-y-14">
-          <div className="text-3xl space-y-3">
+          <RevealStaggeredInView motionClass={"text-3xl space-y-3"}>
             <h2 className="text-sm text-gray-500">Hello there,</h2>
             <p className="text-3xl">
               I'm <span>Pontus Sundgren</span>. A UX/UI designer and front-end
@@ -46,7 +46,7 @@ const About = ({ changeCursorVariant }) => {
                   href="https://www.wptech.se"
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-[#14B8A6] transition-all ease-out duration-500"
+                  className="hover:text-[#648C8B] transition-all ease-out duration-500"
                   onMouseEnter={() => changeCursorVariant("hover")}
                   onMouseLeave={() => changeCursorVariant("default")}
                 >
@@ -57,7 +57,7 @@ const About = ({ changeCursorVariant }) => {
               visual development of the company, and support the front-end
               development on each project of the company.
             </p>
-          </div>
+          </RevealStaggeredInView>
         </div>
         {/*
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-14 gap-y-14">

@@ -2,12 +2,15 @@ import React from "react";
 
 /* Components */
 import Section from "../../components/common/Section";
+import {
+  RevealStaggeredInView,
+  RevealEqualInView,
+} from "../../components/common/Reveal";
 
 /* Project image */
 import placeholder_image from "../../assets/images/placeholder_img.jpg";
 import wp_tech_image from "../../assets/images/project_images/wp_tech.jpeg";
 import time_logger_image from "../../assets/images/project_images/time_logger.jpeg";
-import { RevealEqualInView } from "../../components/common/Reveal";
 
 //TODO: Fix these images
 const stormer_image = null;
@@ -18,7 +21,7 @@ const PROJECT_LIST = [
     id: "2",
     heading: "WP Tech Rebranding",
     subHeading: "a revisit of a tech agency's visual identity",
-    desc: "a complete rebranding of a full-solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
+    desc: "A complete rebranding of a full-solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
     to: "/",
     styling: "mt-28",
   },
@@ -57,28 +60,26 @@ const CreativeCatalogue = ({ changeCursorVariant }) => {
   return (
     <Section p="pt-0 pb-36">
       <div className="flex flex-col gap-14">
-        <di className="space-y-3">
+        <RevealStaggeredInView motionClass="space-y-3">
           <h2 className="text-sm text-gray-400">My works</h2>
           <h1 className="text-4xl text-gray-900">
             Take part of my{" "}
             <span className="font-secondary italic">creative catalogue</span>
           </h1>
-        </di>
+        </RevealStaggeredInView>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-28 gap-y-14">
           {PROJECT_LIST.map((entry) => (
-            <div key={entry.heading}>
-              <RevealEqualInView>
-                <ProjectCard
-                  id={entry.id}
-                  heading={entry.heading}
-                  subHeading={entry.subHeading}
-                  desc={entry.desc}
-                  to={entry.to}
-                  styling={entry.styling}
-                  changeCursorVariant={changeCursorVariant}
-                />
-              </RevealEqualInView>
-            </div>
+            <RevealEqualInView key={entry.heading}>
+              <ProjectCard
+                id={entry.id}
+                heading={entry.heading}
+                subHeading={entry.subHeading}
+                desc={entry.desc}
+                to={entry.to}
+                styling={entry.styling}
+                changeCursorVariant={changeCursorVariant}
+              />
+            </RevealEqualInView>
           ))}
         </ul>
       </div>
