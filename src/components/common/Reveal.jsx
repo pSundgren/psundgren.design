@@ -76,3 +76,34 @@ export const RevealStaggeredInView = ({ children, motionClass }) => {
     </div>
   );
 };
+
+/**
+ * Reveals one element to appear from the bottom of the viewport
+ */
+
+export const AppearFromBottom = ({ children, motionClass }) => {
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        ease: [0, 0, 0.2, 1],
+        duration: 0.6,
+        delay: 1,
+      },
+    },
+  };
+
+  return (
+    <motion.div
+      variants={item}
+      inital="hidden"
+      whileInView="show"
+      className={motionClass}
+      viewport={{ once: true }}
+    >
+      {children}
+    </motion.div>
+  );
+};
