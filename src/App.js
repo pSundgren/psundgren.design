@@ -41,7 +41,7 @@ function App() {
         fill={scrollPosition <= 500 ? "light" : "dark"}
       />
       <Home changeCursorVariant={changeCursorVariant} />
-      <Footer />
+      <Footer changeCursorVariant={changeCursorVariant} />
     </div>
   );
 }

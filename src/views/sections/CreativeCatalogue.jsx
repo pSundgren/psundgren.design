@@ -17,7 +17,7 @@ import wp_appen_image from "../../assets/images/project_images/wp_appen.jpg";
 
 export const PROJECT_LIST = [
   {
-    id: "1",
+    id: "wp_appen",
     heading: "WP Appen",
     subHeading: "internal service management app for field workers",
     desc: "Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
@@ -25,7 +25,7 @@ export const PROJECT_LIST = [
     styling: "mt-28",
   },
   {
-    id: "2",
+    id: "wp_tech",
     heading: "WP Tech",
     subHeading: "a revisit of a tech agency's visual identity",
     desc: "A complete rebranding of a full-solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
@@ -33,37 +33,29 @@ export const PROJECT_LIST = [
     styling: "mt-0",
   },
   {
-    id: "3",
-    heading: "WP Tech",
-    subHeading: "a revisit of a tech agency's visual identity",
-    desc: "A complete rebranding of a full-solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
-    to: "/",
-    styling: "mt-28",
-  },
-  {
-    id: "4",
+    id: "time_log",
     heading: "Time loggin app",
     subHeading:
       "an app to allow employees to log and manage their working hours",
     desc: "With capability gaps with external products, a company decided to develop the product themselves. An app for employees to log and manage their work hours, sick leave, and vacation.",
     to: "/",
-    styling: "mt-0",
-  },
-  {
-    id: "5",
-    heading: "Stormer",
-    subHeading: "an AI-powered tool for aspiring designers and developers",
-    desc: "A website that generates lifelike app concept, echoing the dynamics of authentic projects. To mirror real-world client demands and to allow aspiring designers and developers to gain practical insight of their liking.",
-    to: "/",
     styling: "mt-28",
   },
   {
-    id: "6",
+    id: "twiceme",
     heading: "Twiceme Technology",
     subHeading: "shaping a brands visual identity and strategy for the future",
     desc: "Diving deep into stakeholders demands and user behaviour, a strategy a personal safety company was created to ",
     to: "/",
     styling: "mt-0",
+  },
+  {
+    id: "stormer",
+    heading: "Stormer",
+    subHeading: "an AI-powered tool for aspiring designers and developers",
+    desc: "A website that generates lifelike app concept, echoing the dynamics of authentic projects. To mirror real-world client demands and to allow aspiring designers and developers to gain practical insight of their liking.",
+    to: "/",
+    styling: "mt-28",
   },
 ];
 
@@ -153,11 +145,11 @@ const ProjectCard = ({
 
 const ProjectImage = ({ id }) => {
   const img_container =
-    "relative overflow-hidden shadow-md group-hover:shadow-lg transition-all duration-500 ease-out";
+    "relative overflow-hidden shadow-md transition-all duration-500 ease-out";
   const img_styling =
     "aspect-auto object-cover object-left-top transition-all duration-500 ease-out lg:group-hover:scale-105";
   switch (id) {
-    case "1":
+    case "wp_appen":
       return (
         <div className={img_container}>
           <img
@@ -167,7 +159,7 @@ const ProjectImage = ({ id }) => {
           />
         </div>
       );
-    case "3":
+    case "wp_tech":
       return (
         <div className={img_container}>
           <img
@@ -177,32 +169,32 @@ const ProjectImage = ({ id }) => {
           />
         </div>
       );
-    case "4":
+    case "time_log":
       return (
         <div className={img_container}>
           <img
             src={time_logger_image ? time_logger_image : placeholder_image}
-            alt="Time logging app project"
+            alt="Mockup for time logging app"
             className={time_logger_image ? img_styling : null}
           />
         </div>
       );
-    case "5":
+    case "stormer":
       return (
         <div className={img_container}>
           <img
             src={stormer_image ? stormer_image : placeholder_image}
-            alt="Tech angency rebranding project"
+            alt="Mockup for AI-powered idea generator"
             className={stormer_image ? img_styling : null}
           />
         </div>
       );
-    case "6":
+    case "twiceme":
       return (
         <div className={img_container}>
           <img
             src={twiceme_image ? twiceme_image : placeholder_image}
-            alt="App brainstorming tool project"
+            alt="Company logo for company rebranding project"
             className={twiceme_image ? img_styling : null}
           />
         </div>
@@ -212,7 +204,7 @@ const ProjectImage = ({ id }) => {
         <div className={img_container}>
           <img
             src={placeholder_image}
-            alt="Could not find presentation file"
+            alt="Placeholder"
             className={img_styling}
           />
         </div>

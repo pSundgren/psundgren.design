@@ -59,20 +59,9 @@ const About = ({ changeCursorVariant }) => {
             </p>
           </RevealStaggeredInView>
         </div>
-        {/*
-        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-14 gap-y-14">
-          {STORIES.map((entry) => (
-            <div key={entry.heading}>
-              <StoryCard
-                id={entry.id}
-                heading={entry.heading}
-                subHeading={entry.subHeading}
-                desc={entry.desc}
-              />
-            </div>
-          ))}
-        </ul>
-        */}
+        <div>
+          <div className="h-6 w-6 bg-blue-500" />
+        </div>
       </div>
     </Section>
   );
