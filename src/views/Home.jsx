@@ -1,10 +1,11 @@
 import React from "react";
 
 /* Components */
-import Hero from "./sections/Hero";
+import { Hero } from "./sections/Hero";
 import Wave from "react-wavify";
 import CreativeCatalogue from "./sections/CreativeCatalogue";
 import About from "./sections/About";
+import WPTech from "./catalogue/WPTech";
 
 const Home = ({ changeCursorVariant }) => {
   return (
@@ -23,6 +24,7 @@ const Home = ({ changeCursorVariant }) => {
       />
       <About changeCursorVariant={changeCursorVariant} />
       <CreativeCatalogue changeCursorVariant={changeCursorVariant} />
+      <WPTech />
     </>
   );
 };

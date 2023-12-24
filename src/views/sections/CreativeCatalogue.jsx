@@ -65,7 +65,7 @@ export const PROJECT_LIST = [
 
 const CreativeCatalogue = ({ changeCursorVariant }) => {
   return (
-    <Section p="pt-0 pb-36">
+    <Section p="pt-0 pb-48">
       <div className="flex flex-col gap-14">
         <RevealStaggeredInView motionClass="space-y-3">
           <h2 className="text-sm text-gray-400">My works</h2>
@@ -76,7 +76,6 @@ const CreativeCatalogue = ({ changeCursorVariant }) => {
         </RevealStaggeredInView>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-28 gap-y-14">
           {PROJECT_LIST.map((entry) => (
-            // <RevealEqualInView key={entry.heading}>
             <ProjectCard
               id={entry.id}
               heading={entry.heading}
@@ -86,7 +85,6 @@ const CreativeCatalogue = ({ changeCursorVariant }) => {
               styling={entry.styling}
               changeCursorVariant={changeCursorVariant}
             />
-            // </RevealEqualInView>
           ))}
         </ul>
       </div>

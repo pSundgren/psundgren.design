@@ -5,7 +5,7 @@ import Section from "../../components/common/Section";
 import SVG from "../../assets/svgs/SVG";
 import { RevealStaggeredInView } from "../../components/common/Reveal";
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <Section id="hero" bg="bg-waves" p="py-36">
       <div className="flex flex-row justify-center w-fill my-[120px]">
@@ -23,4 +23,13 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export const CatalogueHero = ({ title, desc }) => {
+  return (
+    <Section bg="bg-neutral-800" p="py-36">
+      <RevealStaggeredInView motionClass="space-y-6 max-w-[580px]">
+        <h1 className="text-3xl text-neutral-50">{title}</h1>
+        <h2 className="text-lg text-neutral-400">{desc}</h2>
+      </RevealStaggeredInView>
+    </Section>
+  );
+};

@@ -22,7 +22,7 @@ const Footer = ({ changeCursorVariant }) => {
           </div>
           <p className="text-neutral-300 text-xs">
             {" "}
-            &#169; All right reserved, 2024
+            &#169; 2024, All right reserved
           </p>
         </div>
       </div>
