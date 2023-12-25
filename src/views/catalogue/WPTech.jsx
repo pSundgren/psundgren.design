@@ -16,6 +16,7 @@ const WPTech = () => {
         duration={page.duration}
         roles={page.roles}
       />
+      <LogoPresentation type="wp_tech" />
     </section>
   );
 };

@@ -27,8 +27,7 @@ const About = ({ changeCursorVariant }) => {
               </span>
               {". "}
               Responsible for leading the design process and visual development
-              of the company. As well as aid the front-end development with both
-              coding and quality assurance.
+              of the company. As well as aiding the front-end development.
             </p>
           </RevealStaggeredInView>
         </div>

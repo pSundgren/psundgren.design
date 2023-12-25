@@ -33,19 +33,19 @@ export const PROJECT_LIST = [
     styling: "mt-0",
   },
   {
+    id: "twiceme",
+    heading: "Twiceme Technology",
+    subHeading: "shaping a brands visual identity and strategy for the future",
+    desc: "Diving deep into stakeholders demands and user behaviour, a strategy a personal safety company was created to ",
+    to: "/",
+    styling: "mt-28",
+  },
+  {
     id: "time_log",
     heading: "Time loggin app",
     subHeading:
       "an app to allow employees to log and manage their working hours",
     desc: "With capability gaps with external products, a company decided to develop the product themselves. An app for employees to log and manage their work hours, sick leave, and vacation.",
-    to: "/",
-    styling: "mt-28",
-  },
-  {
-    id: "twiceme",
-    heading: "Twiceme Technology",
-    subHeading: "shaping a brands visual identity and strategy for the future",
-    desc: "Diving deep into stakeholders demands and user behaviour, a strategy a personal safety company was created to ",
     to: "/",
     styling: "mt-0",
   },
