@@ -23,7 +23,6 @@ const Home = () => {
         animate={cursorVariant}
         transition={spring}
       />
-      <Navbar changeCursorVariant={changeCursorVariant} />
       <Hero />
       <Wave
         className="-translate-y-36"
@@ -38,7 +37,6 @@ const Home = () => {
       />
       <About changeCursorVariant={changeCursorVariant} />
       <CreativeCatalogue changeCursorVariant={changeCursorVariant} />
-      <Footer changeCursorVariant={changeCursorVariant} />
     </>
   );
 };
