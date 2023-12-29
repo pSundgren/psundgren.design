@@ -12,6 +12,7 @@ import {
   ColorPresentation,
   MockupsPresentation,
 } from "../sections/Presentations";
+import { Insights } from "../sections/Insights";
 
 const Twiceme = () => {
   const { page } = data;
@@ -23,6 +24,7 @@ const Twiceme = () => {
         duration={page.duration}
         roles={page.roles}
       />
+      <Insights insight_arr={page.insights} />
       <LogoPresentation type="twiceme" />
       <ColorPresentation type="twiceme" />
       <MockupsPresentation type="twiceme" />

@@ -9,6 +9,20 @@
     "desc": "Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
     "overview": "To facilitate communication between field workers and a ROT & RUT business. A business development and policy was implemented with a CRM system that communicates with an iOS & Android app. Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
     "duration": "2 months",
-    "roles": ["UX/UI Designer", "UX Researcher"]
+    "roles": ["UX/UI Designer", "UX Researcher"],
+    "insights": [
+      {
+        "title": "Field workers needs a step-by-step guide",
+        "desc": "The field workers (primary users of the app) were used to just doing everything on the fly. Which caused a lot of manual labor and money for the company. Therefore there were a lot of limitations to the app to make sure that the field workers vould not do A (report working hours) before completing B (confirming that the job had been completed without any distruptions)."
+      },
+      {
+        "title": "Something",
+        "desc": "This is a text about an insights that I had with the data of the project"
+      },
+      {
+        "title": "Something",
+        "desc": "This is a text about an insights that I had with the data of the project"
+      }
+    ]
   }
 }

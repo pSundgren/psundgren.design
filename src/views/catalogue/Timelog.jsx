@@ -8,10 +8,10 @@ import { CatalogueHero } from "../sections/Hero";
 import { ContactMe } from "../sections/ContactMe";
 import { ProjectDescription } from "../sections/ProjectDescription";
 import {
-  LogoPresentation,
   ColorPresentation,
   MockupsPresentation,
 } from "../sections/Presentations";
+import { Insights } from "../sections/Insights";
 
 const Timelog = () => {
   const { page } = data;
@@ -23,7 +23,7 @@ const Timelog = () => {
         duration={page.duration}
         roles={page.roles}
       />
-      <LogoPresentation type="time_log" />
+      <Insights insight_arr={page.insights} />
       <ColorPresentation type="time_log" />
       <MockupsPresentation type="time_log" />
       <ContactMe />

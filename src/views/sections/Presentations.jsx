@@ -3,6 +3,10 @@ import React from "react";
 /* COMPONENTS */
 import Section from "../../components/common/Section";
 import { WPTechLogo } from "../../components/common/Logo";
+import {
+  RevealEqualInView,
+  RevealStaggeredInView,
+} from "../../components/common/Reveal";
 
 /* PROJECT COLORS */
 const WP_TECH = [
@@ -149,11 +153,9 @@ export const LogoPresentation = ({ type }) => {
         <Section p="pb-36">
           <div className="space-y-6">
             <h1 className="text-sm text-neutral-400">Logotype</h1>
-            <div className="">
-              <div className="">
-                <WPTechLogo />
-              </div>
-            </div>
+            <RevealEqualInView>
+              <WPTechLogo />
+            </RevealEqualInView>
           </div>
         </Section>
       );
@@ -169,7 +171,9 @@ export const MockupsPresentation = ({ type }) => {
         <Section bg="" p="pb-36">
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
-            <WPTechMockups />
+            <RevealEqualInView>
+              <WPTechMockups />
+            </RevealEqualInView>
           </div>
         </Section>
       );
@@ -178,7 +182,9 @@ export const MockupsPresentation = ({ type }) => {
         <Section bg="" p="pb-36">
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
-            <WPTechMockups />
+            <RevealEqualInView>
+              <WPTechMockups />
+            </RevealEqualInView>
           </div>
         </Section>
       );
@@ -187,7 +193,9 @@ export const MockupsPresentation = ({ type }) => {
         <Section bg="" p="pb-36">
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
-            <WPTechMockups />
+            <RevealEqualInView>
+              <WPTechMockups />
+            </RevealEqualInView>
           </div>
         </Section>
       );
@@ -196,7 +204,9 @@ export const MockupsPresentation = ({ type }) => {
         <Section bg="" p="pb-36">
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
-            <WPTechMockups />
+            <RevealEqualInView>
+              <WPTechMockups />
+            </RevealEqualInView>
           </div>
         </Section>
       );
@@ -205,7 +215,9 @@ export const MockupsPresentation = ({ type }) => {
         <Section bg="" p="pb-36">
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
-            <WPTechMockups />
+            <RevealEqualInView>
+              <WPTechMockups />
+            </RevealEqualInView>
           </div>
         </Section>
       );

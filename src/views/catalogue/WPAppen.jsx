@@ -8,10 +8,10 @@ import { CatalogueHero } from "../sections/Hero";
 import { ContactMe } from "../sections/ContactMe";
 import { ProjectDescription } from "../sections/ProjectDescription";
 import {
-  LogoPresentation,
   ColorPresentation,
   MockupsPresentation,
 } from "../sections/Presentations";
+import { Insights } from "../sections/Insights";
 
 const WPAppen = () => {
   const { page } = data;
@@ -23,7 +23,7 @@ const WPAppen = () => {
         duration={page.duration}
         roles={page.roles}
       />
-      <LogoPresentation type="wp_appen" />
+      <Insights insight_arr={page.insights} />
       <ColorPresentation type="wp_appen" />
       <MockupsPresentation type="wp_appen" />
       <ContactMe />
