@@ -16,12 +16,12 @@
         "desc": "Diving deep into stakeholders demands and user behaviour, a strategy for a personal safety company was created to increase user engagement and pave the way for the companys' product development. The app needed to turn into an active app, creating a higher value for the end-user. This was done by adding a way for end-users to register their products to the app, turning protiective equipment into collectibles."
       },
       {
-        "title": "Insight title",
-        "desc": "This is a text about an insights that I had with the data of the project"
+        "title": "The implementation of feedback",
+        "desc": "It's not a mystery that feedback is essential to a good user experience. But prior to the redesign the app did not give sufficient feedback to the user. Therefore, a mentatlity in the redesign was to \"never tell a user they've done something wrong, always guide them to do everything right\"."
       },
       {
-        "title": "Insight title",
-        "desc": "This is a text about an insights that I had with the data of the project"
+        "title": "Color guidance",
+        "desc": "Due to the app being in the context of personal safety, using the colors that convey a correct sense of urgency was important. This resulted in red never being using in input fields error state, etc. Instead, red was only used to guide the user to the emergency scan function within the app that needed to be accessed fast in case of an emergency.\n\nIf a user was not located at the home screen (where the emergency scan function was located) then the home navbar link was equipped with a red badge to grab the users attention at all times."
       }
     ]
   }

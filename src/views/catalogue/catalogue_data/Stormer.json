@@ -7,7 +7,7 @@
   "page": {
     "title": "Stormer - an AI-powered tool for aspiring designers and developers",
     "desc": "A website that generates lifelike app concept, echoing the dynamics of authentic projects. To mirror real-world client demands and to allow aspiring designers and developers to gain practical insight of their liking.",
-    "overview": "After an assignment as UX/UI Designer of a company I found myself out looking for a new job. During my assignment I’d been working on this company’s website and app design. As I was looking for new jobs I realised that the market was tough so say the least and I needed to expand my own design portfolio in order to make myself an attractive designer for open positions.\n\nAnd voilà, the random app idea generator was born!",
+    "overview": "After an assignment as UX/UI Designer of a company I found myself out looking for a new job. During my assignment I’d been working on this company’s website and app design. As I was looking for new jobs I realised that the market was tough so say the least and I needed to expand my own design portfolio in order to make myself an attractive designer for open positions.\n\nHowever, the project was taken down as there was no funding for the ChatGPT API-token.",
     "duration": "1 week",
     "roles": ["Front-end Developer", "UI Designer"]
   }

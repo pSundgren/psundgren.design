@@ -8,6 +8,8 @@ import {
   RevealStaggeredInView,
 } from "../../components/common/Reveal";
 
+import stormer_start from "../../assets/images/stormer_start.jpg";
+
 /* PROJECT COLORS */
 const WP_TECH = [
   { name: "#5EA6C5", bg: "bg-[#5EA6C5]", text: "text-neutral-50" },
@@ -38,7 +40,7 @@ const TWICEME = [
 ];
 
 const STORMER = [
-  { name: "#6366F1", bg: "bg-[#6366F1]", text: "text-neutral-50" },
+  { name: "#526EB7", bg: "bg-[#526EB7]", text: "text-neutral-50" },
   { name: "#3F3F46", bg: "bg-[#3F3F46]", text: "text-neutral-50" },
   { name: "#71717A", bg: "bg-[#71717A]", text: "text-neutral-50" },
   { name: "#FAFAFA", bg: "bg-[#FAFAFA]", text: "text-neutral-700" },
@@ -179,14 +181,16 @@ export const MockupsPresentation = ({ type }) => {
       );
     case "wp_appen":
       return (
-        <Section bg="" p="pb-36">
+        <div className="pb-36">
           <div className="space-y-6">
-            <h1 className="text-neutral-500 text-sm">Result</h1>
+            <Section>
+              <h1 className="text-neutral-500 text-sm">Result</h1>
+            </Section>
             <RevealEqualInView>
-              <WPTechMockups />
+              <WPAppenMockups />
             </RevealEqualInView>
           </div>
-        </Section>
+        </div>
       );
     case "time_log":
       return (
@@ -216,7 +220,7 @@ export const MockupsPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
             <RevealEqualInView>
-              <WPTechMockups />
+              <StormerMockups />
             </RevealEqualInView>
           </div>
         </Section>
@@ -230,6 +234,34 @@ const WPTechMockups = () => {
   return (
     <div className="flex flex-row justify-between">
       <div className="bg-neutral-200 h-16/9 w-full" />
+    </div>
+  );
+};
+
+const WPAppenMockups = () => {
+  return (
+    <>
+      <Section>
+        <div className="bg-neutral-200 h-16/9 w-full" />
+      </Section>
+      <div className="bg-neutral-50 w-screen my-36">
+        <Section p="my-36 bg-neutral-200">
+          <div className="bg-neutral-200" />
+        </Section>
+        <div />
+      </div>
+    </>
+  );
+};
+
+const StormerMockups = () => {
+  return (
+    <div className="flex flex-row justify-between">
+      <img
+        src={stormer_start}
+        alt="Homepage of Stormer"
+        className="h-16/9 w-full"
+      />
     </div>
   );
 };

@@ -11,7 +11,9 @@ export const Insights = ({ insight_arr }) => {
           {insight_arr.map(({ title, desc }) => (
             <div className="space-y-4">
               <h2 className="text-3xl text-neutral-700">{title}</h2>
-              <p className="text-lg text-neutral-500">{desc}</p>
+              <p className="text-lg text-neutral-500 whitespace-pre-line">
+                {desc}
+              </p>
             </div>
           ))}
         </RevealStaggeredInView>
