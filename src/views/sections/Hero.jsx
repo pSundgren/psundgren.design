@@ -14,8 +14,8 @@ export const Hero = () => {
             <SVG variant="sign" fill="rgb(240 253 250)" />
           </div>
           <RevealStaggeredInView motionClass="flex flex-row gap-x-10 pt-8">
-            <p className="text-sm text-teal-50">UX/UI DESIGNER</p>
-            <p className="text-sm text-teal-50">FRONT-END DEV.</p>
+            <p className="text-sm text-neutral-50">UX/UI DESIGNER</p>
+            <p className="text-sm text-neutral-50">FRONT-END DEV.</p>
           </RevealStaggeredInView>
         </div>
       </div>
