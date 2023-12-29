@@ -12,14 +12,11 @@ import {
   ColorPresentation,
   MockupsPresentation,
 } from "../sections/Presentations";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 
-const Twiceme = ({ changeCursorVariant }) => {
+const Twiceme = () => {
   const { page } = data;
   return (
-    <section id="twiceme" className="App font-primary scroll-smooth">
-      <Navbar changeCursorVariant={changeCursorVariant} />
+    <section id="twiceme">
       <CatalogueHero title={page.title} desc={page.desc} />
       <ProjectDescription
         desc={page.overview}
@@ -29,8 +26,7 @@ const Twiceme = ({ changeCursorVariant }) => {
       <LogoPresentation type="twiceme" />
       <ColorPresentation type="twiceme" />
       <MockupsPresentation type="twiceme" />
-      <ContactMe changeCursorVariant={changeCursorVariant} />
-      <Footer changeCursorVariant={changeCursorVariant} />
+      <ContactMe />
     </section>
   );
 };

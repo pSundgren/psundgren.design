@@ -12,14 +12,11 @@ import {
   ColorPresentation,
   MockupsPresentation,
 } from "../sections/Presentations";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
 
-const Stormer = ({ changeCursorVariant }) => {
+const Stormer = () => {
   const { page } = data;
   return (
-    <section id="stormer" className="App font-primary scroll-smooth">
-      <Navbar changeCursorVariant={changeCursorVariant} />
+    <section id="stormer">
       <CatalogueHero title={page.title} desc={page.desc} />
       <ProjectDescription
         desc={page.overview}
@@ -29,8 +26,7 @@ const Stormer = ({ changeCursorVariant }) => {
       <LogoPresentation type="stormer" />
       <ColorPresentation type="stormer" />
       <MockupsPresentation type="stormer" />
-      <ContactMe changeCursorVariant={changeCursorVariant} />
-      <Footer changeCursorVariant={changeCursorVariant} />
+      <ContactMe />
     </section>
   );
 };

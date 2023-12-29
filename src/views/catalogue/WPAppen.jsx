@@ -12,14 +12,11 @@ import {
   ColorPresentation,
   MockupsPresentation,
 } from "../sections/Presentations";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 
-const WPAppen = ({ changeCursorVariant }) => {
+const WPAppen = () => {
   const { page } = data;
   return (
-    <section id="wp_appen" className="App font-primary scroll-smooth">
-      <Navbar changeCursorVariant={changeCursorVariant} />
+    <section id="wp_appen">
       <CatalogueHero title={page.title} desc={page.desc} />
       <ProjectDescription
         desc={page.overview}
@@ -29,8 +26,7 @@ const WPAppen = ({ changeCursorVariant }) => {
       <LogoPresentation type="wp_appen" />
       <ColorPresentation type="wp_appen" />
       <MockupsPresentation type="wp_appen" />
-      <ContactMe changeCursorVariant={changeCursorVariant} />
-      <Footer changeCursorVariant={changeCursorVariant} />
+      <ContactMe />
     </section>
   );
 };

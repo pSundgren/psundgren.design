@@ -12,14 +12,11 @@ import {
   ColorPresentation,
   MockupsPresentation,
 } from "../sections/Presentations";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 
-const WPTech = ({ changeCursorVariant }) => {
+const WPTech = () => {
   const { page } = data;
   return (
-    <section id="wp_tech" className="App font-primary scroll-smooth">
-      <Navbar changeCursorVariant={changeCursorVariant} />
+    <section id="wp_tech">
       <CatalogueHero title={page.title} desc={page.desc} />
       <ProjectDescription
         desc={page.overview}
@@ -29,8 +26,7 @@ const WPTech = ({ changeCursorVariant }) => {
       <LogoPresentation type="wp_tech" />
       <ColorPresentation type="wp_tech" />
       <MockupsPresentation type="wp_tech" />
-      <ContactMe changeCursorVariant={changeCursorVariant} />
-      <Footer changeCursorVariant={changeCursorVariant} />
+      <ContactMe />
     </section>
   );
 };
