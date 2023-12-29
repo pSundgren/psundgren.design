@@ -12,11 +12,14 @@ import {
   ColorPresentation,
   MockupsPresentation,
 } from "../sections/Presentations";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const Timelog = ({ changeCursorVariant }) => {
   const { page } = data;
   return (
-    <section id="time_log">
+    <section id="time_log" className="App font-primary scroll-smooth">
+      <Navbar changeCursorVariant={changeCursorVariant} />
       <CatalogueHero title={page.title} desc={page.desc} />
       <ProjectDescription
         desc={page.overview}
@@ -27,6 +30,7 @@ const Timelog = ({ changeCursorVariant }) => {
       <ColorPresentation type="time_log" />
       <MockupsPresentation type="time_log" />
       <ContactMe changeCursorVariant={changeCursorVariant} />
+      <Footer changeCursorVariant={changeCursorVariant} />
     </section>
   );
 };

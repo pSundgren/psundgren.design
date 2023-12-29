@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 /* Components */
 import Section from "../../components/common/Section";
@@ -21,7 +22,7 @@ export const PROJECT_LIST = [
     heading: "WP Appen",
     subHeading: "internal service management app for field workers",
     desc: "Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
-    to: "/",
+    to: "/wp_appen",
     styling: "mt-28",
   },
   {
@@ -29,7 +30,7 @@ export const PROJECT_LIST = [
     heading: "WP Tech",
     subHeading: "a revisit of a tech agency's visual identity",
     desc: "A complete rebranding of a full-solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
-    to: "/",
+    to: "/wp_tech",
     styling: "mt-0",
   },
   {
@@ -37,7 +38,7 @@ export const PROJECT_LIST = [
     heading: "Twiceme Technology",
     subHeading: "shaping a brands visual identity and strategy for the future",
     desc: "Diving deep into stakeholders demands and user behaviour, a strategy for a personal safety company was created to increase user engagement and pave the way for the companys' product development.",
-    to: "/",
+    to: "/twiceme",
     styling: "mt-28",
   },
   {
@@ -46,7 +47,7 @@ export const PROJECT_LIST = [
     subHeading:
       "efficient time logging and absence management for seamless workplace administration",
     desc: "With capability gaps with external products, a company decided to develop the product themselves. An app for employees to log and manage their work hours, sick leave, and vacation.",
-    to: "/",
+    to: "/time_log",
     styling: "mt-0",
   },
   {
@@ -54,7 +55,7 @@ export const PROJECT_LIST = [
     heading: "Stormer",
     subHeading: "an AI-powered tool for aspiring designers and developers",
     desc: "A website that generates lifelike app concept, echoing the dynamics of authentic projects. To mirror real-world client demands and to allow aspiring designers and developers to gain practical insight of their liking.",
-    to: "/",
+    to: "/stormer",
     styling: "mt-28",
   },
 ];
@@ -76,15 +77,17 @@ const CreativeCatalogue = ({ changeCursorVariant }) => {
         </RevealStaggeredInView>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-28 gap-y-14">
           {PROJECT_LIST.map((entry) => (
-            <ProjectCard
-              id={entry.id}
-              heading={entry.heading}
-              subHeading={entry.subHeading}
-              desc={entry.desc}
-              to={entry.to}
-              styling={entry.styling}
-              changeCursorVariant={changeCursorVariant}
-            />
+            <Link to={entry.to}>
+              <ProjectCard
+                id={entry.id}
+                heading={entry.heading}
+                subHeading={entry.subHeading}
+                desc={entry.desc}
+                to={entry.to}
+                styling={entry.styling}
+                changeCursorVariant={changeCursorVariant}
+              />
+            </Link>
           ))}
         </ul>
       </div>
