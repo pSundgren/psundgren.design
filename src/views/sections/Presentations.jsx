@@ -3,12 +3,10 @@ import React from "react";
 /* COMPONENTS */
 import Section from "../../components/common/Section";
 import { WPTechLogo } from "../../components/common/Logo";
-import {
-  RevealEqualInView,
-  RevealStaggeredInView,
-} from "../../components/common/Reveal";
+import { RevealEqualInView } from "../../components/common/Reveal";
 
 import stormer_start from "../../assets/images/stormer_start.jpg";
+import wp_tech_start from "../../assets/images/wp_tech_start.jpg";
 
 /* PROJECT COLORS */
 const WP_TECH = [
@@ -233,7 +231,11 @@ export const MockupsPresentation = ({ type }) => {
 const WPTechMockups = () => {
   return (
     <div className="flex flex-row justify-between">
-      <div className="bg-neutral-200 h-16/9 w-full" />
+      <img
+        src={wp_tech_start}
+        alt="Homepage of WP Tech"
+        className="h-16/9 w-full"
+      />
     </div>
   );
 };
