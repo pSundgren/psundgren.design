@@ -1,0 +1,14 @@
+{
+  "fragment": {
+    "title": "Twiceme Technology - shaping a brands visual identity and strategy for the future",
+    "desc": "Diving deep into stakeholders demands and user behaviour, a strategy for a personal safety company was created to increase user engagement and pave the way for the companys' product development.",
+    "link": ""
+  },
+  "page": {
+    "title": "Twiceme Technology - shaping a brands visual identity and strategy for the future",
+    "desc": "Diving deep into stakeholders demands and user behaviour, a strategy for a personal safety company was created to increase user engagement and pave the way for the companys' product development.",
+    "overview": "The twICEme app is a tool to use together with personal protective equipment enhanced with Twiceme’s NFC-technology to directly upload medical information to the equipment. If an accident occurs, the twICEme app can be used by first responders to scan the protective equipment in order to get medical information when the injured person cannot speak for themselves.\n\nThe redesign was based on data from three different user groups; common user, rescuers, and construction foremen. The data was used to create wireframes in a parallel design process. These wireframes was then made into hi-fi prototypes that was used in A/B-testing.",
+    "duration": "6 months",
+    "roles": ["UX/UI Designer", "UX Researcher", "Product developer"]
+  }
+}

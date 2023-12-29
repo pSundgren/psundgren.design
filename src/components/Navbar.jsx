@@ -24,7 +24,7 @@ const Navbar = ({ changeCursorVariant, scrollPosition, fill }) => {
             fill={fill === "light" ? "#F0FDFA" : "#042F2E"}
           />
         </a>
-        <p>{scrollPosition}</p>
+        {/** 
         {navbar_entries.map((entry) => (
           <a href={entry.to} key={entry.label} className="">
             <button
@@ -36,10 +36,10 @@ const Navbar = ({ changeCursorVariant, scrollPosition, fill }) => {
               onMouseLeave={() => changeCursorVariant("default")}
             >
               {entry.label}
-              {/*<SVG variant="arrow-right" fill={fill} /> */}
+              {/*<SVG variant="arrow-right" fill={fill} />
             </button>
           </a>
-        ))}
+        ))}*/}
       </div>
     </nav>
   );

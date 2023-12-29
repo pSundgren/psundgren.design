@@ -1,7 +1,7 @@
 import React from "react";
 
 /* DATA IMPORT */
-import data from "./catalogue_data/WPTech.json";
+import data from "./catalogue_data/Timelog.json";
 
 /* COMPONENTS */
 import { CatalogueHero } from "../sections/Hero";
@@ -13,22 +13,22 @@ import {
   MockupsPresentation,
 } from "../sections/Presentations";
 
-const WPTech = ({ changeCursorVariant }) => {
+const Timelog = ({ changeCursorVariant }) => {
   const { page } = data;
   return (
-    <section id="wp_tech">
+    <section id="time_log">
       <CatalogueHero title={page.title} desc={page.desc} />
       <ProjectDescription
         desc={page.overview}
         duration={page.duration}
         roles={page.roles}
       />
-      <LogoPresentation type="wp_tech" />
-      <ColorPresentation type="wp_tech" />
-      <MockupsPresentation type="wp_tech" />
+      <LogoPresentation type="time_log" />
+      <ColorPresentation type="time_log" />
+      <MockupsPresentation type="time_log" />
       <ContactMe changeCursorVariant={changeCursorVariant} />
     </section>
   );
 };
 
-export default WPTech;
+export default Timelog;
