@@ -217,7 +217,7 @@ export const MockupsPresentation = ({ type }) => {
 const WPTechMockups = () => {
   return (
     <div className="flex flex-row justify-between">
-      <div className="bg-neutral-200 h-[796px] w-[1416px]" />
+      <div className="bg-neutral-200 h-16/9 w-full" />
     </div>
   );
 };

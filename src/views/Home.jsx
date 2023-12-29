@@ -4,11 +4,9 @@ import Wave from "react-wavify";
 import { spring, useVariants } from "../utils/cursor";
 
 /* Sections */
-import Navbar from "../components/Navbar";
 import { Hero } from "./sections/Hero";
 import About from "./sections/About";
 import CreativeCatalogue from "./sections/CreativeCatalogue";
-import Footer from "../components/Footer";
 
 const Home = () => {
   const [cursorVariant, changeCursorVariant] = useState("default");

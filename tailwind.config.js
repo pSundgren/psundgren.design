@@ -16,6 +16,7 @@ module.exports = {
       },
       height: {
         "90vh": "calc(100vh * 0.9)",
+        "16/9": "calc(((100vw - 24px)/16)*9)",
       },
     },
   },
