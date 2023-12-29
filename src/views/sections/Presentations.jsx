@@ -185,7 +185,7 @@ export const MockupsPresentation = ({ type }) => {
               <h1 className="text-neutral-500 text-sm">Result</h1>
             </Section>
             <RevealEqualInView>
-              <WPAppenMockups />
+              <PlaceholderMockup />
             </RevealEqualInView>
           </div>
         </div>
@@ -196,7 +196,7 @@ export const MockupsPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
             <RevealEqualInView>
-              <WPTechMockups />
+              <PlaceholderMockup />
             </RevealEqualInView>
           </div>
         </Section>
@@ -207,7 +207,7 @@ export const MockupsPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
             <RevealEqualInView>
-              <WPTechMockups />
+              <PlaceholderMockup />
             </RevealEqualInView>
           </div>
         </Section>
@@ -226,6 +226,14 @@ export const MockupsPresentation = ({ type }) => {
     default:
       return null;
   }
+};
+
+const PlaceholderMockup = () => {
+  return (
+    <div className="flex flex-row justify-between">
+      <div className="h-16/9 w-full bg-neutral-300" />
+    </div>
+  );
 };
 
 const WPTechMockups = () => {
