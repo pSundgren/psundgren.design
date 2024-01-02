@@ -168,7 +168,7 @@ export const TypographyPresentation = ({ type }) => {
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
               <p className="text-6xl text-neutral-700">GT Walsheim</p>
               <Link to="https://www.grillitype.com/typeface/gt-walsheim">
-                <SVG variant="link" fill="#71717A" />
+                <SVG variant="link-sm" fill="#71717A" />
               </Link>
             </RevealEqualInView>
           </div>
@@ -182,7 +182,7 @@ export const TypographyPresentation = ({ type }) => {
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
               <p className="text-6xl text-neutral-700">GT Walsheim</p>
               <Link to="https://www.grillitype.com/typeface/gt-walsheim">
-                <SVG variant="link" fill="#71717A" />
+                <SVG variant="link-sm" fill="#71717A" />
               </Link>
             </RevealEqualInView>
           </div>
@@ -196,7 +196,7 @@ export const TypographyPresentation = ({ type }) => {
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
               <p className="text-6xl font-inter text-neutral-700">Inter</p>
               <Link to="https://fonts.google.com/specimen/Inter">
-                <SVG variant="link" fill="#71717A" />
+                <SVG variant="link-sm" fill="#71717A" />
               </Link>
             </RevealEqualInView>
           </div>
@@ -212,7 +212,7 @@ export const TypographyPresentation = ({ type }) => {
                 SF Pro
               </p>
               <Link to="https://developer.apple.com/fonts/">
-                <SVG variant="link" fill="#71717A" />
+                <SVG variant="link-sm" fill="#71717A" />
               </Link>
             </RevealEqualInView>
           </div>
