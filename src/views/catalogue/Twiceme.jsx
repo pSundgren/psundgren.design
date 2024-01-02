@@ -16,8 +16,10 @@ import { Insights } from "../sections/Insights";
 
 const Twiceme = () => {
   const { page } = data;
+  const key = "twiceme";
+
   return (
-    <section id="twiceme">
+    <section id={key}>
       <CatalogueHero title={page.title} desc={page.desc} />
       <ProjectDescription
         desc={page.overview}
@@ -25,9 +27,9 @@ const Twiceme = () => {
         roles={page.roles}
       />
       <Insights insight_arr={page.insights} />
-      <LogoPresentation type="twiceme" />
-      <ColorPresentation type="twiceme" />
-      <MockupsPresentation type="twiceme" />
+      <LogoPresentation type={key} />
+      <ColorPresentation type={key} />
+      <MockupsPresentation type={key} />
       <ContactMe />
     </section>
   );

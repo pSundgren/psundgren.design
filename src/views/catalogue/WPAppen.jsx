@@ -17,6 +17,7 @@ import { Insights } from "../sections/Insights";
 const WPAppen = () => {
   const { page } = data;
   const key = "wp_appen";
+
   return (
     <section id={key}>
       <CatalogueHero title={page.title} desc={page.desc} />

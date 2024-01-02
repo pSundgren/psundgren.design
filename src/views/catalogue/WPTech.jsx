@@ -16,18 +16,20 @@ import {
 
 const WPTech = () => {
   const { page } = data;
+  const key = "wp_tech";
+
   return (
-    <section id="wp_tech">
+    <section id={key}>
       <CatalogueHero title={page.title} desc={page.desc} />
       <ProjectDescription
         desc={page.overview}
         duration={page.duration}
         roles={page.roles}
       />
-      <LogoPresentation type="wp_tech" />
-      <TypographyPresentation type="wp_tech" />
-      <ColorPresentation type="wp_tech" />
-      <MockupsPresentation type="wp_tech" />
+      <LogoPresentation type={key} />
+      <TypographyPresentation type={key} />
+      <ColorPresentation type={key} />
+      <MockupsPresentation type={key} />
       <ContactMe />
     </section>
   );

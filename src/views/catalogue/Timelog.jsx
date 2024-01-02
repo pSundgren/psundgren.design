@@ -18,6 +18,7 @@ import { Insights } from "../sections/Insights";
 const Timelog = () => {
   const { page } = data;
   const key = "time_log";
+
   return (
     <section id={key}>
       <CatalogueHero title={page.title} desc={page.desc} />
@@ -27,7 +28,7 @@ const Timelog = () => {
         roles={page.roles}
       />
       <Insights insight_arr={page.insights} />
-      <TechStackPresentation type={key} />
+      {/* <TechStackPresentation type={key} /> */}
       <TypographyPresentation type={key} />
       <ColorPresentation type={key} />
       <MockupsPresentation type={key} />

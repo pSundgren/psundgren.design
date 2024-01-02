@@ -16,18 +16,20 @@ import {
 
 const Stormer = () => {
   const { page } = data;
+  const key = "stormer";
+
   return (
-    <section id="stormer">
+    <section id={key}>
       <CatalogueHero title={page.title} desc={page.desc} />
       <ProjectDescription
         desc={page.overview}
         duration={page.duration}
         roles={page.roles}
       />
-      <LogoPresentation type="stormer" />
-      <TypographyPresentation type="stormer" />
-      <ColorPresentation type="stormer" />
-      <MockupsPresentation type="stormer" />
+      <LogoPresentation type={key} />
+      <TypographyPresentation type={key} />
+      <ColorPresentation type={key} />
+      <MockupsPresentation type={key} />
       <ContactMe />
     </section>
   );
