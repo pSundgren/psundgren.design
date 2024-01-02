@@ -11,8 +11,8 @@ const About = ({ changeCursorVariant }) => {
           <RevealStaggeredInView motionClass={"text-3xl space-y-3"}>
             <h2 className="text-sm text-gray-500">Hello there,</h2>
             <p className="text-3xl">
-              I'm <span>Pontus Sundgren</span>. A UX/UI designer and front-end
-              developer, currently living in Stockholm and working at{" "}
+              I'm <span>Pontus Sundgren</span>. An expienced UX/UI designer and
+              front-end developer, currently living in Stockholm and working at{" "}
               <span>
                 <a
                   href="https://www.wptech.se"
@@ -31,7 +31,6 @@ const About = ({ changeCursorVariant }) => {
             </p>
           </RevealStaggeredInView>
         </div>
-        <div className="hidden lg:block w-full"></div>
       </div>
     </Section>
   );

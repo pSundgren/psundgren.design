@@ -70,7 +70,7 @@ const CreativeCatalogue = ({ changeCursorVariant }) => {
       <div className="flex flex-col gap-14">
         <RevealStaggeredInView motionClass="space-y-3">
           <h2 className="text-sm text-gray-400">My works</h2>
-          <h1 className="text-4xl text-gray-900">
+          <h1 className="text-3xl text-gray-900">
             Take part of my{" "}
             <span className="font-secondary italic">creative catalogue</span>
           </h1>

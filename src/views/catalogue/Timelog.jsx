@@ -10,6 +10,7 @@ import { ProjectDescription } from "../sections/ProjectDescription";
 import {
   ColorPresentation,
   MockupsPresentation,
+  TypographyPresentation,
 } from "../sections/Presentations";
 import { Insights } from "../sections/Insights";
 
@@ -24,6 +25,7 @@ const Timelog = () => {
         roles={page.roles}
       />
       <Insights insight_arr={page.insights} />
+      <TypographyPresentation type="time_log" />
       <ColorPresentation type="time_log" />
       <MockupsPresentation type="time_log" />
       <ContactMe />

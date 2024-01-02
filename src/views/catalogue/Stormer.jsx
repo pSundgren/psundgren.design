@@ -11,6 +11,7 @@ import {
   LogoPresentation,
   ColorPresentation,
   MockupsPresentation,
+  TypographyPresentation,
 } from "../sections/Presentations";
 
 const Stormer = () => {
@@ -24,6 +25,7 @@ const Stormer = () => {
         roles={page.roles}
       />
       <LogoPresentation type="stormer" />
+      <TypographyPresentation type="stormer" />
       <ColorPresentation type="stormer" />
       <MockupsPresentation type="stormer" />
       <ContactMe />

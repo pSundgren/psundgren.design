@@ -7,6 +7,8 @@ import { RevealEqualInView } from "../../components/common/Reveal";
 
 import stormer_start from "../../assets/images/stormer_start.jpg";
 import wp_tech_start from "../../assets/images/wp_tech_start.jpg";
+import SVG from "../../assets/svgs/SVG";
+import { Link } from "react-router-dom";
 
 /* PROJECT COLORS */
 const WP_TECH = [
@@ -164,6 +166,55 @@ export const LogoPresentation = ({ type }) => {
   }
 };
 
+export const TypographyPresentation = ({ type }) => {
+  switch (type) {
+    case "wp_tech":
+      return (
+        <Section p="pb-36">
+          <div className="space-y-6">
+            <h1 className="text-sm text-neutral-400">Typography</h1>
+            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
+              <p className="text-6xl">GT Walsheim</p>
+              <Link to="https://www.grillitype.com/typeface/gt-walsheim">
+                <SVG variant="link" fill="#71717A" />
+              </Link>
+            </RevealEqualInView>
+          </div>
+        </Section>
+      );
+    case "time_log":
+      return (
+        <Section p="pb-36">
+          <div className="space-y-6">
+            <h1 className="text-sm text-neutral-400">Typography</h1>
+            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
+              <p className="text-6xl">GT Walsheim</p>
+              <Link to="https://www.grillitype.com/typeface/gt-walsheim">
+                <SVG variant="link" fill="#71717A" />
+              </Link>
+            </RevealEqualInView>
+          </div>
+        </Section>
+      );
+    case "stormer":
+      return (
+        <Section p="pb-36">
+          <div className="space-y-6">
+            <h1 className="text-sm text-neutral-400">Typography</h1>
+            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
+              <p className="text-6xl font-inter">Inter</p>
+              <Link to="https://fonts.google.com/specimen/Inter">
+                <SVG variant="link" fill="#71717A" />
+              </Link>
+            </RevealEqualInView>
+          </div>
+        </Section>
+      );
+    default:
+      return null;
+  }
+};
+
 export const MockupsPresentation = ({ type }) => {
   switch (type) {
     case "wp_tech":
@@ -172,7 +223,13 @@ export const MockupsPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
             <RevealEqualInView>
-              <WPTechMockups />
+              <div className="flex flex-row justify-between">
+                <img
+                  src={wp_tech_start}
+                  alt="Homepage of WP Tech"
+                  className="h-16/9 w-full"
+                />
+              </div>
             </RevealEqualInView>
           </div>
         </Section>
@@ -185,7 +242,10 @@ export const MockupsPresentation = ({ type }) => {
               <h1 className="text-neutral-500 text-sm">Result</h1>
             </Section>
             <RevealEqualInView>
-              <PlaceholderMockup />
+              {/*TODO: Replace this */}
+              <div className="flex flex-row justify-between">
+                <div className="h-16/9 w-full bg-neutral-300" />
+              </div>
             </RevealEqualInView>
           </div>
         </div>
@@ -196,7 +256,10 @@ export const MockupsPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
             <RevealEqualInView>
-              <PlaceholderMockup />
+              {/*TODO: Replace this */}
+              <div className="flex flex-row justify-between">
+                <div className="h-16/9 w-full bg-neutral-300" />
+              </div>
             </RevealEqualInView>
           </div>
         </Section>
@@ -207,7 +270,10 @@ export const MockupsPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
             <RevealEqualInView>
-              <PlaceholderMockup />
+              {/*TODO: Replace this */}
+              <div className="flex flex-row justify-between">
+                <div className="h-16/9 w-full bg-neutral-300" />
+              </div>
             </RevealEqualInView>
           </div>
         </Section>
@@ -218,7 +284,13 @@ export const MockupsPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
             <RevealEqualInView>
-              <StormerMockups />
+              <div className="flex flex-row justify-between">
+                <img
+                  src={stormer_start}
+                  alt="Homepage of Stormer"
+                  className="h-16/9 w-full"
+                />
+              </div>
             </RevealEqualInView>
           </div>
         </Section>
@@ -226,26 +298,6 @@ export const MockupsPresentation = ({ type }) => {
     default:
       return null;
   }
-};
-
-const PlaceholderMockup = () => {
-  return (
-    <div className="flex flex-row justify-between">
-      <div className="h-16/9 w-full bg-neutral-300" />
-    </div>
-  );
-};
-
-const WPTechMockups = () => {
-  return (
-    <div className="flex flex-row justify-between">
-      <img
-        src={wp_tech_start}
-        alt="Homepage of WP Tech"
-        className="h-16/9 w-full"
-      />
-    </div>
-  );
 };
 
 const WPAppenMockups = () => {
@@ -261,17 +313,5 @@ const WPAppenMockups = () => {
         <div />
       </div>
     </>
-  );
-};
-
-const StormerMockups = () => {
-  return (
-    <div className="flex flex-row justify-between">
-      <img
-        src={stormer_start}
-        alt="Homepage of Stormer"
-        className="h-16/9 w-full"
-      />
-    </div>
   );
 };

@@ -10,6 +10,8 @@ module.exports = {
         primary: "GT-Walsheim",
         bold: "GT-Walsheim-Bold",
         secondary: "Playfair Display",
+        wp_appen: "SF Pro",
+        inter: "Inter",
       },
       backgroundImage: {
         waves: "url('./assets/images/waves_gray.jpg')",

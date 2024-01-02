@@ -11,6 +11,7 @@ import {
   LogoPresentation,
   ColorPresentation,
   MockupsPresentation,
+  TypographyPresentation,
 } from "../sections/Presentations";
 
 const WPTech = () => {
@@ -24,6 +25,7 @@ const WPTech = () => {
         roles={page.roles}
       />
       <LogoPresentation type="wp_tech" />
+      <TypographyPresentation type="wp_tech" />
       <ColorPresentation type="wp_tech" />
       <MockupsPresentation type="wp_tech" />
       <ContactMe />
