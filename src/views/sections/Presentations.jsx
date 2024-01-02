@@ -3,7 +3,10 @@ import React from "react";
 /* COMPONENTS */
 import Section from "../../components/common/Section";
 import { WPTechLogo } from "../../components/common/Logo";
-import { RevealEqualInView } from "../../components/common/Reveal";
+import {
+  RevealEqualInView,
+  RevealStaggeredInView,
+} from "../../components/common/Reveal";
 
 import stormer_start from "../../assets/images/stormer_start.jpg";
 import wp_tech_start from "../../assets/images/wp_tech_start.jpg";
@@ -243,9 +246,11 @@ export const MockupsPresentation = ({ type }) => {
             </Section>
             <RevealEqualInView>
               {/*TODO: Replace this */}
-              <div className="flex flex-row justify-between">
-                <div className="h-16/9 w-full bg-neutral-300" />
-              </div>
+              <Section>
+                <div className="flex flex-row justify-between">
+                  <div className="h-16/9 w-full bg-neutral-300" />
+                </div>
+              </Section>
             </RevealEqualInView>
           </div>
         </div>
