@@ -166,7 +166,9 @@ export const TypographyPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-sm text-neutral-500">Typography</h1>
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
-              <p className="text-6xl text-neutral-700">GT Walsheim</p>
+              <p className="text-5xl md:text-6xl text-neutral-700">
+                GT Walsheim
+              </p>
               <Link to="https://www.grillitype.com/typeface/gt-walsheim">
                 <SVG variant="link-sm" fill="#71717A" />
               </Link>
@@ -180,7 +182,9 @@ export const TypographyPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-sm text-neutral-500">Typography</h1>
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
-              <p className="text-6xl text-neutral-700">GT Walsheim</p>
+              <p className="text-5xl md:text-6xl text-neutral-700">
+                GT Walsheim
+              </p>
               <Link to="https://www.grillitype.com/typeface/gt-walsheim">
                 <SVG variant="link-sm" fill="#71717A" />
               </Link>
@@ -194,7 +198,9 @@ export const TypographyPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-sm text-neutral-500">Typography</h1>
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
-              <p className="text-6xl font-inter text-neutral-700">Inter</p>
+              <p className="text-5xl md:text-6xl font-inter text-neutral-700">
+                Inter
+              </p>
               <Link to="https://fonts.google.com/specimen/Inter">
                 <SVG variant="link-sm" fill="#71717A" />
               </Link>
@@ -208,7 +214,7 @@ export const TypographyPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-sm text-neutral-500">Typography</h1>
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
-              <p className="text-6xl font-sf-pro-regular text-neutral-700">
+              <p className="text-5xl md:text-6xl font-sf-pro-regular text-neutral-700">
                 SF Pro
               </p>
               <Link to="https://developer.apple.com/fonts/">
