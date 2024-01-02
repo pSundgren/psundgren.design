@@ -10,14 +10,16 @@ import { ProjectDescription } from "../sections/ProjectDescription";
 import {
   ColorPresentation,
   MockupsPresentation,
+  TechStackPresentation,
   TypographyPresentation,
 } from "../sections/Presentations";
 import { Insights } from "../sections/Insights";
 
 const Timelog = () => {
   const { page } = data;
+  const key = "time_log";
   return (
-    <section id="time_log">
+    <section id={key}>
       <CatalogueHero title={page.title} desc={page.desc} />
       <ProjectDescription
         desc={page.overview}
@@ -25,9 +27,10 @@ const Timelog = () => {
         roles={page.roles}
       />
       <Insights insight_arr={page.insights} />
-      <TypographyPresentation type="time_log" />
-      <ColorPresentation type="time_log" />
-      <MockupsPresentation type="time_log" />
+      <TechStackPresentation type={key} />
+      <TypographyPresentation type={key} />
+      <ColorPresentation type={key} />
+      <MockupsPresentation type={key} />
       <ContactMe />
     </section>
   );

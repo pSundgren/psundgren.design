@@ -10,7 +10,7 @@ const About = ({ changeCursorVariant }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-14">
           <RevealStaggeredInView motionClass={"text-3xl space-y-3"}>
             <h2 className="text-sm text-gray-500">Hello there,</h2>
-            <p className="text-3xl">
+            <p className="text-3xl text-neutral-700">
               I'm <span>Pontus Sundgren</span>. An expienced UX/UI designer and
               front-end developer, currently living in Stockholm and working at{" "}
               <span>

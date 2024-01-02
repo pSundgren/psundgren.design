@@ -10,7 +10,8 @@ module.exports = {
         primary: "GT-Walsheim",
         bold: "GT-Walsheim-Bold",
         secondary: "Playfair Display",
-        wp_appen: "SF Pro",
+        "sf-pro-regular": "SF-Pro-Regular",
+        "sf-pro-semibold": "SF-Pro-Semibold",
         inter: "Inter",
       },
       backgroundImage: {

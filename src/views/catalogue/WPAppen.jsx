@@ -10,13 +10,15 @@ import { ProjectDescription } from "../sections/ProjectDescription";
 import {
   ColorPresentation,
   MockupsPresentation,
+  TypographyPresentation,
 } from "../sections/Presentations";
 import { Insights } from "../sections/Insights";
 
 const WPAppen = () => {
   const { page } = data;
+  const key = "wp_appen";
   return (
-    <section id="wp_appen">
+    <section id={key}>
       <CatalogueHero title={page.title} desc={page.desc} />
       <ProjectDescription
         desc={page.overview}
@@ -24,8 +26,9 @@ const WPAppen = () => {
         roles={page.roles}
       />
       <Insights insight_arr={page.insights} />
-      <ColorPresentation type="wp_appen" />
-      <MockupsPresentation type="wp_appen" />
+      <TypographyPresentation type={key} />
+      <ColorPresentation type={key} />
+      <MockupsPresentation type={key} />
       <ContactMe />
     </section>
   );

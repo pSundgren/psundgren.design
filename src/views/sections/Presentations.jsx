@@ -3,10 +3,7 @@ import React from "react";
 /* COMPONENTS */
 import Section from "../../components/common/Section";
 import { WPTechLogo } from "../../components/common/Logo";
-import {
-  RevealEqualInView,
-  RevealStaggeredInView,
-} from "../../components/common/Reveal";
+import { RevealEqualInView } from "../../components/common/Reveal";
 
 import stormer_start from "../../assets/images/stormer_start.jpg";
 import wp_tech_start from "../../assets/images/wp_tech_start.jpg";
@@ -37,8 +34,8 @@ const TIME_LOG = [
 
 const TWICEME = [
   { name: "#00BFA5", bg: "bg-[#00BFA5]", text: "text-neutral-50" },
+  { name: "#BE123C", bg: "bg-[#BE123C]", text: "text-neutral-50" },
   { name: "#171717", bg: "bg-[#171717]", text: "text-neutral-50" },
-  { name: "#71717A", bg: "bg-[#71717A]", text: "text-neutral-50" },
   { name: "#FAFAFA", bg: "bg-[#FAFAFA]", text: "text-neutral-700" },
 ];
 
@@ -78,9 +75,7 @@ export const ColorPresentation = ({ type }) => {
             <div className="flex flex-row items-center justify-between">
               {WP_APP.map((color) => (
                 <div className={`${color.bg} h-48 w-full flex items-end p-3`}>
-                  <p
-                    className={`${color.text} text-neutral-50 opacity-70 text-sm`}
-                  >
+                  <p className={`${color.text} opacity-70 text-sm`}>
                     {color.name}
                   </p>
                 </div>
@@ -97,9 +92,7 @@ export const ColorPresentation = ({ type }) => {
             <div className="flex flex-row items-center justify-between">
               {TIME_LOG.map((color) => (
                 <div className={`${color.bg} h-48 w-full flex items-end p-3`}>
-                  <p
-                    className={`${color.text} text-neutral-50 opacity-70 text-sm`}
-                  >
+                  <p className={`${color.text} opacity-70 text-sm`}>
                     {color.name}
                   </p>
                 </div>
@@ -116,9 +109,7 @@ export const ColorPresentation = ({ type }) => {
             <div className="flex flex-row items-center justify-between">
               {TWICEME.map((color) => (
                 <div className={`${color.bg} h-48 w-full flex items-end p-3`}>
-                  <p
-                    className={`${color.text} text-neutral-50 opacity-70 text-sm`}
-                  >
+                  <p className={`${color.text} opacity-70 text-sm`}>
                     {color.name}
                   </p>
                 </div>
@@ -135,9 +126,7 @@ export const ColorPresentation = ({ type }) => {
             <div className="flex flex-row items-center justify-between">
               {STORMER.map((color) => (
                 <div className={`${color.bg} h-48 w-full flex items-end p-3`}>
-                  <p
-                    className={`${color.text} text-neutral-50 opacity-70 text-sm`}
-                  >
+                  <p className={`${color.text} opacity-70 text-sm`}>
                     {color.name}
                   </p>
                 </div>
@@ -157,7 +146,7 @@ export const LogoPresentation = ({ type }) => {
       return (
         <Section p="pb-36">
           <div className="space-y-6">
-            <h1 className="text-sm text-neutral-400">Logotype</h1>
+            <h1 className="text-sm text-neutral-500">Logotype</h1>
             <RevealEqualInView>
               <WPTechLogo />
             </RevealEqualInView>
@@ -175,9 +164,9 @@ export const TypographyPresentation = ({ type }) => {
       return (
         <Section p="pb-36">
           <div className="space-y-6">
-            <h1 className="text-sm text-neutral-400">Typography</h1>
+            <h1 className="text-sm text-neutral-500">Typography</h1>
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
-              <p className="text-6xl">GT Walsheim</p>
+              <p className="text-6xl text-neutral-700">GT Walsheim</p>
               <Link to="https://www.grillitype.com/typeface/gt-walsheim">
                 <SVG variant="link" fill="#71717A" />
               </Link>
@@ -189,9 +178,9 @@ export const TypographyPresentation = ({ type }) => {
       return (
         <Section p="pb-36">
           <div className="space-y-6">
-            <h1 className="text-sm text-neutral-400">Typography</h1>
+            <h1 className="text-sm text-neutral-500">Typography</h1>
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
-              <p className="text-6xl">GT Walsheim</p>
+              <p className="text-6xl text-neutral-700">GT Walsheim</p>
               <Link to="https://www.grillitype.com/typeface/gt-walsheim">
                 <SVG variant="link" fill="#71717A" />
               </Link>
@@ -203,10 +192,26 @@ export const TypographyPresentation = ({ type }) => {
       return (
         <Section p="pb-36">
           <div className="space-y-6">
-            <h1 className="text-sm text-neutral-400">Typography</h1>
+            <h1 className="text-sm text-neutral-500">Typography</h1>
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
-              <p className="text-6xl font-inter">Inter</p>
+              <p className="text-6xl font-inter text-neutral-700">Inter</p>
               <Link to="https://fonts.google.com/specimen/Inter">
+                <SVG variant="link" fill="#71717A" />
+              </Link>
+            </RevealEqualInView>
+          </div>
+        </Section>
+      );
+    case "wp_appen":
+      return (
+        <Section p="pb-36">
+          <div className="space-y-6">
+            <h1 className="text-sm text-neutral-500">Typography</h1>
+            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
+              <p className="text-6xl font-sf-pro-regular text-neutral-700">
+                SF Pro
+              </p>
+              <Link to="https://developer.apple.com/fonts/">
                 <SVG variant="link" fill="#71717A" />
               </Link>
             </RevealEqualInView>
@@ -305,18 +310,30 @@ export const MockupsPresentation = ({ type }) => {
   }
 };
 
-const WPAppenMockups = () => {
-  return (
-    <>
-      <Section>
-        <div className="bg-neutral-200 h-16/9 w-full" />
-      </Section>
-      <div className="bg-neutral-50 w-screen my-36">
-        <Section p="my-36 bg-neutral-200">
-          <div className="bg-neutral-200" />
+export const TechStackPresentation = ({ type }) => {
+  switch (type) {
+    case "time_log":
+      return (
+        <Section p="pb-36">
+          <div className="space-y-6">
+            <h1 className="text-neutral-500 text-sm">Tech stack</h1>
+            <div className="flex flex-col gap-y-8">
+              <div className="flex flex-row">
+                <p className="text-3xl text-neutral-700">
+                  Design & prototyping
+                </p>
+              </div>
+              <div className="flex flex-row">
+                <p className="text-3xl text-neutral-700">Front end</p>
+              </div>
+              <div className="flex flex-row">
+                <p className="text-3xl text-neutral-700">Back end</p>
+              </div>
+            </div>
+          </div>
         </Section>
-        <div />
-      </div>
-    </>
-  );
+      );
+    default:
+      return null;
+  }
 };

@@ -11,7 +11,7 @@ export const Hero = () => {
       <div className="flex flex-row justify-center w-fill my-[120px]">
         <div className="flex flex-col">
           <div className="pr-6">
-            <SVG variant="sign" fill="rgb(240 253 250)" />
+            <SVG variant="sign" fill="#fafafa" />
           </div>
           <RevealStaggeredInView motionClass="flex flex-row gap-x-10 pt-8">
             <p className="text-sm text-neutral-50">UX/UI DESIGNER</p>
@@ -28,7 +28,7 @@ export const CatalogueHero = ({ title, desc }) => {
     <Section bg="bg-neutral-800" p="pt-[196px] pb-36">
       <RevealStaggeredInView motionClass="space-y-6 max-w-[580px]">
         <h1 className="text-3xl text-neutral-50">{title}</h1>
-        <h2 className="text-lg text-neutral-400">{desc}</h2>
+        <h2 className="text-lg text-neutral-500">{desc}</h2>
       </RevealStaggeredInView>
     </Section>
   );

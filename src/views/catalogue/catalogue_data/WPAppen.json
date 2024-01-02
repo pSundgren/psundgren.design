@@ -8,8 +8,8 @@
     "title": "WP Appen - internal service management app for field workers",
     "desc": "Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
     "overview": "To facilitate communication between field workers and a ROT & RUT business. A business development and policy was implemented with a CRM system that communicates with an iOS & Android app. Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
-    "duration": "2 months",
-    "roles": ["UX/UI Designer", "UX Researcher"],
+    "duration": "3 months",
+    "roles": ["UX/UI Designer", "UX Researcher", "Front-end developer"],
     "insights": [
       {
         "title": "Field workers needs a step-by-step guide",
