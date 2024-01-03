@@ -11,7 +11,7 @@ import { RevealEqualInView } from "../../components/common/Reveal";
 import wp_tech_start from "../../assets/images/wp_tech_start.jpg";
 
 /* WP APPEN MOCKUP IMAGES */
-import wp_appen_worker from "../../assets/images/project_images/wp_appen/worker_mockup.jpg";
+import wp_appen_worker from "../../assets/images/project_images/wp_appen/worker_mockup.jpeg";
 
 /* STORMER MOCKUP IMAGES */
 import stormer_start from "../../assets/images/stormer_start.jpg";
@@ -267,7 +267,7 @@ export const MockupsPresentation = ({ type }) => {
                   <img
                     src={wp_appen_worker}
                     alt="Worker holding app"
-                    className="h-16/9 w-full object-center"
+                    className="h-auto w-full object-center"
                   />
                 </div>
               </Section>
