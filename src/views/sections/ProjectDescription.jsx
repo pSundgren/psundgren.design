@@ -18,7 +18,7 @@ export const ProjectDescription = ({ desc, duration, roles }) => {
             <p className="text-2xl text-neutral-700">{duration}</p>
           </div>
           <div className="text-start space-y-3">
-            <p className="text-neutral-500 text-sm">Roles</p>
+            <p className="text-neutral-500 text-sm">Deliverables</p>
             <div className="space-y-0">
               {roles.map((item) => (
                 <p className="text-2xl text-neutral-700">{item}</p>

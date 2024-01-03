@@ -12,7 +12,7 @@ const About = ({ changeCursorVariant }) => {
             <h2 className="text-sm text-gray-500">Hello there,</h2>
             <p className="text-3xl text-neutral-700">
               I'm <span>Pontus Sundgren</span>. An expienced UX/UI designer and
-              front-end developer, currently living in Stockholm and working at{" "}
+              front—end developer, currently living in Stockholm and working at{" "}
               <span>
                 <a
                   href="https://www.wptech.se"
@@ -27,7 +27,7 @@ const About = ({ changeCursorVariant }) => {
               </span>
               {". "}
               Responsible for leading the design process and visual development
-              of the company. As well as aiding the front-end development.
+              of the company. As well as aiding the front—end development.
             </p>
           </RevealStaggeredInView>
         </div>

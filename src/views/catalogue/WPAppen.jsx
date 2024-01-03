@@ -26,7 +26,7 @@ const WPAppen = () => {
         duration={page.duration}
         roles={page.roles}
       />
-      <Insights insight_arr={page.insights} />
+      {/* <Insights insight_arr={page.insights} /> */}
       <TypographyPresentation type={key} />
       <ColorPresentation type={key} />
       <MockupsPresentation type={key} />

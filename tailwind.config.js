@@ -13,6 +13,7 @@ module.exports = {
         "sf-pro-regular": "SF-Pro-Regular",
         "sf-pro-semibold": "SF-Pro-Semibold",
         inter: "Inter",
+        lato: "Lato",
       },
       backgroundImage: {
         waves: "url('./assets/images/waves_gray.jpg')",

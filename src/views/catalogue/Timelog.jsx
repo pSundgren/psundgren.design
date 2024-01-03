@@ -27,7 +27,7 @@ const Timelog = () => {
         duration={page.duration}
         roles={page.roles}
       />
-      <Insights insight_arr={page.insights} />
+      {/* <Insights insight_arr={page.insights} /> */}
       {/* <TechStackPresentation type={key} /> */}
       <TypographyPresentation type={key} />
       <ColorPresentation type={key} />

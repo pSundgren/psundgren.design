@@ -126,7 +126,7 @@ const ProjectCard = ({
             <div className="flex flex-row space-x-6">
               <div className="flex flex-row items-center space-x-0 mt-6 font-primary">
                 <h1 className="inline-block text-2xl text-neutral-700">
-                  {`${heading} - ${subHeading}`}
+                  {`${heading} — ${subHeading}`}
                 </h1>
               </div>
             </div>

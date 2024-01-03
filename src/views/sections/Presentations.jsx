@@ -185,8 +185,8 @@ export const TypographyPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-sm text-neutral-500">Typography</h1>
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
-              <p className="text-5xl md:text-6xl text-neutral-700">
-                GT Walsheim
+              <p className="text-3xl text-neutral-700">
+                Typeface — GT Walsheim
               </p>
               <Link to="https://www.grillitype.com/typeface/gt-walsheim">
                 <SVG variant="link-sm" fill="#71717A" />
@@ -201,8 +201,8 @@ export const TypographyPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-sm text-neutral-500">Typography</h1>
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
-              <p className="text-5xl md:text-6xl text-neutral-700">
-                GT Walsheim
+              <p className="text-3xl text-neutral-700">
+                Typeface — GT Walsheim
               </p>
               <Link to="https://www.grillitype.com/typeface/gt-walsheim">
                 <SVG variant="link-sm" fill="#71717A" />
@@ -217,10 +217,26 @@ export const TypographyPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-sm text-neutral-500">Typography</h1>
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
-              <p className="text-5xl md:text-6xl font-inter text-neutral-700">
-                Inter
+              <p className="text-3xl font-inter text-neutral-700">
+                Typeface — Inter
               </p>
               <Link to="https://fonts.google.com/specimen/Inter">
+                <SVG variant="link-sm" fill="#71717A" />
+              </Link>
+            </RevealEqualInView>
+          </div>
+        </Section>
+      );
+    case "twiceme":
+      return (
+        <Section p="pb-36">
+          <div className="space-y-6">
+            <h1 className="text-sm text-neutral-500">Typography</h1>
+            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
+              <p className="text-3xl font-lato text-neutral-700">
+                Typeface — Lato
+              </p>
+              <Link to="https://fonts.google.com/specimen/Lato">
                 <SVG variant="link-sm" fill="#71717A" />
               </Link>
             </RevealEqualInView>
@@ -233,8 +249,8 @@ export const TypographyPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-sm text-neutral-500">Typography</h1>
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
-              <p className="text-5xl md:text-6xl font-sf-pro-regular text-neutral-700">
-                SF Pro
+              <p className="text-3xl font-sf-pro-regular text-neutral-700">
+                Typeface — SF Pro
               </p>
               <Link to="https://developer.apple.com/fonts/">
                 <SVG variant="link-sm" fill="#71717A" />

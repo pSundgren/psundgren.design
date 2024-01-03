@@ -11,6 +11,7 @@ import {
   LogoPresentation,
   ColorPresentation,
   MockupsPresentation,
+  TypographyPresentation,
 } from "../sections/Presentations";
 import { Insights } from "../sections/Insights";
 
@@ -26,8 +27,9 @@ const Twiceme = () => {
         duration={page.duration}
         roles={page.roles}
       />
-      <Insights insight_arr={page.insights} />
+      {/* <Insights insight_arr={page.insights} /> */}
       <LogoPresentation type={key} />
+      <TypographyPresentation type={key} />
       <ColorPresentation type={key} />
       <MockupsPresentation type={key} />
       <ContactMe />
