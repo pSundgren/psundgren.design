@@ -15,12 +15,16 @@ import wp_tech_start from "../../assets/images/wp_tech_start.jpg";
 
 /* WP APPEN MOCKUP IMAGES */
 import wp_appen_worker from "../../assets/images/project_images/wp_appen/worker_mockup.jpeg";
-import phone_one from "../../assets/images/project_images/wp_appen/phone_1_side.png";
-import phone_two from "../../assets/images/project_images/wp_appen/phone_2_side.png";
-import phone_three from "../../assets/images/project_images/wp_appen/phone_3_side.png";
-import phone_four from "../../assets/images/project_images/wp_appen/phone_4_side.png";
-import phone_five from "../../assets/images/project_images/wp_appen/phone_5_side.png";
-import phone_six from "../../assets/images/project_images/wp_appen/phone_6_side.png";
+import phone_one from "../../assets/images/project_images/wp_appen/phone_1_side.webp";
+import phone_two from "../../assets/images/project_images/wp_appen/phone_2_side.webp";
+import phone_three from "../../assets/images/project_images/wp_appen/phone_3_side.webp";
+import phone_four from "../../assets/images/project_images/wp_appen/phone_4_side.webp";
+import phone_five from "../../assets/images/project_images/wp_appen/phone_5_side.webp";
+import phone_six from "../../assets/images/project_images/wp_appen/phone_6_side.webp";
+
+/* TIME LOG MOCKUP IMAGES */
+
+/* TWICEME MOCKUP IMAGES */
 
 /* STORMER MOCKUP IMAGES */
 import stormer_start from "../../assets/images/stormer_start.jpg";
