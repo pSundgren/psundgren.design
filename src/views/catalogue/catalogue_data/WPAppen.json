@@ -13,15 +13,15 @@
     "insights": [
       {
         "title": "Field workers needs a step-by-step guide",
-        "desc": "The field workers (primary users of the app) were used to just doing everything on the fly. Which caused a lot of manual labor and money for the company. Therefore there were a lot of limitations to the app to make sure that the field workers vould not do A (report working hours) before completing B (confirming that the job had been completed without any distruptions)."
+        "desc": "The primary users of the app were used to just doing everything on the fly, often forgetting steps in the companys' proccess policy. Which caused a lot of manual labor and money for the company. Therefore there were a lot of limitations to the app to make sure that the field workers vould not do A (report working hours) before completing B (confirming that the job had been completed without any distruptions)."
+      },
+      {
+        "title": "Incentive system for using the app",
+        "desc": "A common behavioural pattern which was observed was the field workers usually skipped steps of the companys' process. Therefore, an incentive systems was created as of each completed task from a field worker they collected points. An average of points (total points/total jobs assigned) was then calculated to priotise workers with an higher average."
       },
       {
         "title": "Internalization",
         "desc": "Many of the field workers are not bilingual and therefore the app needed to support several languages. Translations was handled via i18nexus and translations were confirmed with the help of volonteering field workers or freelance personell."
-      },
-      {
-        "title": "Incentive system",
-        "desc": "A common error that was observed was that the field workers usually skipped steps of the companys' process. Therefore, an incentive systems was created as of each completed task from a field worker they collected points. An average of points (total points/total jobs assigned) was then calculated to priotise workers with an higher average."
       }
     ]
   }
