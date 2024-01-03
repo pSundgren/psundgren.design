@@ -1,14 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 /* COMPONENTS */
 import Section from "../../components/common/Section";
+import SVG from "../../assets/svgs/SVG";
 import { WPTechLogo } from "../../components/common/Logo";
 import { RevealEqualInView } from "../../components/common/Reveal";
 
-import stormer_start from "../../assets/images/stormer_start.jpg";
+/* WP TECH MOCKUP IMAGES */
 import wp_tech_start from "../../assets/images/wp_tech_start.jpg";
-import SVG from "../../assets/svgs/SVG";
-import { Link } from "react-router-dom";
+
+/* WP APPEN MOCKUP IMAGES */
+import wp_appen_worker from "../../assets/images/project_images/wp_appen/worker_mockup.jpg";
+
+/* STORMER MOCKUP IMAGES */
+import stormer_start from "../../assets/images/stormer_start.jpg";
 
 /* PROJECT COLORS */
 const WP_TECH = [
@@ -256,10 +262,13 @@ export const MockupsPresentation = ({ type }) => {
               <h1 className="text-neutral-500 text-sm">Result</h1>
             </Section>
             <RevealEqualInView>
-              {/*TODO: Replace this */}
               <Section>
                 <div className="flex flex-row justify-between">
-                  <div className="h-16/9 w-full bg-neutral-300" />
+                  <img
+                    src={wp_appen_worker}
+                    alt="Worker holding app"
+                    className="h-16/9 w-full object-center"
+                  />
                 </div>
               </Section>
             </RevealEqualInView>
@@ -316,30 +325,17 @@ export const MockupsPresentation = ({ type }) => {
   }
 };
 
-export const TechStackPresentation = ({ type }) => {
-  switch (type) {
-    case "time_log":
-      return (
-        <Section p="pb-36">
-          <div className="space-y-6">
-            <h1 className="text-neutral-500 text-sm">Tech stack</h1>
-            <div className="flex flex-col gap-y-8">
-              <div className="flex flex-row">
-                <p className="text-3xl text-neutral-700">
-                  Design & prototyping
-                </p>
-              </div>
-              <div className="flex flex-row">
-                <p className="text-3xl text-neutral-700">Front end</p>
-              </div>
-              <div className="flex flex-row">
-                <p className="text-3xl text-neutral-700">Back end</p>
-              </div>
-            </div>
-          </div>
-        </Section>
-      );
-    default:
-      return null;
-  }
+export const TechStackPresentation = ({ arr }) => {
+  return (
+    <Section p="pb-36">
+      <div className="space-y-6">
+        <h1 className="text-neutral-500 text-sm">Tech used</h1>
+        <div className="flex flex-row flex-wrap justify-between items-center">
+          {arr.map((variant) => (
+            <SVG variant={variant} />
+          ))}
+        </div>
+      </div>
+    </Section>
+  );
 };
