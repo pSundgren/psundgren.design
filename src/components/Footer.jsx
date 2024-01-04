@@ -7,7 +7,7 @@ const Footer = ({ changeCursorVariant }) => {
     <Section p="py-14" bg="bg-neutral-800">
       <div className="flex flex-row justify-between">
         <div className="flex flex-col space-y-4">
-          <SVG variant="sign-sm" fill="#F0FDFA" />
+          <SVG variant="sign-sm" fill="#fafafa" />
           <div>
             <p className="text-neutral-300 text-xs">Pontus Sundgren</p>
             <a

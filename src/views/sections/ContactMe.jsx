@@ -13,7 +13,7 @@ export const ContactMe = ({ changeCursorVariant }) => {
             href="/#creative-catalogue"
           >
             Go back{" "}
-            <span className="group-hover:text-[#648C8B] transition-all ease-out duration-500">
+            <span className="group-hover:text-[#71717A] transition-all ease-out duration-500">
               home
             </span>
           </a>
@@ -27,7 +27,7 @@ export const ContactMe = ({ changeCursorVariant }) => {
             href="mailto:sundgren.pontus@gmail.com"
           >
             Get in{" "}
-            <span className="group-hover:text-[#648C8B] transition-all ease-out duration-500">
+            <span className="group-hover:text-[#71717A] transition-all ease-out duration-500">
               touch
             </span>
           </a>
