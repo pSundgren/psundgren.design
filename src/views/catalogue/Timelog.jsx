@@ -9,6 +9,7 @@ import { ContactMe } from "../sections/ContactMe";
 import { ProjectDescription } from "../sections/ProjectDescription";
 import {
   ColorPresentation,
+  Icons,
   MockupsPresentation,
   TechStackPresentation,
   TypographyPresentation,
@@ -31,6 +32,7 @@ const Timelog = () => {
       {/* <TechStackPresentation type={key} /> */}
       <TypographyPresentation type={key} />
       <ColorPresentation type={key} />
+      <Icons type={key} />
       <MockupsPresentation type={key} />
       <ContactMe />
     </section>

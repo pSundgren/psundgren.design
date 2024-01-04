@@ -9,6 +9,7 @@ import { ContactMe } from "../sections/ContactMe";
 import { ProjectDescription } from "../sections/ProjectDescription";
 import {
   ColorPresentation,
+  Icons,
   MockupsPresentation,
   TypographyPresentation,
 } from "../sections/Presentations";
@@ -29,6 +30,7 @@ const WPAppen = () => {
       {/* <Insights insight_arr={page.insights} /> */}
       <TypographyPresentation type={key} />
       <ColorPresentation type={key} />
+      <Icons type={key} />
       <MockupsPresentation type={key} />
       <ContactMe />
     </section>

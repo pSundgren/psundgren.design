@@ -17,6 +17,7 @@ module.exports = {
       },
       backgroundImage: {
         waves: "url('./assets/images/waves_gray.jpg')",
+        "black-texture": "url('./assets/images/black_bg.jpg')",
       },
       height: {
         "90vh": "calc(100vh * 0.9)",
