@@ -46,7 +46,7 @@ const WP_APP = [
 
 const TIME_LOG = [
   { name: "#059669", bg: "bg-[#059669]", text: "text-neutral-50" },
-  { name: "#3F3F46", bg: "bg-[#3F3F46]", text: "text-neutral-50" },
+  { name: "#262626", bg: "bg-[#262626]", text: "text-neutral-50" },
   { name: "#71717A", bg: "bg-[#71717A]", text: "text-neutral-50" },
   { name: "#FAFAFA", bg: "bg-[#FAFAFA]", text: "text-neutral-700" },
 ];
