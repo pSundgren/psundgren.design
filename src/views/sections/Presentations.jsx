@@ -14,13 +14,11 @@ import {
 import wp_tech_start from "../../assets/images/wp_tech_start.jpg";
 
 /* WP APPEN MOCKUP IMAGES */
-import wp_appen_worker from "../../assets/images/project_images/wp_appen/worker_mockup.jpeg";
-import phone_one from "../../assets/images/project_images/wp_appen/phone_1_side.webp";
-import phone_two from "../../assets/images/project_images/wp_appen/phone_2_side.webp";
-import phone_three from "../../assets/images/project_images/wp_appen/phone_3_side.webp";
-import phone_four from "../../assets/images/project_images/wp_appen/phone_4_side.webp";
-import phone_five from "../../assets/images/project_images/wp_appen/phone_5_side.webp";
-import phone_six from "../../assets/images/project_images/wp_appen/phone_6_side.webp";
+import wp_appen_mockup from "../../assets/images/project_images/wp_appen/result_mockup.jpg";
+import wp_appen_mockup_2 from "../../assets/images/project_images/wp_appen/result_mockup_2.jpg";
+import phone_one from "../../assets/images/project_images/wp_appen/phone_1_straight.png";
+import phone_two from "../../assets/images/project_images/wp_appen/phone_2_straight.webp";
+import phone_three from "../../assets/images/project_images/wp_appen/phone_4_straight.webp";
 
 /* TIME LOG MOCKUP IMAGES */
 
@@ -268,7 +266,7 @@ export const MockupsPresentation = ({ type }) => {
   switch (type) {
     case "wp_tech":
       return (
-        <Section bg="" p="pb-36">
+        <Section p="pb-36">
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
             <RevealEqualInView>
@@ -285,129 +283,22 @@ export const MockupsPresentation = ({ type }) => {
       );
     case "wp_appen":
       return (
-        <div className="pb-36">
-          <div className="space-y-6">
-            <Section p="pb-36 gap-y-14">
-              <div className="flex flex-col lg:flex-row gap-y-6 lg:justify-between items-center">
-                <img src={phone_one} alt="Phone mockup" className="w-[650px]" />
-                <RevealStaggeredInView motionClass="space-y-6">
-                  <h1 className="text-neutral-500 text-sm">
-                    Reporting availability
-                  </h1>
-                  <p className="text-neutral-700 text-2xl max-w-[700px]">
-                    Field workers are able to report whenever they are available
-                    to work. This report is then sent to a planning department
-                    that match available field workers to requested services
-                    from customers.
-                  </p>
-                </RevealStaggeredInView>
-              </div>
-            </Section>
-            <Section p="pb-36 gap-y-14">
-              <div className="flex flex-col lg:flex-row-reverse gap-y-6 lg:justify-between items-center">
-                <img src={phone_two} alt="Phone mockup" className="w-[650px]" />
-                <RevealStaggeredInView motionClass="space-y-6">
-                  <h1 className="text-neutral-500 text-sm">
-                    Get an overview of your jobs
-                  </h1>
-                  <p className="text-neutral-700 text-2xl max-w-[700px]">
-                    See the jobs you have planned for the day or select a later
-                    date to check. See the current status of the different jobs
-                    and get notified if a co-worker have added information to
-                    the job.
-                  </p>
-                </RevealStaggeredInView>
-              </div>
-            </Section>
-            <Section p="pb-36 gap-y-14">
-              <div className="flex flex-col lg:flex-row gap-y-6 lg:justify-between items-center">
-                <img
-                  src={phone_three}
-                  alt="Phone mockup"
-                  className="w-[650px]"
-                />
-                <RevealStaggeredInView motionClass="space-y-6">
-                  <h1 className="text-neutral-500 text-sm">
-                    Read and confirm job information
-                  </h1>
-                  <p className="text-neutral-700 text-2xl max-w-[700px]">
-                    Inside the job you'll find everything you need. All the
-                    information that is registered by the planning department is
-                    visible inside the information tab. Confirm important
-                    information to let the planning department how the job is
-                    coming along.
-                  </p>
-                </RevealStaggeredInView>
-              </div>
-            </Section>
-            <Section p="pb-36 gap-y-14">
-              <div className="flex flex-col lg:flex-row-reverse gap-y-6 lg:justify-between items-center">
-                <img
-                  src={phone_four}
-                  alt="Phone mockup"
-                  className="w-[650px]"
-                />
-                <RevealStaggeredInView motionClass="space-y-6">
-                  <h1 className="text-neutral-500 text-sm">
-                    Report your working hours
-                  </h1>
-                  <p className="text-neutral-700 text-2xl max-w-[700px]">
-                    No need for tedious spreadsheets. Report your working hours
-                    once you've marked the job as complete and get timestamps
-                    and suggested values instead of having to keep track of time
-                    while you're focused on the job.
-                  </p>
-                </RevealStaggeredInView>
-              </div>
-            </Section>
-            <Section p="pb-36 gap-y-14">
-              <div className="flex flex-col lg:flex-row gap-y-6 lg:justify-between items-center">
-                <img
-                  src={phone_five}
-                  alt="Phone mockup"
-                  className="w-[650px]"
-                />
-                <RevealStaggeredInView motionClass="space-y-6">
-                  <h1 className="text-neutral-500 text-sm">
-                    Add notes and comments for your co-workers
-                  </h1>
-                  <p className="text-neutral-700 text-2xl max-w-[700px]">
-                    Add important information to the job that your co-workers
-                    will be notified about. Also take part of important events
-                    that always keeps you up to date on the progress of the job.
-                  </p>
-                </RevealStaggeredInView>
-              </div>
-            </Section>
-            <Section p="pb-36 gap-y-14">
-              <div className="flex flex-col lg:flex-row-reverse gap-y-6 lg:justify-between items-center">
-                <img src={phone_six} alt="Phone mockup" className="w-[650px]" />
-                <RevealStaggeredInView motionClass="space-y-6">
-                  <h1 className="text-neutral-500 text-sm">
-                    Handle payment from the app
-                  </h1>
-                  <p className="text-neutral-700 text-2xl max-w-[700px]">
-                    Get an auto generated invoice based on you and your
-                    co-workers reported hours. Presentable to the customer on
-                    site. Send the invoice to the customer by a simple press of
-                    a button.
-                  </p>
-                </RevealStaggeredInView>
-              </div>
-            </Section>
+        <Section p="pb-36">
+          <h1 className="text-neutral-500 text-sm mb-6">Result</h1>
+          <div className="space-y-36">
             <RevealEqualInView>
-              <Section p="pb-36">
-                <div className="flex flex-row justify-between">
-                  <img
-                    src={wp_appen_worker}
-                    alt="Worker holding app"
-                    className="h-auto w-full object-center"
-                  />
-                </div>
-              </Section>
+              <img src={wp_appen_mockup} alt="WP Appen Mockup" />
+            </RevealEqualInView>
+            <RevealStaggeredInView motionClass="flex flex-row gap-x-6 justify-center items-center">
+              <img src={phone_one} alt="Mockup" className="w-[300px]" />
+              <img src={phone_two} alt="Mockup" className="w-[300px]" />
+              <img src={phone_three} alt="Mockup" className="w-[300px]" />
+            </RevealStaggeredInView>
+            <RevealEqualInView>
+              <img src={wp_appen_mockup_2} alt="WP Appen Mockup" />
             </RevealEqualInView>
           </div>
-        </div>
+        </Section>
       );
     case "time_log":
       return (
