@@ -21,6 +21,8 @@ import phone_two from "../../assets/images/project_images/wp_appen/phone_2_strai
 import phone_three from "../../assets/images/project_images/wp_appen/phone_4_straight.webp";
 
 /* TIME LOG MOCKUP IMAGES */
+import time_log_mockup_1 from "../../assets/images/project_images/time_log/time_log_mockup.jpeg";
+import time_log_mockup_2 from "../../assets/images/project_images/time_log/time_log_mockup_2.jpeg";
 
 /* TWICEME MOCKUP IMAGES */
 
@@ -302,15 +304,13 @@ export const MockupsPresentation = ({ type }) => {
       );
     case "time_log":
       return (
-        <Section bg="" p="pb-36">
-          <div className="space-y-6">
-            <h1 className="text-neutral-500 text-sm">Result</h1>
-            <RevealEqualInView>
-              {/*TODO: Replace this */}
-              <div className="flex flex-row justify-between">
-                <div className="h-16/9 w-full bg-neutral-300" />
-              </div>
-            </RevealEqualInView>
+        <Section p="pb-36">
+          <h1 className="text-neutral-500 text-sm mb-6">Result</h1>
+          <div className="space-y-0">
+            <RevealStaggeredInView motionClass="flex flex-col gap-x-6 justify-center items-center">
+              <img src={time_log_mockup_1} alt="Mockup" />
+              <img src={time_log_mockup_2} alt="Mockup" />
+            </RevealStaggeredInView>
           </div>
         </Section>
       );
