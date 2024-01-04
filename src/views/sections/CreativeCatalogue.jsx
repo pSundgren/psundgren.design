@@ -13,34 +13,34 @@ import placeholder_image from "../../assets/images/placeholder_img.jpg";
 import wp_tech_image from "../../assets/images/project_images/wp_tech.jpeg";
 import time_logger_image from "../../assets/images/project_images/time_logger.jpeg";
 import twiceme_image from "../../assets/images/project_images/twiceme.jpg";
-import stormer_image from "../../assets/images/project_images/stormer.jpg";
-import wp_appen_image from "../../assets/images/project_images/wp_appen.jpg";
+import stormer_image from "../../assets/images/project_images/stormer/stormer_mockup.jpeg";
+import wp_appen_image from "../../assets/images/project_images/wp_appen.jpeg";
 
 export const PROJECT_LIST = [
-  {
-    id: "wp_appen",
-    heading: "WP Appen",
-    subHeading: "internal service management app for field workers",
-    desc: "Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
-    to: "/wp_appen",
-    styling: "mt-28",
-  },
   {
     id: "wp_tech",
     heading: "WP Tech",
     subHeading: "a revisit of a tech agency's visual identity",
     desc: "A complete rebranding of a full-solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
     to: "/wp_tech",
-    styling: "mt-0",
-  },
-  {
-    id: "twiceme",
-    heading: "Twiceme Technology",
-    subHeading: "shaping a brands visual identity and strategy for the future",
-    desc: "Diving deep into stakeholders demands and user behaviour, a strategy for a personal safety company was created to increase user engagement and pave the way for the companys' product development.",
-    to: "/twiceme",
     styling: "mt-28",
   },
+  {
+    id: "wp_appen",
+    heading: "WP Appen",
+    subHeading: "internal service management app for field workers",
+    desc: "Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
+    to: "/wp_appen",
+    styling: "mt-0",
+  },
+  // {
+  //   id: "twiceme",
+  //   heading: "Twiceme Technology",
+  //   subHeading: "shaping a brands visual identity and strategy for the future",
+  //   desc: "Diving deep into stakeholders demands and user behaviour, a strategy for a personal safety company was created to increase user engagement and pave the way for the companys' product development.",
+  //   to: "/twiceme",
+  //   styling: "mt-28",
+  // },
   {
     id: "time_log",
     heading: "Time loggin app",
@@ -48,7 +48,7 @@ export const PROJECT_LIST = [
       "efficient time logging and absence management for seamless workplace administration",
     desc: "With capability gaps with external products, a company decided to develop the product themselves. An app for employees to log and manage their work hours, sick leave, and vacation.",
     to: "/time_log",
-    styling: "mt-0",
+    styling: "mt-28",
   },
   {
     id: "stormer",
@@ -56,7 +56,7 @@ export const PROJECT_LIST = [
     subHeading: "an AI-powered tool for aspiring designers and developers",
     desc: "A website that generates lifelike app concept, echoing the dynamics of authentic projects. To mirror real-world client demands and to allow aspiring designers and developers to gain practical insight of their liking.",
     to: "/stormer",
-    styling: "mt-28",
+    styling: "mt-0",
   },
 ];
 

@@ -27,7 +27,7 @@ import time_log_mockup_2 from "../../assets/images/project_images/time_log/time_
 /* TWICEME MOCKUP IMAGES */
 
 /* STORMER MOCKUP IMAGES */
-import stormer_start from "../../assets/images/stormer_start.jpg";
+import stormer_mockup from "../../assets/images/project_images/stormer/stormer_mockup.jpeg";
 
 /* PROJECT COLORS */
 const WP_TECH = [
@@ -59,9 +59,9 @@ const TWICEME = [
 ];
 
 const STORMER = [
+  { name: "#292828", bg: "bg-[#292828]", text: "text-neutral-50" },
   { name: "#526EB7", bg: "bg-[#526EB7]", text: "text-neutral-50" },
-  { name: "#3F3F46", bg: "bg-[#3F3F46]", text: "text-neutral-50" },
-  { name: "#71717A", bg: "bg-[#71717A]", text: "text-neutral-50" },
+  { name: "#82AFD9", bg: "bg-[#82AFD9]", text: "text-neutral-50" },
   { name: "#FAFAFA", bg: "bg-[#FAFAFA]", text: "text-neutral-700" },
 ];
 
@@ -201,10 +201,10 @@ export const TypographyPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-sm text-neutral-500">Typography</h1>
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
-              <p className="text-3xl text-neutral-700">
-                Typeface — GT Walsheim
+              <p className="text-3xl font-sf-pro-regular text-neutral-700">
+                Typeface — SF Pro
               </p>
-              <Link to="https://www.grillitype.com/typeface/gt-walsheim">
+              <Link to="https://developer.apple.com/fonts/">
                 <SVG variant="link-sm" fill="#71717A" />
               </Link>
             </RevealEqualInView>
@@ -334,13 +334,7 @@ export const MockupsPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
             <RevealEqualInView>
-              <div className="flex flex-row justify-between">
-                <img
-                  src={stormer_start}
-                  alt="Homepage of Stormer"
-                  className="h-16/9 w-full"
-                />
-              </div>
+              <img src={stormer_mockup} alt="Mockup" />
             </RevealEqualInView>
           </div>
         </Section>

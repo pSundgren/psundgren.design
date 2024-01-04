@@ -11,23 +11,11 @@ const About = ({ changeCursorVariant }) => {
           <RevealStaggeredInView motionClass={"text-3xl space-y-3"}>
             <h2 className="text-sm text-gray-500">Hello there,</h2>
             <p className="text-3xl text-neutral-700">
-              I'm <span>Pontus Sundgren</span>. An expienced UX/UI designer and
-              front—end developer, currently living in Stockholm and working at{" "}
-              <span>
-                <a
-                  href="https://www.wptech.se"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-[#648C8B] transition-all ease-out duration-500"
-                  onMouseEnter={() => changeCursorVariant("hover")}
-                  onMouseLeave={() => changeCursorVariant("default")}
-                >
-                  WP Tech
-                </a>
-              </span>
-              {". "}
-              Responsible for leading the design process and visual development
-              of the company. As well as aiding the front—end development.
+              I'm <span>Pontus Sundgren</span>. An experienced UX/UI designer
+              and front—end developer currently living in Stockholm. Being
+              detail—oriented, experienced in design process optimization, and
+              future design I am out to make myself a valuable asset in every
+              project I am a part of.
             </p>
           </RevealStaggeredInView>
         </div>
