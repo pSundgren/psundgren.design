@@ -31,8 +31,8 @@ import stormer_mockup from "../../assets/images/project_images/stormer/stormer_m
 /* PROJECT COLORS */
 const WP_TECH = [
   { name: "#5EA6C5", bg: "bg-[#5EA6C5]", text: "text-neutral-50" },
-  { name: "#3F3F46", bg: "bg-[#3F3F46]", text: "text-neutral-50" },
-  { name: "#71717A", bg: "bg-[#71717A]", text: "text-neutral-50" },
+  { name: "#262626", bg: "bg-[#262626]", text: "text-neutral-50" },
+  { name: "#404040", bg: "bg-[#404040]", text: "text-neutral-50" },
   { name: "#FAFAFA", bg: "bg-[#FAFAFA]", text: "text-neutral-700" },
 ];
 
