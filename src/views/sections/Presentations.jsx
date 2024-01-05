@@ -287,7 +287,13 @@ export const MockupsPresentation = ({ type }) => {
           <h1 className="text-neutral-500 text-sm mb-6">Result</h1>
           <div className="space-y-36">
             <RevealEqualInView>
-              <img src={wp_appen_mockup} alt="WP Appen Mockup" />
+              <div className="inline-block overflow-hidden">
+                <img
+                  src={wp_appen_mockup}
+                  alt="WP Appen Mockup"
+                  className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
             </RevealEqualInView>
             <RevealStaggeredInView motionClass="flex flex-row gap-x-6 justify-center items-center">
               <img src={phone_one} alt="Mockup" className="w-[300px]" />
@@ -295,7 +301,13 @@ export const MockupsPresentation = ({ type }) => {
               <img src={phone_three} alt="Mockup" className="w-[300px]" />
             </RevealStaggeredInView>
             <RevealEqualInView>
-              <img src={wp_appen_mockup_2} alt="WP Appen Mockup" />
+              <div className="inline-block overflow-hidden">
+                <img
+                  src={wp_appen_mockup_2}
+                  alt="WP Appen Mockup"
+                  className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
             </RevealEqualInView>
           </div>
         </Section>
@@ -305,9 +317,21 @@ export const MockupsPresentation = ({ type }) => {
         <Section p="pb-36">
           <h1 className="text-neutral-500 text-sm mb-6">Result</h1>
           <div className="space-y-0">
-            <RevealStaggeredInView motionClass="flex flex-col gap-x-6 justify-center items-center">
-              <img src={time_log_mockup_1} alt="Mockup" />
-              <img src={time_log_mockup_2} alt="Mockup" />
+            <RevealStaggeredInView motionClass="flex flex-col justify-center items-center">
+              <div className="inline-block overflow-hidden">
+                <img
+                  src={time_log_mockup_1}
+                  alt="WP Appen Mockup"
+                  className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
+              <div className="inline-block overflow-hidden">
+                <img
+                  src={time_log_mockup_2}
+                  alt="WP Appen Mockup"
+                  className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
             </RevealStaggeredInView>
           </div>
         </Section>
@@ -332,7 +356,13 @@ export const MockupsPresentation = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Result</h1>
             <RevealEqualInView>
-              <img src={stormer_mockup} alt="Mockup" />
+              <div className="inline-block overflow-hidden">
+                <img
+                  src={stormer_mockup}
+                  alt="WP Appen Mockup"
+                  className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
             </RevealEqualInView>
           </div>
         </Section>
