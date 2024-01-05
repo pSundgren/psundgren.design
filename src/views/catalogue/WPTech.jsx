@@ -10,8 +10,9 @@ import { ProjectDescription } from "../sections/ProjectDescription";
 import {
   LogoPresentation,
   ColorPresentation,
-  MockupsPresentation,
+  Mockups,
   TypographyPresentation,
+  Animations,
 } from "../sections/Presentations";
 
 const WPTech = () => {
@@ -29,7 +30,8 @@ const WPTech = () => {
       <LogoPresentation type={key} />
       <TypographyPresentation type={key} />
       <ColorPresentation type={key} />
-      <MockupsPresentation type={key} />
+      <Animations type={key} />
+      <Mockups type={key} />
       <ContactMe />
     </section>
   );

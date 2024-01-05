@@ -10,10 +10,9 @@ import { ProjectDescription } from "../sections/ProjectDescription";
 import {
   ColorPresentation,
   Icons,
-  MockupsPresentation,
+  Mockups,
   TypographyPresentation,
 } from "../sections/Presentations";
-import { Insights } from "../sections/Insights";
 
 const WPAppen = () => {
   const { page } = data;
@@ -31,7 +30,7 @@ const WPAppen = () => {
       <TypographyPresentation type={key} />
       <ColorPresentation type={key} />
       <Icons type={key} />
-      <MockupsPresentation type={key} />
+      <Mockups type={key} />
       <ContactMe />
     </section>
   );

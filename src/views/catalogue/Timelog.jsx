@@ -10,11 +10,9 @@ import { ProjectDescription } from "../sections/ProjectDescription";
 import {
   ColorPresentation,
   Icons,
-  MockupsPresentation,
-  TechStackPresentation,
+  Mockups,
   TypographyPresentation,
 } from "../sections/Presentations";
-import { Insights } from "../sections/Insights";
 
 const Timelog = () => {
   const { page } = data;
@@ -28,12 +26,10 @@ const Timelog = () => {
         duration={page.duration}
         roles={page.roles}
       />
-      {/* <Insights insight_arr={page.insights} /> */}
-      {/* <TechStackPresentation type={key} /> */}
       <TypographyPresentation type={key} />
       <ColorPresentation type={key} />
       <Icons type={key} />
-      <MockupsPresentation type={key} />
+      <Mockups type={key} />
       <ContactMe />
     </section>
   );

@@ -10,7 +10,7 @@ import { ProjectDescription } from "../sections/ProjectDescription";
 import {
   LogoPresentation,
   ColorPresentation,
-  MockupsPresentation,
+  Mockups,
   TypographyPresentation,
 } from "../sections/Presentations";
 
@@ -29,7 +29,7 @@ const Stormer = () => {
       <LogoPresentation type={key} />
       <TypographyPresentation type={key} />
       <ColorPresentation type={key} />
-      <MockupsPresentation type={key} />
+      <Mockups type={key} />
       <ContactMe />
     </section>
   );

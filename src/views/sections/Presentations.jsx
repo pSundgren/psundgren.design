@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import { motion, useInView } from "framer-motion";
 
 /* COMPONENTS */
 import Section from "../../components/common/Section";
@@ -263,7 +264,7 @@ export const TypographyPresentation = ({ type }) => {
   }
 };
 
-export const MockupsPresentation = ({ type }) => {
+export const Mockups = ({ type }) => {
   switch (type) {
     case "wp_tech":
       return (
@@ -380,19 +381,89 @@ export const MockupsPresentation = ({ type }) => {
   }
 };
 
-export const TechStackPresentation = ({ arr }) => {
-  return (
-    <Section p="pb-36">
-      <div className="space-y-6">
-        <h1 className="text-neutral-500 text-sm">Tech used</h1>
-        <div className="flex flex-row flex-wrap justify-between items-center">
-          {arr.map((variant) => (
-            <SVG variant={variant} />
-          ))}
-        </div>
-      </div>
-    </Section>
-  );
+export const Animations = ({ type }) => {
+  const ref = useRef();
+  const isInView = useInView(ref);
+
+  const logo = {
+    hidden: {
+      pathLength: 0,
+      fill: "rgba(0, 0, 0, 0)",
+    },
+    visible: {
+      pathLength: 1,
+      fill: "rgba(0, 0, 0, 0)",
+    },
+  };
+
+  switch (type) {
+    case "wp_tech":
+      return (
+        <Section p="pb-36">
+          <div className="space-y-6">
+            <h1 className="text-sm text-neutral-500">Animation</h1>
+            <div className="w-full h-[800px] bg-gradient-to-br from-[#2F5362] to-[#5EA6C5] flex justify-center items-center">
+              <motion.svg
+                ref={ref}
+                height="400"
+                width="auto"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 756 568"
+                className="stroke-white stroke-2 opacity-30"
+              >
+                <motion.path
+                  d="M249.502 566.985C301.626 530.266 318.035 459.14 285.545 402.836L53.6462 0.965332C1.52228 37.6849 -14.8862 108.81 17.604 165.115L249.502 566.985Z"
+                  variants={logo}
+                  initial={{
+                    pathLength: 0,
+                    fill: "rgba(0, 0, 0, 0)",
+                  }}
+                  animate={{
+                    pathLength: isInView ? 1 : 0,
+                    fill: "rgba(0, 0, 0, 0)",
+                  }}
+                  transition={{
+                    default: { duration: 2, delay: 1, ease: [0, 0, 0.2, 1] },
+                  }}
+                />
+                <motion.path
+                  d="M505.544 566.985C557.668 530.266 574.076 459.14 541.586 402.836L309.688 0.965332C257.564 37.6849 241.155 108.81 273.645 165.115L505.544 566.985Z"
+                  variants={logo}
+                  initial={{
+                    pathLength: 0,
+                    fill: "rgba(0, 0, 0, 0)",
+                  }}
+                  animate={{
+                    pathLength: isInView ? 1 : 0,
+                    fill: "rgba(0, 0, 0, 0)",
+                  }}
+                  transition={{
+                    default: { duration: 2, delay: 1.4, ease: [0, 0, 0.2, 1] },
+                  }}
+                />
+                <motion.path
+                  d="M574.021 98.353C574.021 48.2919 614.583 7.70938 664.618 7.70938C714.652 7.70938 755.214 48.2919 755.214 98.353C755.214 148.414 714.652 188.997 664.618 188.997C614.583 188.997 574.021 148.414 574.021 98.353Z"
+                  variants={logo}
+                  initial={{
+                    pathLength: 0,
+                    fill: "rgba(0, 0, 0, 0)",
+                  }}
+                  animate={{
+                    pathLength: isInView ? 1 : 0,
+                    fill: "rgba(0, 0, 0, 0)",
+                  }}
+                  transition={{
+                    default: { duration: 2, delay: 1.8, ease: [0, 0, 0.2, 1] },
+                  }}
+                />
+              </motion.svg>
+            </div>
+          </div>
+        </Section>
+      );
+    default:
+      return null;
+  }
 };
 
 export const Icons = ({ type }) => {

@@ -10,10 +10,9 @@ import { ProjectDescription } from "../sections/ProjectDescription";
 import {
   LogoPresentation,
   ColorPresentation,
-  MockupsPresentation,
+  Mockups,
   TypographyPresentation,
 } from "../sections/Presentations";
-import { Insights } from "../sections/Insights";
 
 const Twiceme = () => {
   const { page } = data;
@@ -31,7 +30,7 @@ const Twiceme = () => {
       <LogoPresentation type={key} />
       <TypographyPresentation type={key} />
       <ColorPresentation type={key} />
-      <MockupsPresentation type={key} />
+      <Mockups type={key} />
       <ContactMe />
     </section>
   );
