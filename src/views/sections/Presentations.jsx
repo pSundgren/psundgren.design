@@ -402,14 +402,12 @@ export const Animations = ({ type }) => {
         <Section p="pb-36">
           <div className="space-y-6">
             <h1 className="text-sm text-neutral-500">Animation</h1>
-            <div className="w-full h-[800px] bg-gradient-to-br from-[#2F5362] to-[#5EA6C5] flex justify-center items-center">
+            <div className="w-full h-[700px] lg:h-[800px] bg-gradient-to-br from-[#2F5362] to-[#5EA6C5] flex justify-center items-center">
               <motion.svg
                 ref={ref}
-                height="400"
-                width="auto"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 756 568"
-                className="stroke-white stroke-2 opacity-30"
+                className="stroke-white stroke-2 opacity-40 max-w-[756px] max-h-[568px] py-36 lg:py-14"
               >
                 <motion.path
                   d="M249.502 566.985C301.626 530.266 318.035 459.14 285.545 402.836L53.6462 0.965332C1.52228 37.6849 -14.8862 108.81 17.604 165.115L249.502 566.985Z"
