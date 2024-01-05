@@ -11,7 +11,8 @@ import {
 } from "../../components/common/Reveal";
 
 /* WP TECH MOCKUP IMAGES */
-import wp_tech_start from "../../assets/images/wp_tech_start.jpg";
+import wp_tech_mockup_1 from "../../assets/images/project_images/wp_tech/wp_tech_1.jpg";
+import wp_tech_mockup_2 from "../../assets/images/project_images/wp_tech/wp_tech_2.jpg";
 
 /* WP APPEN MOCKUP IMAGES */
 import wp_appen_mockup from "../../assets/images/project_images/wp_appen/result_mockup.jpg";
@@ -267,17 +268,24 @@ export const MockupsPresentation = ({ type }) => {
     case "wp_tech":
       return (
         <Section p="pb-36">
-          <div className="space-y-6">
-            <h1 className="text-neutral-500 text-sm">Result</h1>
-            <RevealEqualInView>
-              <div className="flex flex-row justify-between">
+          <h1 className="text-neutral-500 text-sm mb-6">Result</h1>
+          <div className="space-y-0">
+            <RevealStaggeredInView motionClass="flex flex-col justify-center items-center">
+              <div className="inline-block overflow-hidden">
                 <img
-                  src={wp_tech_start}
-                  alt="Homepage of WP Tech"
-                  className="h-16/9 w-full"
+                  src={wp_tech_mockup_2}
+                  alt="WP Appen Mockup"
+                  className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
-            </RevealEqualInView>
+              <div className="inline-block overflow-hidden">
+                <img
+                  src={wp_tech_mockup_1}
+                  alt="WP Appen Mockup"
+                  className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
+            </RevealStaggeredInView>
           </div>
         </Section>
       );
