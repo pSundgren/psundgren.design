@@ -30,7 +30,7 @@ const WPTech = () => {
       <LogoPresentation type={key} />
       <TypographyPresentation type={key} />
       <ColorPresentation type={key} />
-      <Animations type={key} />
+      {/* <Animations type={key} /> */}
       <Mockups type={key} />
       <ContactMe />
     </section>
