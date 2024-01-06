@@ -279,7 +279,7 @@ export const Mockups = ({ type }) => {
                   className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
-              <div className="inline-block overflow-hidden">
+              <div className="inline-block overflow-hidden -translate-y-2">
                 <img
                   src={wp_tech_mockup_1}
                   alt="WP Appen Mockup"
@@ -334,7 +334,7 @@ export const Mockups = ({ type }) => {
                   className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
-              <div className="inline-block overflow-hidden">
+              <div className="inline-block overflow-hidden -translate-y-2">
                 <img
                   src={time_log_mockup_2}
                   alt="WP Appen Mockup"
