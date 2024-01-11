@@ -11,6 +11,7 @@ import {
   ColorPresentation,
   Icons,
   Mockups,
+  ProblemAndSolution,
   TypographyPresentation,
 } from "../sections/Presentations";
 
@@ -25,6 +26,10 @@ const Timelog = () => {
         desc={page.overview}
         duration={page.duration}
         roles={page.roles}
+      />
+      <ProblemAndSolution
+        problem={page.problem_solution.problem}
+        solution={page.problem_solution.solution}
       />
       <TypographyPresentation type={key} />
       <ColorPresentation type={key} />

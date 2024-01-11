@@ -14,8 +14,7 @@
       "Design System",
       "Design Strategy",
       "UX Copy",
-      "Development",
-      "Product Design"
+      "Development"
     ],
     "insights": [
       {
@@ -30,6 +29,10 @@
         "title": "Selling strategy",
         "desc": "The app worked togehter with a dashboard. This to make the system sellable to other companies that are looking for the same system for their employees. The strategy behind this was to develop a base solution that included the nessecary features. Then, additional features would be added to the clients needs. Increasing the cost slightly for each additional feature. This would make the product competiable with competitors."
       }
-    ]
+    ],
+    "problem_solution": {
+      "problem": "Third party time management tool was too expensive. The third party did not meet the usability requirements of their users, causing a lot of manual labor for inaccurate time logs.",
+      "solution": "Create a tailored solution for users. Find the root of inaccurate time logs and focus on implementing solutions to prevent such errors. Support the ability to edit inaccurate time logs. The design process that was used for this project was an interative design process with 5 test users for each iteration."
+    }
   }
 }
