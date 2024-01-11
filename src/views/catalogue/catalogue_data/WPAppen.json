@@ -9,27 +9,17 @@
     "desc": "Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
     "overview": "To facilitate communication between field workers and a ROT & RUT business. A business development and policy was implemented with a CRM system that communicates with an iOS & Android app. Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
     "duration": "3 months",
+    "role": "Product Designer & Developer",
     "roles": [
       "UX & UI Design",
       "Design System",
       "Development",
-      "Design Strategy",
-      "UX Copy",
-      "Product Design"
+      "Prototype",
+      "UX Copy"
     ],
-    "insights": [
-      {
-        "title": "Field workers needs a step—by—step guide",
-        "desc": "The primary users of the app were used to just doing everything on the fly, often forgetting steps in the companys' proccess policy. Which caused a lot of manual labor and money for the company. Therefore there were a lot of limitations to the app to make sure that the field workers vould not do A (report working hours) before completing B (confirming that the job had been completed without any distruptions)."
-      },
-      {
-        "title": "Incentive system for using the app",
-        "desc": "A common behavioural pattern which was observed was the field workers usually skipped steps of the companys' process. Therefore, an incentive systems was created as of each completed task from a field worker they collected points. An average of points (total points/total jobs assigned) was then calculated to priotise workers with an higher average."
-      },
-      {
-        "title": "Internalization",
-        "desc": "Many of the field workers are not bilingual and therefore the app needed to support several languages. Translations was handled via i18nexus and translations were confirmed with the help of volonteering field workers or freelance personell."
-      }
-    ]
+    "problem_solution": {
+      "problem": "Field workers and planners needed a streamlined process, and not have to use several systems, when conducting service requests.",
+      "solution": "Get to learn the process and note what tasks are less and more successful. Include all those nessecary tasks as features within an app for the field workers. A combination of competitive and iterative design processes was used to conduct project."
+    }
   }
 }

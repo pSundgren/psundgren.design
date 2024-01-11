@@ -264,6 +264,34 @@ export const TypographyPresentation = ({ type }) => {
   }
 };
 
+export const ProblemAndSolution = ({ problem, solution }) => {
+  return (
+    <Section p="pb-36">
+      <div className="flex flex-col gap-y-14">
+        <div className="flex flex-col gap-y-6 w-full lg:w-1/2">
+          <h1 className="text-sm text-neutral-500">Problem</h1>
+          <p className="text-2xl text-neutral-700">{problem}</p>
+        </div>
+        <div className="flex flex-col gap-y-6 w-full lg:w-1/2">
+          <h1 className="text-sm text-neutral-500">Solution</h1>
+          <p className="text-2xl text-neutral-700">{solution}</p>
+        </div>
+      </div>
+    </Section>
+  );
+};
+
+export const Role = ({ role }) => {
+  return (
+    <Section p="pb-36">
+      <div className="space-y-6">
+        <h1 className="text-sm text-neutral-500">Role</h1>
+        <p className="text-3xl text-neutral-700">{role}</p>
+      </div>
+    </Section>
+  );
+};
+
 export const Mockups = ({ type }) => {
   switch (type) {
     case "wp_tech":

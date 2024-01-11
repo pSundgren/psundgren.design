@@ -29,6 +29,10 @@
         "title": "Color guidance",
         "desc": "Due to the app being in the context of personal safety, using the colors that convey a correct sense of urgency was important. This resulted in red never being using in input fields error state, etc. Instead, red was only used to guide the user to the emergency scan function within the app that needed to be accessed fast in case of an emergency.\n\nIf a user was not located at the home screen (where the emergency scan function was located) then the home navbar link was equipped with a red badge to grab the users attention at all times."
       }
-    ]
+    ],
+    "problem_solution": {
+      "problem": "",
+      "solution": ""
+    }
   }
 }

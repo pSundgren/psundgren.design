@@ -11,6 +11,8 @@ import {
   ColorPresentation,
   Icons,
   Mockups,
+  ProblemAndSolution,
+  Role,
   TypographyPresentation,
 } from "../sections/Presentations";
 
@@ -26,9 +28,12 @@ const WPAppen = () => {
         duration={page.duration}
         roles={page.roles}
       />
-      {/* <Insights insight_arr={page.insights} /> */}
-      <TypographyPresentation type={key} />
+      <ProblemAndSolution
+        problem={page.problem_solution.problem}
+        solution={page.problem_solution.solution}
+      />
       <ColorPresentation type={key} />
+      <TypographyPresentation type={key} />
       <Icons type={key} />
       <Mockups type={key} />
       <ContactMe />
