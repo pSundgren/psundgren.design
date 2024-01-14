@@ -28,12 +28,8 @@ const WPAppen = () => {
         duration={page.duration}
         roles={page.roles}
       />
-      <ProblemAndSolution
-        problem={page.problem_solution.problem}
-        solution={page.problem_solution.solution}
-      />
-      <ColorPresentation type={key} />
       <TypographyPresentation type={key} />
+      <ColorPresentation type={key} />
       <Icons type={key} />
       <Mockups type={key} />
       <ContactMe />
