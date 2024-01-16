@@ -7,12 +7,7 @@ import data from "./catalogue_data/Twiceme.json";
 import { CatalogueHero } from "../sections/Hero";
 import { ContactMe } from "../sections/ContactMe";
 import { ProjectDescription } from "../sections/ProjectDescription";
-import {
-  LogoPresentation,
-  ColorPresentation,
-  Mockups,
-  TypographyPresentation,
-} from "../sections/Presentations";
+import { Logo, Colors, Mockups, Typography } from "../sections/Presentations";
 
 const Twiceme = () => {
   const { page } = data;
@@ -27,9 +22,9 @@ const Twiceme = () => {
         roles={page.roles}
       />
       {/* <Insights insight_arr={page.insights} /> */}
-      <LogoPresentation type={key} />
-      <TypographyPresentation type={key} />
-      <ColorPresentation type={key} />
+      <Logo type={key} />
+      <Typography type={key} />
+      <Colors type={key} />
       <Mockups type={key} />
       <ContactMe />
     </section>

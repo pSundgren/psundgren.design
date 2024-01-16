@@ -7,12 +7,7 @@ import data from "./catalogue_data/Provento.json";
 import { CatalogueHero } from "../sections/Hero";
 import { ContactMe } from "../sections/ContactMe";
 import { ProjectDescription } from "../sections/ProjectDescription";
-import {
-  LogoPresentation,
-  ColorPresentation,
-  Mockups,
-  TypographyPresentation,
-} from "../sections/Presentations";
+import { Logo, Colors, Mockups, Typography } from "../sections/Presentations";
 
 const Provento = () => {
   const { page } = data;
@@ -26,9 +21,9 @@ const Provento = () => {
         duration={page.duration}
         roles={page.roles}
       />
-      <LogoPresentation type={key} />
-      <TypographyPresentation type={key} />
-      <ColorPresentation type={key} />
+      <Logo type={key} />
+      <Typography type={key} />
+      <Colors type={key} />
       <Mockups type={key} />
       <ContactMe />
     </section>

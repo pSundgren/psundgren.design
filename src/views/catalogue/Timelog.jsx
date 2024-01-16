@@ -7,12 +7,7 @@ import data from "./catalogue_data/Timelog.json";
 import { CatalogueHero } from "../sections/Hero";
 import { ContactMe } from "../sections/ContactMe";
 import { ProjectDescription } from "../sections/ProjectDescription";
-import {
-  ColorPresentation,
-  Icons,
-  Mockups,
-  TypographyPresentation,
-} from "../sections/Presentations";
+import { Colors, Icons, Mockups, Typography } from "../sections/Presentations";
 
 const Timelog = () => {
   const { page } = data;
@@ -26,8 +21,8 @@ const Timelog = () => {
         duration={page.duration}
         roles={page.roles}
       />
-      <ColorPresentation type={key} />
-      <TypographyPresentation type={key} />
+      <Colors type={key} />
+      <Typography type={key} />
       <Icons type={key} />
       <Mockups type={key} />
       <ContactMe />

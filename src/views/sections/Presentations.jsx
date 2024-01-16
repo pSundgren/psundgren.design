@@ -77,7 +77,7 @@ const PROVENTO = [
   { name: "#FAFAFA", bg: "bg-[#FAFAFA]", text: "text-neutral-700" },
 ];
 
-export const ColorPresentation = ({ type }) => {
+export const Colors = ({ type }) => {
   switch (type) {
     case "provento":
       return (
@@ -190,7 +190,7 @@ export const ColorPresentation = ({ type }) => {
   }
 };
 
-export const LogoPresentation = ({ type }) => {
+export const Logo = ({ type }) => {
   switch (type) {
     case "provento":
       return (
@@ -219,7 +219,7 @@ export const LogoPresentation = ({ type }) => {
   }
 };
 
-export const TypographyPresentation = ({ type }) => {
+export const Typography = ({ type }) => {
   switch (type) {
     case "provento":
       return (
@@ -345,7 +345,7 @@ export const Mockups = ({ type }) => {
                 <img
                   src={provento_mockup_1}
                   alt="Provento Mockup"
-                  className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
+                  className="scale-125 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
               <div className="inline-block overflow-hidden -translate-y-2">
