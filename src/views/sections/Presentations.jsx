@@ -5,7 +5,11 @@ import { motion, useInView } from "framer-motion";
 /* COMPONENTS */
 import Section from "../../components/common/Section";
 import SVG from "../../assets/svgs/SVG";
-import { ProventoLogo, WPTechLogo } from "../../components/common/Logo";
+import {
+  ProventoLogo,
+  TwicemeLogo,
+  WPTechLogo,
+} from "../../components/common/Logo";
 import {
   RevealEqualInView,
   RevealStaggeredInView,
@@ -210,6 +214,17 @@ export const Logo = ({ type }) => {
             <h1 className="text-sm text-neutral-500">Logotype</h1>
             <RevealEqualInView>
               <WPTechLogo />
+            </RevealEqualInView>
+          </div>
+        </Section>
+      );
+    case "twiceme":
+      return (
+        <Section p="pb-36">
+          <div className="space-y-6">
+            <h1 className="text-sm text-neutral-500">Logotype</h1>
+            <RevealEqualInView>
+              <TwicemeLogo />
             </RevealEqualInView>
           </div>
         </Section>
