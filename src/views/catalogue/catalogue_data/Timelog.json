@@ -1,8 +1,10 @@
 {
   "fragment": {
+    "id": "time_log",
     "title": "Time logging app — efficient time logging and absence management for seamless workplace administration",
     "desc": "With capability gaps with external products, a company decided to develop the product themselves. An app for employees to log and manage their work hours, sick leave, and vacation.",
-    "link": ""
+    "role": "Product Designer",
+    "link": "/time_log"
   },
   "page": {
     "title": "Time logging app — efficient time logging and absence management for seamless workplace administration",
@@ -15,24 +17,6 @@
       "Design Strategy",
       "UX Copy",
       "Development"
-    ],
-    "insights": [
-      {
-        "title": "Source of innacurate hours",
-        "desc": "The highest reason for users to report innacurate hours was that the user was forgetful to check in and out of work. Therefore there was a high focus on implementing accurate notifications for whenever the user left the proximity of their working area and algorithms to determine if the user had forgot to check out of work. There were also timers implemented that the user could use to set reminders to themselves if they so wanted to."
-      },
-      {
-        "title": "Report absent",
-        "desc": "Since one of the apps requested features were to let users report absent from work without having to contact managers. The implementation needed restraints and helpers in case of errors. The restraints included that the user should not be able to report absent for centrain categories without having to attach additional documents. A helper was that in case the user reported themselves as absent by mistake, they were able to cancel their absence wihtin one hour of the reported time. The absence report also reported at midnight everyday."
-      },
-      {
-        "title": "Selling strategy",
-        "desc": "The app worked togehter with a dashboard. This to make the system sellable to other companies that are looking for the same system for their employees. The strategy behind this was to develop a base solution that included the nessecary features. Then, additional features would be added to the clients needs. Increasing the cost slightly for each additional feature. This would make the product competiable with competitors."
-      }
-    ],
-    "problem_solution": {
-      "problem": "Third party time management tool was too expensive. The third party did not meet the usability requirements of their users, causing a lot of manual labor for inaccurate time logs.",
-      "solution": "Create a tailored solution for users. Find the root of inaccurate time logs and focus on implementing solutions to prevent such errors. Support the ability to edit inaccurate time logs. The design process that was used for this project was an interative design process with 5 test users for each iteration."
-    }
+    ]
   }
 }

@@ -5,7 +5,7 @@ import { motion, useInView } from "framer-motion";
 /* COMPONENTS */
 import Section from "../../components/common/Section";
 import SVG from "../../assets/svgs/SVG";
-import { WPTechLogo } from "../../components/common/Logo";
+import { ProventoLogo, WPTechLogo } from "../../components/common/Logo";
 import {
   RevealEqualInView,
   RevealStaggeredInView,
@@ -28,6 +28,11 @@ import time_log_mockup_2 from "../../assets/images/project_images/time_log/time_
 
 /* STORMER MOCKUP IMAGES */
 import stormer_mockup from "../../assets/images/project_images/stormer/stormer_mockup.jpeg";
+
+/* PROVENTO MOCKUP IMAGES */
+import provento_mockup_1 from "../../assets/images/project_images/provento/provento_imagery_1.jpeg";
+import provento_mockup_2 from "../../assets/images/project_images/provento/provento_imagery_2.jpeg";
+import provento_mockup_3 from "../../assets/images/project_images/provento/provento_imagery_3.jpeg";
 
 /* PROJECT COLORS */
 const WP_TECH = [
@@ -65,8 +70,34 @@ const STORMER = [
   { name: "#FAFAFA", bg: "bg-[#FAFAFA]", text: "text-neutral-700" },
 ];
 
+const PROVENTO = [
+  { name: "#FF8000", bg: "bg-[#FF8000]", text: "text-neutral-50" },
+  { name: "#FFB300", bg: "bg-[#FFB300]", text: "text-neutral-50" },
+  { name: "#162521", bg: "bg-[#162521]", text: "text-neutral-50" },
+  { name: "#FAFAFA", bg: "bg-[#FAFAFA]", text: "text-neutral-700" },
+];
+
 export const ColorPresentation = ({ type }) => {
   switch (type) {
+    case "provento":
+      return (
+        <Section p="pb-36">
+          <div className="space-y-6">
+            <h1 className="text-sm text-neutral-500">Colors</h1>
+            <div className="flex flex-row items-center justify-between">
+              {PROVENTO.map((color) => (
+                <div className={`${color.bg} h-48 w-full flex items-end p-3`}>
+                  <p
+                    className={`${color.text} text-neutral-50 opacity-70 text-sm`}
+                  >
+                    {color.name}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Section>
+      );
     case "wp_tech":
       return (
         <Section p="pb-36">
@@ -161,6 +192,17 @@ export const ColorPresentation = ({ type }) => {
 
 export const LogoPresentation = ({ type }) => {
   switch (type) {
+    case "provento":
+      return (
+        <Section p="pb-36">
+          <div className="space-y-6">
+            <h1 className="text-sm text-neutral-500">Logotype</h1>
+            <RevealEqualInView>
+              <ProventoLogo />
+            </RevealEqualInView>
+          </div>
+        </Section>
+      );
     case "wp_tech":
       return (
         <Section p="pb-36">
@@ -179,6 +221,22 @@ export const LogoPresentation = ({ type }) => {
 
 export const TypographyPresentation = ({ type }) => {
   switch (type) {
+    case "provento":
+      return (
+        <Section p="pb-36">
+          <div className="space-y-6">
+            <h1 className="text-sm text-neutral-500">Typography</h1>
+            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
+              <p className="text-3xl text-neutral-700 font-dm-sans font-medium">
+                Typeface — DM Sans
+              </p>
+              <Link to="https://www.grillitype.com/typeface/gt-walsheim">
+                <SVG variant="link-sm" fill="#71717A" />
+              </Link>
+            </RevealEqualInView>
+          </div>
+        </Section>
+      );
     case "wp_tech":
       return (
         <Section p="pb-36">
@@ -264,23 +322,6 @@ export const TypographyPresentation = ({ type }) => {
   }
 };
 
-export const ProblemAndSolution = ({ problem, solution }) => {
-  return (
-    <Section p="pb-36">
-      <div className="flex flex-col gap-y-14">
-        <div className="flex flex-col gap-y-6 w-full lg:w-1/2">
-          <h1 className="text-sm text-neutral-500">Problem</h1>
-          <p className="text-2xl text-neutral-700">{problem}</p>
-        </div>
-        <div className="flex flex-col gap-y-6 w-full lg:w-1/2">
-          <h1 className="text-sm text-neutral-500">Solution</h1>
-          <p className="text-2xl text-neutral-700">{solution}</p>
-        </div>
-      </div>
-    </Section>
-  );
-};
-
 export const Role = ({ role }) => {
   return (
     <Section p="pb-36">
@@ -294,6 +335,37 @@ export const Role = ({ role }) => {
 
 export const Mockups = ({ type }) => {
   switch (type) {
+    case "provento":
+      return (
+        <Section p="pb-36">
+          <h1 className="text-neutral-500 text-sm mb-6">Result</h1>
+          <div className="space-y-0">
+            <RevealStaggeredInView motionClass="flex flex-col justify-center items-center">
+              <div className="inline-block overflow-hidden">
+                <img
+                  src={provento_mockup_1}
+                  alt="Provento Mockup"
+                  className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
+              <div className="inline-block overflow-hidden -translate-y-2">
+                <img
+                  src={provento_mockup_2}
+                  alt="Provento Mockup"
+                  className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
+              <div className="inline-block overflow-hidden -translate-y-4">
+                <img
+                  src={provento_mockup_3}
+                  alt="Provento Mockup"
+                  className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
+            </RevealStaggeredInView>
+          </div>
+        </Section>
+      );
     case "wp_tech":
       return (
         <Section p="pb-36">

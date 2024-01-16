@@ -12,8 +12,6 @@ import {
   ColorPresentation,
   Mockups,
   TypographyPresentation,
-  Animations,
-  Role,
 } from "../sections/Presentations";
 
 const WPTech = () => {

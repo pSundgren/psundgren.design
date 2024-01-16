@@ -1,8 +1,10 @@
 {
   "fragment": {
+    "id": "wp_appen",
     "title": "WP Tech — internal service management app for field workers",
     "desc": "Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
-    "link": ""
+    "role": "Product Designer",
+    "link": "/wp_appen"
   },
   "page": {
     "title": "WP Appen — internal service management app for field workers",
@@ -16,10 +18,6 @@
       "Development",
       "Prototype",
       "UX Copy"
-    ],
-    "problem_solution": {
-      "problem": "Field workers and planners needed a streamlined process, and not have to use several systems, when conducting service requests.",
-      "solution": "Get to learn the process and note what tasks are less and more successful. Include all those nessecary tasks as features within an app for the field workers. A combination of competitive and iterative design processes was used to conduct project."
-    }
+    ]
   }
 }

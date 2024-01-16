@@ -8,10 +8,20 @@ import {
   RevealEqualInView,
 } from "../../components/common/Reveal";
 
+/* DATA IMPORT */
+import time_log_data from "../catalogue/catalogue_data/Timelog.json";
+import provento_data from "../catalogue/catalogue_data/Provento.json";
+import wp_tech_data from "../catalogue/catalogue_data/WPTech.json";
+import wp_appen_data from "../catalogue/catalogue_data/WPAppen.json";
+import stormer_data from "../catalogue/catalogue_data/Stormer.json";
+//import twiceme_data from "../catalogue/catalogue_data/Twiceme.json";
+
 /* Project image */
 import placeholder_image from "../../assets/images/placeholder_img.jpg";
-import wp_tech_image from "../../assets/images/project_images/wp_tech.jpeg";
+
 import time_logger_image from "../../assets/images/project_images/time_logger.jpeg";
+import provento_image from "../../assets/images/project_images/provento/provento_imagery_2.jpeg";
+import wp_tech_image from "../../assets/images/project_images/wp_tech.jpeg";
 import twiceme_image from "../../assets/images/project_images/twiceme.jpg";
 import stormer_image from "../../assets/images/project_images/stormer/stormer_mockup.jpeg";
 import wp_appen_image from "../../assets/images/project_images/wp_appen.jpeg";
@@ -58,13 +68,29 @@ export const PROJECT_LIST = [
     to: "/stormer",
     styling: "mt-0",
   },
+  {
+    id: "provento",
+    heading: "Provento",
+    subHeading: "an AI-powered tool for aspiring designers and developers",
+    desc: "A website that generates lifelike app concept, echoing the dynamics of authentic projects. To mirror real-world client demands and to allow aspiring designers and developers to gain practical insight of their liking.",
+    to: "/stormer",
+    styling: "mt-0",
+  },
 ];
 
 /*
  * Main section component
  */
 
-const CreativeCatalogue = ({ changeCursorVariant }) => {
+const CreativeCatalogue = () => {
+  const LIST = [
+    time_log_data.fragment,
+    provento_data.fragment,
+    wp_tech_data.fragment,
+    wp_appen_data.fragment,
+    stormer_data.fragment,
+  ];
+
   return (
     <Section p="pt-0 pb-48">
       <div className="flex flex-col gap-14">
@@ -76,16 +102,14 @@ const CreativeCatalogue = ({ changeCursorVariant }) => {
           </h2>
         </RevealStaggeredInView>
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-28 gap-y-14">
-          {PROJECT_LIST.map((entry) => (
-            <Link to={entry.to}>
+          {LIST.map((entry, index) => (
+            <Link to={entry.link}>
               <ProjectCard
                 id={entry.id}
-                heading={entry.heading}
-                subHeading={entry.subHeading}
+                title={entry.title}
                 desc={entry.desc}
-                to={entry.to}
-                styling={entry.styling}
-                changeCursorVariant={changeCursorVariant}
+                role={entry.role}
+                styling={index % 2 === 0 ? "mt-28" : null}
               />
             </Link>
           ))}
@@ -99,15 +123,7 @@ const CreativeCatalogue = ({ changeCursorVariant }) => {
  * This components reders a card for each projects that's added to the array PROJECT_LIST in this file
  */
 
-const ProjectCard = ({
-  id,
-  heading,
-  subHeading,
-  desc,
-  to,
-  styling,
-  changeCursorVariant,
-}) => {
+const ProjectCard = ({ id, title, desc, role, styling }) => {
   const { innerWidth: width } = window;
   return (
     <li
@@ -116,17 +132,13 @@ const ProjectCard = ({
       } transition-all duration-500 ease-out cursor-pointer`}
     >
       <RevealEqualInView>
-        <div
-          className="flex flex-col space-y-6 group"
-          onMouseEnter={() => changeCursorVariant("hover")}
-          onMouseLeave={() => changeCursorVariant("default")}
-        >
-          <ProjectImage id={id} />
+        <div className="flex flex-col space-y-6 group">
+          <ProjectImage id={id} role={role} />
           <div className="flex flex-col space-y-3">
             <div className="flex flex-row space-x-6">
-              <div className="flex flex-row items-center space-x-0 mt-6 font-primary">
+              <div className="flex flex-row items-center space-x-0 mt-6">
                 <h1 className="inline-block text-2xl text-neutral-700">
-                  {`${heading} — ${subHeading}`}
+                  {title}
                 </h1>
               </div>
             </div>
@@ -144,12 +156,25 @@ const ProjectCard = ({
  * This components reders out the images for each project in the creative cataloge
  */
 
-const ProjectImage = ({ id }) => {
+const ProjectImage = ({ id, role }) => {
   const img_container =
     "relative overflow-hidden shadow-md transition-all duration-500 ease-out";
   const img_styling =
     "aspect-auto object-cover object-left-top transition-all duration-500 ease-out lg:group-hover:scale-105";
   switch (id) {
+    case "provento":
+      return (
+        <div className={img_container}>
+          <img
+            src={provento_image ? provento_image : placeholder_image}
+            alt="Tech angency rebranding project"
+            className={provento_image ? img_styling : null}
+          />
+          <h1 className="absolute bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+            {role}
+          </h1>
+        </div>
+      );
     case "wp_appen":
       return (
         <div className={img_container}>
@@ -158,6 +183,9 @@ const ProjectImage = ({ id }) => {
             alt="Tech angency rebranding project"
             className={wp_appen_image ? img_styling : null}
           />
+          <h1 className="absolute bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+            {role}
+          </h1>
         </div>
       );
     case "wp_tech":
@@ -168,6 +196,9 @@ const ProjectImage = ({ id }) => {
             alt="Tech angency rebranding project"
             className={wp_tech_image ? img_styling : null}
           />
+          <h1 className="absolute bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+            {role}
+          </h1>
         </div>
       );
     case "time_log":
@@ -178,6 +209,9 @@ const ProjectImage = ({ id }) => {
             alt="Mockup for time logging app"
             className={time_logger_image ? img_styling : null}
           />
+          <h1 className="absolute bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+            {role}
+          </h1>
         </div>
       );
     case "stormer":
@@ -188,6 +222,9 @@ const ProjectImage = ({ id }) => {
             alt="Mockup for AI-powered idea generator"
             className={stormer_image ? img_styling : null}
           />
+          <h1 className="absolute bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+            {role}
+          </h1>
         </div>
       );
     case "twiceme":
@@ -198,6 +235,9 @@ const ProjectImage = ({ id }) => {
             alt="Company logo for company rebranding project"
             className={twiceme_image ? img_styling : null}
           />
+          <h1 className="absolute bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+            {role}
+          </h1>
         </div>
       );
     default:

@@ -14,6 +14,7 @@ module.exports = {
         "sf-pro-semibold": "SF-Pro-Semibold",
         inter: "Inter",
         lato: "Lato",
+        "dm-sans": "DM Sans",
       },
       backgroundImage: {
         waves: "url('./assets/images/waves_gray.jpg')",

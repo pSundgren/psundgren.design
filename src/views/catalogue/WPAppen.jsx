@@ -11,8 +11,6 @@ import {
   ColorPresentation,
   Icons,
   Mockups,
-  ProblemAndSolution,
-  Role,
   TypographyPresentation,
 } from "../sections/Presentations";
 

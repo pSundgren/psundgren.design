@@ -1,22 +1,22 @@
 import React from "react";
 
 /* DATA IMPORT */
-import data from "./catalogue_data/Timelog.json";
+import data from "./catalogue_data/Provento.json";
 
 /* COMPONENTS */
 import { CatalogueHero } from "../sections/Hero";
 import { ContactMe } from "../sections/ContactMe";
 import { ProjectDescription } from "../sections/ProjectDescription";
 import {
+  LogoPresentation,
   ColorPresentation,
-  Icons,
   Mockups,
   TypographyPresentation,
 } from "../sections/Presentations";
 
-const Timelog = () => {
+const Provento = () => {
   const { page } = data;
-  const key = "time_log";
+  const key = "provento";
 
   return (
     <section id={key}>
@@ -26,13 +26,13 @@ const Timelog = () => {
         duration={page.duration}
         roles={page.roles}
       />
-      <ColorPresentation type={key} />
+      <LogoPresentation type={key} />
       <TypographyPresentation type={key} />
-      <Icons type={key} />
+      <ColorPresentation type={key} />
       <Mockups type={key} />
       <ContactMe />
     </section>
   );
 };
 
-export default Timelog;
+export default Provento;

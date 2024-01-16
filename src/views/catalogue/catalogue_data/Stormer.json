@@ -1,8 +1,10 @@
 {
   "fragment": {
+    "id": "stormer",
     "title": "Stormer — an AI-powered tool for aspiring designers and developers",
     "desc": "With capability gaps with external products, a company decided to develop the product themselves. An app for employees to log and manage their work hours, sick leave, and vacation.",
-    "link": ""
+    "role": "Personal project",
+    "link": "/stormer"
   },
   "page": {
     "title": "Stormer — an AI-powered tool for aspiring designers and developers",
