@@ -37,6 +37,7 @@ import stormer_mockup from "../../assets/images/project_images/stormer/stormer_m
 import provento_mockup_1 from "../../assets/images/project_images/provento/provento_imagery_1.jpeg";
 import provento_mockup_2 from "../../assets/images/project_images/provento/provento_imagery_2.jpeg";
 import provento_mockup_3 from "../../assets/images/project_images/provento/provento_imagery_3.jpeg";
+import provento_mockup_4 from "../../assets/images/project_images/provento/provento_imagery_4.jpeg";
 
 /* PROJECT COLORS */
 const WP_TECH = [
@@ -375,6 +376,13 @@ export const Mockups = ({ type }) => {
                   src={provento_mockup_3}
                   alt="Provento Mockup"
                   className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
+              <div className="inline-block overflow-hidden -translate-y-8">
+                <img
+                  src={provento_mockup_4}
+                  alt="Provento Mockup"
+                  className="scale-125 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
             </RevealStaggeredInView>
