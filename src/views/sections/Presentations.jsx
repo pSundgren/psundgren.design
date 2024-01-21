@@ -246,7 +246,7 @@ export const Typography = ({ type }) => {
               <p className="text-3xl text-neutral-700 font-dm-sans font-medium">
                 Typeface — DM Sans
               </p>
-              <Link to="https://www.grillitype.com/typeface/gt-walsheim">
+              <Link to="https://fonts.google.com/specimen/DM+Sans">
                 <SVG variant="link-sm" fill="#71717A" />
               </Link>
             </RevealEqualInView>
