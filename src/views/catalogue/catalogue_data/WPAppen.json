@@ -1,7 +1,7 @@
 {
   "fragment": {
     "id": "wp_appen",
-    "title": "WP Tech — internal service management app for field workers",
+    "title": "WP Appen — internal service management app for field workers",
     "desc": "Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
     "role": "Product Designer",
     "link": "/wp_appen"
