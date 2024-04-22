@@ -15,7 +15,7 @@ export const Hero = () => {
           </div>
           <RevealStaggeredInView motionClass="flex flex-row gap-x-10 pt-8">
             <p className="text-sm text-neutral-50">PRODUCT DESIGNER</p>
-            <p className="text-sm text-neutral-50">UX/UI DESIGNER</p>
+            <p className="text-sm text-neutral-50">DESIGN ENGINEER</p>
           </RevealStaggeredInView>
         </div>
       </div>
