@@ -8,6 +8,7 @@ import { CatalogueHero } from "../sections/Hero";
 import { ContactMe } from "../sections/ContactMe";
 import { ProjectDescription } from "../sections/ProjectDescription";
 import { Colors, Icons, Mockups, Typography } from "../sections/Presentations";
+import { Research } from "../sections/Research";
 
 const WPAppen = () => {
   const { page } = data;
@@ -15,12 +16,13 @@ const WPAppen = () => {
 
   return (
     <section id={key}>
-      <CatalogueHero title={page.title} desc={page.desc} />
+      <CatalogueHero title={page.title} desc={page.overview} />
       <ProjectDescription
-        desc={page.overview}
+        desc={page.research}
         duration={page.duration}
         roles={page.roles}
       />
+      <Research research={page.research} />
       <Typography type={key} />
       <Colors type={key} />
       <Icons type={key} />

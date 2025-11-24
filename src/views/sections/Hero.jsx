@@ -26,7 +26,7 @@ export const Hero = () => {
 export const CatalogueHero = ({ title, desc }) => {
   return (
     <Section bg="bg-neutral-800" p="pt-[196px] pb-36">
-      <RevealStaggeredInView motionClass="space-y-6 max-w-[580px]">
+      <RevealStaggeredInView motionClass="space-y-6 max-w-[880px]">
         <h1 className="text-3xl text-neutral-50">{title}</h1>
         <h2 className="text-lg text-neutral-500">{desc}</h2>
       </RevealStaggeredInView>

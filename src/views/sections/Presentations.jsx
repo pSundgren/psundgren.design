@@ -354,7 +354,7 @@ export const Mockups = ({ type }) => {
     case "provento":
       return (
         <Section p="pb-36">
-          <h1 className="text-neutral-500 text-sm mb-6">Result</h1>
+          <h1 className="text-neutral-500 text-sm mb-6">Mockups</h1>
           <div className="space-y-0">
             <RevealStaggeredInView motionClass="flex flex-col justify-center items-center">
               <div className="inline-block overflow-hidden">
@@ -392,7 +392,7 @@ export const Mockups = ({ type }) => {
     case "wp_tech":
       return (
         <Section p="pb-36">
-          <h1 className="text-neutral-500 text-sm mb-6">Result</h1>
+          <h1 className="text-neutral-500 text-sm mb-6">Mockups</h1>
           <div className="space-y-0">
             <RevealStaggeredInView motionClass="flex flex-col justify-center items-center">
               <div className="inline-block overflow-hidden">
@@ -416,7 +416,7 @@ export const Mockups = ({ type }) => {
     case "wp_appen":
       return (
         <Section p="pb-36">
-          <h1 className="text-neutral-500 text-sm mb-6">Result</h1>
+          <h1 className="text-neutral-500 text-sm mb-6">Mockups</h1>
           <div className="space-y-36">
             <RevealEqualInView>
               <div className="inline-block overflow-hidden">
@@ -447,7 +447,7 @@ export const Mockups = ({ type }) => {
     case "time_log":
       return (
         <Section p="pb-36">
-          <h1 className="text-neutral-500 text-sm mb-6">Result</h1>
+          <h1 className="text-neutral-500 text-sm mb-6">Mockups</h1>
           <div className="space-y-0">
             <RevealStaggeredInView motionClass="flex flex-col justify-center items-center">
               <div className="inline-block overflow-hidden">
@@ -472,7 +472,7 @@ export const Mockups = ({ type }) => {
       return (
         <Section bg="" p="pb-36">
           <div className="space-y-6">
-            <h1 className="text-neutral-500 text-sm">Result</h1>
+            <h1 className="text-neutral-500 text-sm">Mockups</h1>
             <RevealEqualInView>
               {/*TODO: Replace this */}
               <div className="flex flex-row justify-between">
@@ -486,7 +486,7 @@ export const Mockups = ({ type }) => {
       return (
         <Section bg="" p="pb-36">
           <div className="space-y-6">
-            <h1 className="text-neutral-500 text-sm">Result</h1>
+            <h1 className="text-neutral-500 text-sm">Mockups</h1>
             <RevealEqualInView>
               <div className="inline-block overflow-hidden">
                 <img

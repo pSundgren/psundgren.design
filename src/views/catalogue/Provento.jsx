@@ -15,9 +15,9 @@ const Provento = () => {
 
   return (
     <section id={key}>
-      <CatalogueHero title={page.title} desc={page.desc} />
+      <CatalogueHero title={page.title} desc={page.overview} />
       <ProjectDescription
-        desc={page.overview}
+        desc={page.research}
         duration={page.duration}
         roles={page.roles}
       />
