@@ -16,7 +16,11 @@ const AlrikDrive = () => {
 
   return (
     <section id={key}>
-      <CatalogueHero title={page.title} desc={page.overview} />
+      <CatalogueHero
+        title={page.title}
+        desc={page.overview}
+        roles={page.roles}
+      />
       <Section p="pt-0 pb-48">
         <div className="flex flex-row justify-between">
           <div className="flex flex-col space-y-4">

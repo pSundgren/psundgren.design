@@ -62,12 +62,22 @@ export const Hero = () => {
   );
 };
 
-export const CatalogueHero = ({ title, desc }) => {
+export const CatalogueHero = ({ title, desc, roles }) => {
   return (
-    <Section bg="bg-neutral-800" p="pt-[196px] pb-36">
-      <RevealStaggeredInView motionClass="space-y-6 max-w-[880px]">
-        <h1 className="text-3xl text-neutral-50">{title}</h1>
-        <h2 className="text-lg text-neutral-500">{desc}</h2>
+    <Section p="pt-[196px] pb-36">
+      <RevealStaggeredInView motionClass="flex flex-col text-center w-full items-center justify-center space-y-6">
+        <h1 className="text-3xl text-neutral-900 max-w-[800px]">{title}</h1>
+        <h2 className="text-lg text-neutral-500 max-w-[800px]">{desc}</h2>
+      </RevealStaggeredInView>
+      <RevealStaggeredInView
+        stagger={0.2}
+        motionClass="flex flex-row items-center justify-center gap-x-6"
+      >
+        {roles.map((role) => (
+          <p className="bg-neutral-100 text-neutral-500 px-4 py-2 rounded-lg text-xs">
+            {role}
+          </p>
+        ))}
       </RevealStaggeredInView>
     </Section>
   );

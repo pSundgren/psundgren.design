@@ -15,7 +15,7 @@ const Stormer = () => {
 
   return (
     <section id={key}>
-      <CatalogueHero title={page.title} desc={page.desc} />
+      <CatalogueHero title={page.title} desc={page.desc} roles={page.roles} />
       <ProjectDescription
         desc={page.overview}
         duration={page.duration}

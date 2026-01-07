@@ -16,7 +16,11 @@ const WPAppen = () => {
 
   return (
     <section id={key}>
-      <CatalogueHero title={page.title} desc={page.overview} />
+      <CatalogueHero
+        title={page.title}
+        desc={page.overview}
+        roles={page.roles}
+      />
       <ProjectDescription
         desc={page.research}
         duration={page.duration}
