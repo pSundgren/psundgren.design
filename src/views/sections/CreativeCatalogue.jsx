@@ -59,6 +59,7 @@ const CreativeCatalogue = () => {
                 title={entry.title}
                 desc={entry.desc}
                 role={entry.role}
+                index={index}
                 styling={index % 2 === 0 ? "lg:mt-28" : null}
               />
             </Link>
@@ -73,7 +74,7 @@ const CreativeCatalogue = () => {
  * This components reders a card for each projects that's added to the array LIST in this file
  */
 
-const ProjectCard = ({ id, title, desc, role, styling }) => {
+const ProjectCard = ({ id, title, desc, role, styling, index }) => {
   const { innerWidth: width } = window;
   return (
     <li
@@ -83,7 +84,7 @@ const ProjectCard = ({ id, title, desc, role, styling }) => {
     >
       <RevealEqualInView>
         <div className="flex flex-col space-y-6 group">
-          <ProjectImage id={id} role={role} />
+          <ProjectImage id={id} role={role} index={index} />
           <div className="flex flex-col space-y-3">
             <div className="flex flex-row space-x-6">
               <div className="flex flex-row items-center space-x-0 mt-6">
@@ -106,9 +107,10 @@ const ProjectCard = ({ id, title, desc, role, styling }) => {
  * This components reders out the images for each project in the creative cataloge
  */
 
-const ProjectImage = ({ id, role }) => {
-  const img_container =
-    "relative overflow-hidden shadow-md transition-all duration-500 ease-out";
+const ProjectImage = ({ id, role, index }) => {
+  const img_container = `relative overflow-hidden shadow-md transition-all duration-500 ease-out rounded-xl ${
+    index % 2 === 0 ? "rotate-1" : "-rotate-1"
+  } group-hover:rotate-0`;
   const img_styling =
     "aspect-auto object-cover object-left-top transition-all duration-500 ease-out lg:group-hover:scale-105";
   switch (id) {
@@ -120,7 +122,7 @@ const ProjectImage = ({ id, role }) => {
             alt="Tech angency rebranding project"
             className={provento_image ? img_styling : null}
           />
-          <h1 className="absolute bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+          <h1 className="absolute rounded-md bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
             {role}
           </h1>
         </div>
@@ -133,7 +135,7 @@ const ProjectImage = ({ id, role }) => {
             alt="Tech angency rebranding project"
             className={wp_appen_image ? img_styling : null}
           />
-          <h1 className="absolute bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+          <h1 className="absolute rounded-md bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
             {role}
           </h1>
         </div>
@@ -146,7 +148,7 @@ const ProjectImage = ({ id, role }) => {
             alt="Tech angency rebranding project"
             className={wp_tech_image ? img_styling : null}
           />
-          <h1 className="absolute bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+          <h1 className="absolute rounded-md bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
             {role}
           </h1>
         </div>
@@ -159,7 +161,7 @@ const ProjectImage = ({ id, role }) => {
             alt="Mockup for time logging app"
             className={time_logger_image ? img_styling : null}
           />
-          <h1 className="absolute bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+          <h1 className="absolute rounded-md bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
             {role}
           </h1>
         </div>
@@ -172,7 +174,7 @@ const ProjectImage = ({ id, role }) => {
             alt="Mockup for AI-powered idea generator"
             className={stormer_image ? img_styling : null}
           />
-          <h1 className="absolute bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+          <h1 className="absolute rounded-md bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
             {role}
           </h1>
         </div>
@@ -185,7 +187,7 @@ const ProjectImage = ({ id, role }) => {
             alt="Company logo for company rebranding project"
             className={twiceme_image ? img_styling : null}
           />
-          <h1 className="absolute bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+          <h1 className="absolute rounded-md bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
             {role}
           </h1>
         </div>
