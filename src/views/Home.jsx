@@ -22,7 +22,7 @@ const Home = () => {
         transition={spring}
       />
       <Hero />
-      <Wave
+      {/* <Wave
         className="-translate-y-36"
         fill="#ffffff"
         paused={false}
@@ -32,7 +32,7 @@ const Home = () => {
           speed: 0.1,
           points: 1,
         }}
-      />
+      /> */}
       <About changeCursorVariant={changeCursorVariant} />
       <CreativeCatalogue changeCursorVariant={changeCursorVariant} />
     </>

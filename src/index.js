@@ -16,6 +16,7 @@ import Twiceme from "./views/catalogue/Twiceme";
 import Timelog from "./views/catalogue/Timelog";
 import Stormer from "./views/catalogue/Stormer";
 import Provento from "./views/catalogue/Provento";
+import AlrikDrive from "./views/catalogue/AlrikDrive";
 
 const router = createBrowserRouter([
   {
@@ -71,6 +72,22 @@ const router = createBrowserRouter([
     element: (
       <App>
         <Stormer />
+      </App>
+    ),
+  },
+  {
+    path: "/alrik-drive",
+    element: (
+      <App>
+        <AlrikDrive />
+      </App>
+    ),
+  },
+  {
+    path: "/alrik-connect",
+    element: (
+      <App>
+        <AlrikDrive />
       </App>
     ),
   },

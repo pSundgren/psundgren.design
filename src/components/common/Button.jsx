@@ -18,5 +18,4 @@ const Button = ({ label, fill, to }) => {
     </a>
   );
 };
-
 export default Button;

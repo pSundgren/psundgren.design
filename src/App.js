@@ -29,7 +29,10 @@ function App({ children }) {
   const variants = useVariants(ref);
 
   return (
-    <div className="App font-primary scroll-smooth" ref={ref}>
+    <div
+      className="App font-primary scroll-smooth size-full bg-repeat bg-[url(./circle-ellipsis.svg)] bg-[length:56px_56px]"
+      ref={ref}
+    >
       <ScrollToTop />
       <motion.div
         variants={variants}

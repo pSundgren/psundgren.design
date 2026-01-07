@@ -9,6 +9,7 @@ import {
 } from "../../components/common/Reveal";
 
 /* DATA IMPORT */
+import alrik_drive_data from "../catalogue/catalogue_data/AlrikDrive.json";
 import time_log_data from "../catalogue/catalogue_data/Timelog.json";
 import provento_data from "../catalogue/catalogue_data/Provento.json";
 import wp_tech_data from "../catalogue/catalogue_data/WPTech.json";
@@ -32,6 +33,7 @@ import wp_appen_image from "../../assets/images/project_images/wp_appen.jpeg";
 
 const CreativeCatalogue = () => {
   const LIST = [
+    alrik_drive_data.fragment,
     time_log_data.fragment,
     provento_data.fragment,
     wp_tech_data.fragment,

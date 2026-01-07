@@ -3,6 +3,7 @@ import Section from "./common/Section";
 import SVG from "../assets/svgs/SVG";
 
 const Footer = ({ changeCursorVariant }) => {
+  const thisYear = new Date().getFullYear();
   return (
     <Section p="py-14" bg="bg-neutral-800">
       <div className="flex flex-row justify-between">
@@ -22,7 +23,8 @@ const Footer = ({ changeCursorVariant }) => {
           </div>
           <p className="text-neutral-300 text-xs">
             {" "}
-            &#169; 2024, All right reserved
+            &#169;
+            {` ${thisYear}, All right reserved`}
           </p>
         </div>
       </div>

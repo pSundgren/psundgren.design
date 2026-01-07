@@ -1,22 +1,61 @@
 import React from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import "./style.css";
 
 /* Components */
+import PFP from "../../assets/images/pontus-sundgren.webp";
 import Section from "../../components/common/Section";
 import SVG from "../../assets/svgs/SVG";
 import { RevealStaggeredInView } from "../../components/common/Reveal";
 
 export const Hero = () => {
+  const [index, setIndex] = React.useState(0);
+
+  const words = ["designer", "developer"];
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, 3000);
+    // Clean up interval on unmount
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <Section id="hero" bg="bg-neutral-800" p="pt-[196px] pb-36">
+    <Section id="hero" p="pt-[196px] pb-36">
       <div className="flex flex-row justify-center w-fill my-[120px]">
-        <div className="flex flex-col">
-          <div className="pr-6">
-            <SVG variant="sign" fill="#fafafa" />
+        <div className="flex flex-col items-center justify-center">
+          <p className="text-neutral-500">Hello there,</p>
+          <div className="flex flex-row items-center justify-center text-neutral-900 text-4xl">
+            {"I'm a "}
+            <AnimatePresence mode="wait">
+              <motion.p
+                key={words[index]}
+                className="w-[160px] max-w-[160px] mx-2 flex justify-center font-secondary text-teal-700"
+                initial={{ opacity: 0, y: -20, filter: "blur(10px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                exit={{ opacity: 0, y: 20, filter: "blur(10px)" }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
+              >
+                {words[index]}
+              </motion.p>
+            </AnimatePresence>
+
+            {" based in Stockholm"}
           </div>
-          <RevealStaggeredInView motionClass="flex flex-row gap-x-10 pt-8">
+          <div className="mt-8 pl-3 flex flex-row items-center justify-center gap-x-4">
+            <img src={PFP} alt="linkedin" className="w-[86px] h-[86px]" />
+            <div className="flex flex-col my-auto -translate-y-2">
+              <p className="nowrap text-neutral-900 w-full translate-y-4">
+                Pontus Sundgren
+              </p>
+              <SVG variant="sign" fill="#17171720" height={"42px"} />
+            </div>
+          </div>
+          {/* <RevealStaggeredInView motionClass="flex flex-row gap-x-10 pt-8">
             <p className="text-sm text-neutral-50">PRODUCT DESIGNER</p>
             <p className="text-sm text-neutral-50">DESIGN ENGINEER</p>
-          </RevealStaggeredInView>
+          </RevealStaggeredInView> */}
         </div>
       </div>
     </Section>

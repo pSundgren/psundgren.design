@@ -1,21 +1,27 @@
 import React from "react";
 
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 
 /**
  *  Reveals each child of the component at once
  */
 
-export const RevealEqualInView = ({ children, motionClass }) => {
+export const RevealEqualInView = ({
+  children,
+  motionClass,
+  duration,
+  delay,
+}) => {
   const container = {
-    hidden: { opacity: 0, y: 10 },
+    hidden: { opacity: 0, y: 10, filter: "blur(8px)" },
     show: {
       opacity: 1,
       y: 0,
+      filter: "blur(0px)",
       transition: {
-        ease: [0, 0, 0.2, 1],
-        delay: 0.6,
-        duration: 0.8,
+        ease: easeInOut,
+        delay: delay ? delay : 0.6,
+        duration: duration ? duration : 0.8,
       },
     },
   };
@@ -39,24 +45,24 @@ export const RevealEqualInView = ({ children, motionClass }) => {
  *  Reveals each child of the component with a delay
  */
 
-export const RevealStaggeredInView = ({ children, motionClass }) => {
+export const RevealStaggeredInView = ({ children, motionClass, stagger }) => {
   const container = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
       transition: {
-        ease: [0, 0, 0.2, 1],
-        duration: 1,
-        staggerChildren: 0.6,
+        staggerChildren: stagger ? stagger : 0.6,
+        ease: easeInOut,
       },
     },
   };
 
   const item = {
-    hidden: { opacity: 0, y: 10 },
+    hidden: { opacity: 0, y: 10, filter: "blur(8px)" },
     show: {
       opacity: 1,
       y: 0,
+      filter: "blur(0px)",
     },
   };
 

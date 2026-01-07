@@ -1,0 +1,32 @@
+{
+  "fragment": {
+    "id": "alrik-drive",
+    "title": "Alrik Drive - a mobile app for construction logistics drivers for a TMS company",
+    "desc": "As the TMS company Alrik is expanding their users and services, they needed to replace a third-party app for drivers to fully manage the data and be able to improve usability and increase use range of the app.",
+    "role": "Design Engineer",
+    "link": "/alrik-drive"
+  },
+  "page": {
+    "hero": {
+      "title": "Alrik Drive",
+      "timeline": "4 months",
+      "team": "1 designer, 3 devs",
+      "impact-summary": "Complete inhouse control over app, increased data collection, and improved user experience"
+    },
+    "challenge": "Some text here",
+    "research": {
+      "methods": "User interviews, usability testing, ...",
+      "artifacts": "Some text here",
+      "key-insights": [
+        "Some text here",
+        "Some text here",
+        "Some text here",
+        "Some text here"
+      ]
+    },
+    "results": {
+      "results": "Some text here",
+      "reflection": "Some text here"
+    }
+  }
+}
