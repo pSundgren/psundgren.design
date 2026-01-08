@@ -1,8 +1,7 @@
 import React from "react";
-
 import Section from "../../components/common/Section";
 
-export const ContactMe = ({ changeCursorVariant }) => {
+export const ContactMe = () => {
   return (
     <Section p="pt-14 pb-48">
       <div className="flex flex-col lg:flex-row lg:justify-between gap-y-14">

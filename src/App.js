@@ -40,12 +40,9 @@ function App({ children }) {
         animate={cursorVariant}
         transition={spring}
       />
-      <Navbar
-        changeCursorVariant={changeCursorVariant}
-        fill={scrollPosition <= 500 ? "light" : "dark"}
-      />
+      <Navbar fill={scrollPosition <= 500 ? "light" : "dark"} />
       {children}
-      <Footer changeCursorVariant={changeCursorVariant} />
+      <Footer />
     </div>
   );
 }

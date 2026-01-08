@@ -10,7 +10,7 @@ import SVG from "../assets/svgs/SVG";
 import Section from "./common/Section";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ changeCursorVariant }) => {
+const Navbar = () => {
   const scrollY = useMotionValue(0);
   const [hidden, setHidden] = useState(false);
 
@@ -45,7 +45,7 @@ const Navbar = ({ changeCursorVariant }) => {
     >
       <Section bg={"overflow-visible"}>
         <div
-          className="scale-x-[1.05] flex flex-row justify-between items-center bg-neutral-800 px-4 py-2 rounded-xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-[2%] shadow border border-[#ffffff20]
+          className="scale-x-[1.025] flex flex-row justify-between items-center px-4 py-2 rounded-xl bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-[2%] shadow border border-[#ffffff20]
 "
         >
           <Link to="/">

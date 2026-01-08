@@ -1,6 +1,5 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import "./style.css";
 
 /* Components */
 import PFP from "../../assets/images/pontus-sundgren.webp";
@@ -71,10 +70,10 @@ export const CatalogueHero = ({ title, desc, roles }) => {
       </RevealStaggeredInView>
       <RevealStaggeredInView
         stagger={0.2}
-        motionClass="flex flex-row items-center justify-center gap-x-6"
+        motionClass="flex flex-row flex-wrap items-center justify-center gap-6 "
       >
         {roles.map((role) => (
-          <p className="bg-neutral-100 text-neutral-500 px-4 py-2 rounded-lg text-xs">
+          <p className="bg-neutral-100 text-neutral-500 px-4 py-2 rounded-lg text-xs whitespace-nowrap">
             {role}
           </p>
         ))}

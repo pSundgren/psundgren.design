@@ -4,7 +4,7 @@ import FAB from "../../components/common/FAB";
 
 import { RevealStaggeredInView } from "../../components/common/Reveal";
 
-const About = ({ changeCursorVariant }) => {
+const About = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <Section p="pt-32 pb-64 items-center">

@@ -31,13 +31,13 @@ import wp_appen_image from "../../assets/images/project_images/wp_appen.jpeg";
  * Main section component
  */
 
-const CreativeCatalogue = () => {
+export const CreativeCatalogue = () => {
   const LIST = [
     alrik_drive_data.fragment,
     time_log_data.fragment,
+    wp_appen_data.fragment,
     provento_data.fragment,
     wp_tech_data.fragment,
-    wp_appen_data.fragment,
     stormer_data.fragment,
   ];
 
@@ -65,6 +65,37 @@ const CreativeCatalogue = () => {
             </Link>
           ))}
         </ul>
+      </div>
+    </Section>
+  );
+};
+
+export const CreativeCatalogueFrament = ({ projectList }) => {
+  return (
+    <Section p="pt-0 pb-48">
+      <div className="flex flex-col gap-14">
+        <RevealStaggeredInView motionClass="space-y-6">
+          <h1 className="text-sm text-gray-500">Want to see more?</h1>
+          <h2 className="text-3xl text-gray-700">
+            Check out some of my{" "}
+            <span className="font-secondary italic">other works</span>
+          </h2>
+        </RevealStaggeredInView>
+        {projectList && (
+          <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-28 gap-y-14">
+            {projectList.map((entry, index) => (
+              <Link to={entry.link}>
+                <ProjectCard
+                  id={entry.id}
+                  title={entry.title}
+                  desc={entry.desc}
+                  role={entry.role}
+                  index={index}
+                />
+              </Link>
+            ))}
+          </ul>
+        )}
       </div>
     </Section>
   );
@@ -204,5 +235,3 @@ const ProjectImage = ({ id, role, index }) => {
       );
   }
 };
-
-export default CreativeCatalogue;
