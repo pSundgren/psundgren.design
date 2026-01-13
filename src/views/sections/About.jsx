@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Section from "../../components/common/Section";
 import FAB from "../../components/common/FAB";
 
