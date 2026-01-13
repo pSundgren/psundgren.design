@@ -27,7 +27,7 @@ import wp_tech_image from "../../assets/images/project_images/wp_tech.jpeg";
 import twiceme_image from "../../assets/images/project_images/twiceme.jpg";
 import stormer_image from "../../assets/images/project_images/stormer/stormer_mockup.jpeg";
 import wp_appen_image from "../../assets/images/project_images/wp_appen.jpeg";
-import alrik_drive_image from "../../assets/images/project_images/alrik-drive.jpg";
+import alrik_drive_image from "../../assets/images/project_images/alrik-drive.jpeg";
 
 /*
  * Main section component
