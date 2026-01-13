@@ -7,13 +7,12 @@ import { RevealStaggeredInView } from "../../components/common/Reveal";
 const About = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsOpen((prevIsOpen) => !prevIsOpen);
-    }, 10000);
-    // Clean up interval on unmount
-    return () => clearInterval(interval);
-  }, []);
+  const openAndReset = () => {
+    setIsOpen(true);
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 5000);
+  };
 
   return (
     <Section p="pt-32 pb-64 items-center">
@@ -42,7 +41,7 @@ const About = () => {
           label="Get in touch"
           fill="#F0FDFA"
           onClick={() => {
-            setIsOpen(!isOpen);
+            openAndReset();
           }}
           isOpen={isOpen}
         />
