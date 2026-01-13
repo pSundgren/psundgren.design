@@ -7,7 +7,6 @@ import alrik_cockpit from "../catalogue/catalogue_data/AlrikCockpit.json";
 
 /* COMPONENTS */
 import { CatalogueHero } from "../sections/Hero";
-import { ContactMe } from "../sections/ContactMe";
 import { ProjectDescription } from "../sections/ProjectDescription";
 import { Logo, Colors, Mockups, Typography } from "../sections/Presentations";
 import { CreativeCatalogueFrament } from "../sections/CreativeCatalogue";

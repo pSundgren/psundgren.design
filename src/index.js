@@ -85,7 +85,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/alrik-connect",
+    path: "/alrik-cockpit",
     element: (
       <App>
         <AlrikCockpit />

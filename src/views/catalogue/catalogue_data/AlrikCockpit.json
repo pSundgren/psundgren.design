@@ -7,9 +7,9 @@
     "link": "/alrik-cockpit"
   },
   "page": {
-    "title": "WP Tech — a revisit of a tech agency's visual identity",
-    "desc": "A complete rebranding of a full—solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
-    "overview": "As a newly formed tech agency was looking to make a break on the tech market, they were looking to rebrand themselves and update their visual identity. The goal with the project was to create a new logotype, website, create templates for social media posts, and to structure a visual identity that aligned with the tech agencys' mission.\n\nThe design process was conducted according to a competitive design process and the design was examined and approved by the shareholders of the company. The final design was approved after 3 iterations (4 design alternatives).",
+    "title": "Alrik Cockpit - a new way for a TMS to scale with expontential customer growth",
+    "desc": "Alrik started small, with customers that handled around 10 orders daily. As the compant grew, so did the amount of orders the customers needed to handle. This is the project that made Alrik adapt to that growth. And introduce AI to construction logistics.",
+    "overview": "Write something here...",
     "roles": [
       "Reaserch",
       "Usability Testing",
@@ -18,48 +18,32 @@
     ],
     "research": [
       {
-        "title": "User interviews was done to collect data on positive, and negative, experiences with the previous app",
-        "desc": "Interview was made with both employees and managers to investigate both user types."
+        "title": "Write something here...",
+        "desc": "Write something here..."
       },
       {
-        "title": "Usability testing was made with users to gain insights on how users navigate the previous app",
-        "desc": "Users were asked to perform tasks while talking out loud on their thought process."
+        "title": "Write something here...",
+        "desc": "Write something here..."
       }
     ],
     "findings": [
       {
-        "title": "The previous app did not have any way for users to correct their mistakes",
-        "desc": "This caused a lot of manual work for managers and employees."
+        "title": "Write something here...",
+        "desc": "Write something here..."
       },
       {
-        "title": "The previous app did not have a way to report absence or sick leave for employees",
-        "desc": "This made total working time for employees out of sync whenever they were absent or sick."
-      },
-      {
-        "title": "Low visibility of active / inactive employees for managers",
-        "desc": "With remote work becoming more common, managers wanted more overview of their employees' activity and place of work."
-      },
-      {
-        "title": "Unintuitive navigation for employees",
-        "desc": "The previous app had a lot of navigation options, which made it difficult for employees to find what they were looking for."
+        "title": "Write something here...",
+        "desc": "Write something here..."
       }
     ],
     "result": [
       {
-        "title": "Allowing users to report absence or sick leave",
-        "desc": ""
+        "title": "Write something here...",
+        "desc": "Write something here..."
       },
       {
-        "title": "Adding error handling for users when they make mistakes",
-        "desc": ""
-      },
-      {
-        "title": "Keep navigation simple, no unnecessary navbar",
-        "desc": ""
-      },
-      {
-        "title": "Add interface for managers to see employees' status",
-        "desc": ""
+        "title": "Write something here...",
+        "desc": "Write something here..."
       }
     ]
   }
