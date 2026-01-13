@@ -28,6 +28,7 @@ import twiceme_image from "../../assets/images/project_images/twiceme.jpg";
 import stormer_image from "../../assets/images/project_images/stormer/stormer_mockup.jpeg";
 import wp_appen_image from "../../assets/images/project_images/wp_appen.jpeg";
 import alrik_drive_image from "../../assets/images/project_images/alrik-drive.jpeg";
+import alrik_cockpit_image from "../../assets/images/project_images/alrik_cockpit.jpg";
 
 /*
  * Main section component
@@ -148,6 +149,19 @@ const ProjectImage = ({ id, role, index }) => {
   const img_styling =
     "aspect-auto object-cover object-left-top transition-all duration-500 ease-out lg:group-hover:scale-105";
   switch (id) {
+    case "alrik-cockpit":
+      return (
+        <div className={img_container}>
+          <img
+            src={alrik_cockpit_image ? alrik_cockpit_image : placeholder_image}
+            alt="Tech angency rebranding project"
+            className={alrik_cockpit_image ? img_styling : null}
+          />
+          <h1 className="absolute rounded-md bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+            {role}
+          </h1>
+        </div>
+      );
     case "alrik-drive":
       return (
         <div className={img_container}>

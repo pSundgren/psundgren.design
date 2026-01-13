@@ -18,12 +18,16 @@
     ],
     "research": [
       {
-        "title": "Write something here...",
-        "desc": "Write something here..."
+        "title": "Planners need to be able to see the big picture of their orders",
+        "desc": "Kanban view used before only shows a couple of orders at a time and seeing orders that can be delivered in the same delivery route is impossible."
       },
       {
-        "title": "Write something here...",
-        "desc": "Write something here..."
+        "title": "No feedback on the progress on the delivery drivers progress",
+        "desc": "Where are my drivers right now? Are they gonna deliver on time? Is there anyone available at the moment? There were a lot of questions unanswered for planners to optimize their deliveries."
+      },
+      {
+        "title": "Planners had no idea if they planned a good, or bad, delivery route",
+        "desc": "A lot of planners needed to use third party services to check addresses in order to get an understanding if the delivery route was good, or bad."
       }
     ],
     "findings": [

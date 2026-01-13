@@ -28,8 +28,6 @@ const AlrikCockpit = () => {
         findings={page.findings}
         result={page.result}
       />
-      <Typography type={key} />
-      <Colors type={key} />
       <Mockups type={key} />
       <CreativeCatalogueFrament projectList={arr} />
     </section>

@@ -39,6 +39,10 @@ import provento_mockup_2 from "../../assets/images/project_images/provento/prove
 import provento_mockup_3 from "../../assets/images/project_images/provento/provento_imagery_3.jpeg";
 import provento_mockup_4 from "../../assets/images/project_images/provento/provento_imagery_4.jpeg";
 
+/* ALRIK MOCKUP IMAGES */
+import alrik_mockup_1 from "../../assets/images/project_images/alrik_cockpit.jpg";
+import alrik_mockup_2 from "../../assets/images/project_images/alrik_cockpit/alrik-cockpit-map.jpg";
+
 /* PROJECT COLORS */
 const WP_TECH = [
   { name: "#5EA6C5", bg: "bg-[#5EA6C5]", text: "text-neutral-50" },
@@ -395,6 +399,32 @@ export const Role = ({ role }) => {
 
 export const Mockups = ({ type }) => {
   switch (type) {
+    case "alrik-cockpit":
+      return (
+        <Section p="pb-36">
+          <h1 className="text-neutral-500 font-secondary mb-6 text-center">
+            Mockups
+          </h1>
+          <div className="space-y-8">
+            <RevealStaggeredInView motionClass="flex flex-col justify-center items-center gap-y-6">
+              <div className="inline-block overflow-hidden rounded-xl shadow rotate-1">
+                <img
+                  src={alrik_mockup_1}
+                  alt="Alrik Cockpit Mockup"
+                  className="scale-125 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
+              <div className="inline-block overflow-hidden rounded-xl shadow -rotate-1">
+                <img
+                  src={alrik_mockup_2}
+                  alt="Alrik Cockpit Mockup"
+                  className="scale-125 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
+            </RevealStaggeredInView>
+          </div>
+        </Section>
+      );
     case "provento":
       return (
         <Section p="pb-36">
@@ -443,14 +473,14 @@ export const Mockups = ({ type }) => {
           </h1>
           <div className="space-y-0">
             <RevealStaggeredInView motionClass="flex flex-col justify-center items-center gap-y-6">
-              <div className="inline-block overflow-hidden rounded-xl">
+              <div className="inline-block overflow-hidden rounded-xl shadow rotate-1">
                 <img
                   src={wp_tech_mockup_2}
                   alt="WP Appen Mockup"
                   className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
-              <div className="inline-block overflow-hidden rounded-xl">
+              <div className="inline-block overflow-hidden rounded-xl shadow -rotate-1">
                 <img
                   src={wp_tech_mockup_1}
                   alt="WP Appen Mockup"
@@ -469,7 +499,7 @@ export const Mockups = ({ type }) => {
           </h1>
           <div className="space-y-36">
             <RevealEqualInView>
-              <div className="inline-block overflow-hidden rounded-xl">
+              <div className="inline-block overflow-hidden rounded-xl shadow rotate-1">
                 <img
                   src={wp_appen_mockup}
                   alt="WP Appen Mockup"
@@ -483,7 +513,7 @@ export const Mockups = ({ type }) => {
               <img src={phone_three} alt="Mockup" className="w-[300px]" />
             </RevealStaggeredInView>
             <RevealEqualInView>
-              <div className="inline-block overflow-hidden rounded-xl">
+              <div className="inline-block overflow-hidden rounded-xl shadow -rotate-1">
                 <img
                   src={wp_appen_mockup_2}
                   alt="WP Appen Mockup"
@@ -502,14 +532,14 @@ export const Mockups = ({ type }) => {
           </h1>
           <div className="space-y-8">
             <RevealStaggeredInView motionClass="flex flex-col justify-center items-center gap-y-6">
-              <div className="inline-block overflow-hidden rounded-xl">
+              <div className="inline-block overflow-hidden rounded-xl shadow rotate-1">
                 <img
                   src={time_log_mockup_1}
                   alt="WP Appen Mockup"
                   className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
-              <div className="inline-block overflow-hidden rounded-xl">
+              <div className="inline-block overflow-hidden rounded-xl shadow -rotate-1">
                 <img
                   src={time_log_mockup_2}
                   alt="WP Appen Mockup"
@@ -542,7 +572,7 @@ export const Mockups = ({ type }) => {
               Mockups
             </h1>
             <RevealEqualInView>
-              <div className="inline-block overflow-hidden rounded-xl">
+              <div className="inline-block overflow-hidden rounded-xl shadow rotate-1">
                 <img
                   src={stormer_mockup}
                   alt="WP Appen Mockup"
