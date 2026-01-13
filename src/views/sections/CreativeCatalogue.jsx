@@ -78,7 +78,7 @@ export const CreativeCatalogueFrament = ({ projectList }) => {
     <Section p="pt-0 pb-48">
       <div className="flex flex-col gap-14">
         <RevealStaggeredInView motionClass="space-y-6">
-          <h1 className="text-sm text-gray-500">Want to see more?</h1>
+          <h1 className="font-secondary text-gray-500">Want to see more?</h1>
           <h2 className="text-3xl text-gray-700">
             Check out some of my{" "}
             <span className="font-secondary italic">other work</span>

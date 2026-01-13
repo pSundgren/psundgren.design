@@ -10,7 +10,52 @@
     "title": "Stormer — an AI-powered tool for aspiring designers and developers",
     "desc": "A website that generates lifelike app concept, echoing the dynamics of authentic projects. To mirror real-world client demands and to allow aspiring designers and developers to gain practical insight of their liking.",
     "overview": "After an assignment as UX/UI Designer of a company I found myself out looking for a new job. During my assignment I’d been working on this company’s website and app design. As I was looking for new jobs I realised that the market was tough so say the least and I needed to expand my own design portfolio in order to make myself an attractive designer for open positions.\n\nHowever, the project was taken down as there was no funding for the ChatGPT API-token.",
-    "duration": "1 week",
-    "roles": ["Development", "UI Design"]
+    "roles": ["Development", "UI Design"],
+    "research": [
+      {
+        "title": "User interviews was done to collect data on positive, and negative, experiences with the previous app",
+        "desc": "Interview was made with both employees and managers to investigate both user types."
+      },
+      {
+        "title": "Usability testing was made with users to gain insights on how users navigate the previous app",
+        "desc": "Users were asked to perform tasks while talking out loud on their thought process."
+      }
+    ],
+    "findings": [
+      {
+        "title": "The previous app did not have any way for users to correct their mistakes",
+        "desc": "This caused a lot of manual work for managers and employees."
+      },
+      {
+        "title": "The previous app did not have a way to report absence or sick leave for employees",
+        "desc": "This made total working time for employees out of sync whenever they were absent or sick."
+      },
+      {
+        "title": "Low visibility of active / inactive employees for managers",
+        "desc": "With remote work becoming more common, managers wanted more overview of their employees' activity and place of work."
+      },
+      {
+        "title": "Unintuitive navigation for employees",
+        "desc": "The previous app had a lot of navigation options, which made it difficult for employees to find what they were looking for."
+      }
+    ],
+    "result": [
+      {
+        "title": "Allowing users to report absence or sick leave",
+        "desc": ""
+      },
+      {
+        "title": "Adding error handling for users when they make mistakes",
+        "desc": ""
+      },
+      {
+        "title": "Keep navigation simple, no unnecessary navbar",
+        "desc": ""
+      },
+      {
+        "title": "Add interface for managers to see employees' status",
+        "desc": ""
+      }
+    ]
   }
 }

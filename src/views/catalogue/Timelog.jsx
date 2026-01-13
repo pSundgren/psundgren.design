@@ -9,7 +9,7 @@ import alrik_cockpit from "../catalogue/catalogue_data/AlrikCockpit.json";
 import { CatalogueHero } from "../sections/Hero";
 import { CreativeCatalogueFrament } from "../sections/CreativeCatalogue";
 import { ProjectDescription } from "../sections/ProjectDescription";
-import { Mockups } from "../sections/Presentations";
+import { Mockups, Typography, Colors } from "../sections/Presentations";
 
 const Timelog = () => {
   const { page } = data;
@@ -28,6 +28,8 @@ const Timelog = () => {
         findings={page.findings}
         result={page.result}
       />
+      <Typography type={key} />
+      <Colors type={key} />
       <Mockups type={key} />
       <CreativeCatalogueFrament projectList={arr} />
     </section>

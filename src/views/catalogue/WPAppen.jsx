@@ -9,7 +9,7 @@ import provento_data from "../catalogue/catalogue_data/Provento.json";
 import { CatalogueHero } from "../sections/Hero";
 import { CreativeCatalogueFrament } from "../sections/CreativeCatalogue";
 import { ProjectDescription } from "../sections/ProjectDescription";
-import { Mockups } from "../sections/Presentations";
+import { Colors, Mockups, Typography } from "../sections/Presentations";
 
 const WPAppen = () => {
   const { page } = data;
@@ -28,6 +28,8 @@ const WPAppen = () => {
         findings={page.findings}
         result={page.result}
       />
+      <Typography type={key} />
+      <Colors type={key} />
       <Mockups type={key} />
       <CreativeCatalogueFrament projectList={arr} />
     </section>

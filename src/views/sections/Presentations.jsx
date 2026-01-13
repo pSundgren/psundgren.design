@@ -88,7 +88,9 @@ export const Colors = ({ type }) => {
       return (
         <Section p="pb-36">
           <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Colors</h1>
+            <h1 className="font-secondary text-center text-neutral-500">
+              Colors
+            </h1>
             <div className="flex flex-row gap-x-6 items-center justify-between">
               {PROVENTO.map((color, index) => (
                 <div
@@ -111,7 +113,9 @@ export const Colors = ({ type }) => {
       return (
         <Section p="pb-36">
           <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Colors</h1>
+            <h1 className="font-secondary text-center text-neutral-500">
+              Colors
+            </h1>
             <div className="flex flex-row gap-x-6 items-center justify-between">
               {WP_TECH.map((color, index) => (
                 <div
@@ -134,11 +138,19 @@ export const Colors = ({ type }) => {
       return (
         <Section p="pb-36">
           <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Colors</h1>
-            <div className="flex flex-row items-center justify-between">
-              {WP_APP.map((color) => (
-                <div className={`${color.bg} h-48 w-full flex items-end p-3`}>
-                  <p className={`${color.text} opacity-70 text-sm`}>
+            <h1 className="font-secondary text-center text-neutral-500">
+              Colors
+            </h1>
+            <div className="flex flex-row gap-x-6 items-center justify-between">
+              {WP_APP.map((color, index) => (
+                <div
+                  className={`${color.bg} ${
+                    index % 2 === 0 ? "rotate-1" : "-rotate-1"
+                  } h-48 w-full flex items-end p-3 rounded-xl shadow`}
+                >
+                  <p
+                    className={`${color.text} text-neutral-50 opacity-70 text-sm`}
+                  >
                     {color.name}
                   </p>
                 </div>
@@ -151,11 +163,19 @@ export const Colors = ({ type }) => {
       return (
         <Section p="pb-36">
           <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Colors</h1>
-            <div className="flex flex-row items-center justify-between">
-              {TIME_LOG.map((color) => (
-                <div className={`${color.bg} h-48 w-full flex items-end p-3`}>
-                  <p className={`${color.text} opacity-70 text-sm`}>
+            <h1 className="font-secondary text-center text-neutral-500">
+              Colors
+            </h1>
+            <div className="flex flex-row gap-x-6 items-center justify-between">
+              {TIME_LOG.map((color, index) => (
+                <div
+                  className={`${color.bg} ${
+                    index % 2 === 0 ? "rotate-1" : "-rotate-1"
+                  } h-48 w-full flex items-end p-3 rounded-xl shadow`}
+                >
+                  <p
+                    className={`${color.text} text-neutral-50 opacity-70 text-sm`}
+                  >
                     {color.name}
                   </p>
                 </div>
@@ -168,11 +188,19 @@ export const Colors = ({ type }) => {
       return (
         <Section p="pb-36">
           <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Colors</h1>
-            <div className="flex flex-row items-center justify-between">
-              {TWICEME.map((color) => (
-                <div className={`${color.bg} h-48 w-full flex items-end p-3`}>
-                  <p className={`${color.text} opacity-70 text-sm`}>
+            <h1 className="font-secondary text-center text-neutral-500">
+              Colors
+            </h1>
+            <div className="flex flex-row gap-x-6 items-center justify-between">
+              {TWICEME.map((color, index) => (
+                <div
+                  className={`${color.bg} ${
+                    index % 2 === 0 ? "rotate-1" : "-rotate-1"
+                  } h-48 w-full flex items-end p-3 rounded-xl shadow`}
+                >
+                  <p
+                    className={`${color.text} text-neutral-50 opacity-70 text-sm`}
+                  >
                     {color.name}
                   </p>
                 </div>
@@ -185,11 +213,19 @@ export const Colors = ({ type }) => {
       return (
         <Section p="pb-36">
           <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Colors</h1>
-            <div className="flex flex-row items-center justify-between">
-              {STORMER.map((color) => (
-                <div className={`${color.bg} h-48 w-full flex items-end p-3`}>
-                  <p className={`${color.text} opacity-70 text-sm`}>
+            <h1 className="font-secondary text-center text-neutral-500">
+              Colors
+            </h1>
+            <div className="flex flex-row gap-x-6 items-center justify-between">
+              {STORMER.map((color, index) => (
+                <div
+                  className={`${color.bg} ${
+                    index % 2 === 0 ? "rotate-1" : "-rotate-1"
+                  } h-48 w-full flex items-end p-3 rounded-xl shadow`}
+                >
+                  <p
+                    className={`${color.text} text-neutral-50 opacity-70 text-sm`}
+                  >
                     {color.name}
                   </p>
                 </div>
@@ -280,9 +316,9 @@ export const Typography = ({ type }) => {
     case "time_log":
       return (
         <Section p="pb-36">
-          <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Typography</h1>
-            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
+          <div className="space-y-6 flex flex-col gap-x-6 items-center">
+            <h1 className="font-secondary text-neutral-500">Typography</h1>
+            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 justify-center items-center">
               <p className="text-3xl font-sf-pro-regular text-neutral-700">
                 Typeface — SF Pro
               </p>
@@ -296,9 +332,9 @@ export const Typography = ({ type }) => {
     case "stormer":
       return (
         <Section p="pb-36">
-          <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Typography</h1>
-            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
+          <div className="space-y-6 flex flex-col gap-x-6 items-center">
+            <h1 className="font-secondary text-neutral-500">Typography</h1>
+            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 justify-center items-center">
               <p className="text-3xl font-inter text-neutral-700">
                 Typeface — Inter
               </p>
@@ -312,8 +348,8 @@ export const Typography = ({ type }) => {
     case "twiceme":
       return (
         <Section p="pb-36">
-          <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Typography</h1>
+          <div className="space-y-6 flex flex-col gap-x-6 items-center">
+            <h1 className="font-secondary text-neutral-500">Typography</h1>
             <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
               <p className="text-3xl font-lato text-neutral-700">
                 Typeface — Lato
@@ -328,9 +364,9 @@ export const Typography = ({ type }) => {
     case "wp_appen":
       return (
         <Section p="pb-36">
-          <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Typography</h1>
-            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
+          <div className="space-y-6 flex flex-col gap-x-6 items-center">
+            <h1 className="font-secondary text-neutral-500">Typography</h1>
+            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 justify-center items-center">
               <p className="text-3xl font-sf-pro-regular text-neutral-700">
                 Typeface — SF Pro
               </p>
@@ -362,7 +398,9 @@ export const Mockups = ({ type }) => {
     case "provento":
       return (
         <Section p="pb-36">
-          <h1 className="text-neutral-500 font-secondary mb-6">Mockups</h1>
+          <h1 className="text-neutral-500 font-secondary mb-6 text-center">
+            Mockups
+          </h1>
           <div className="space-y-8">
             <RevealStaggeredInView motionClass="flex flex-col justify-center items-center gap-y-6">
               <div className="inline-block overflow-hidden rounded-xl shadow rotate-1">
@@ -400,7 +438,9 @@ export const Mockups = ({ type }) => {
     case "wp_tech":
       return (
         <Section p="pb-36">
-          <h1 className="text-neutral-500 text-sm mb-6">Mockups</h1>
+          <h1 className="text-neutral-500 font-secondary mb-6 text-center">
+            Mockups
+          </h1>
           <div className="space-y-0">
             <RevealStaggeredInView motionClass="flex flex-col justify-center items-center gap-y-6">
               <div className="inline-block overflow-hidden rounded-xl">
@@ -424,7 +464,9 @@ export const Mockups = ({ type }) => {
     case "wp_appen":
       return (
         <Section p="pb-36">
-          <h1 className="text-neutral-500 text-sm mb-6">Mockups</h1>
+          <h1 className="text-neutral-500 font-secondary mb-6 text-center">
+            Mockups
+          </h1>
           <div className="space-y-36">
             <RevealEqualInView>
               <div className="inline-block overflow-hidden rounded-xl">
@@ -455,7 +497,9 @@ export const Mockups = ({ type }) => {
     case "time_log":
       return (
         <Section p="pb-36">
-          <h1 className="text-neutral-500 font-secondary mb-6">Mockups</h1>
+          <h1 className="text-neutral-500 font-secondary mb-6 text-center">
+            Mockups
+          </h1>
           <div className="space-y-8">
             <RevealStaggeredInView motionClass="flex flex-col justify-center items-center gap-y-6">
               <div className="inline-block overflow-hidden rounded-xl">
@@ -494,7 +538,9 @@ export const Mockups = ({ type }) => {
       return (
         <Section bg="" p="pb-36">
           <div className="space-y-6">
-            <h1 className="text-neutral-500 text-sm">Mockups</h1>
+            <h1 className="text-neutral-500 font-secondary mb-6 text-center">
+              Mockups
+            </h1>
             <RevealEqualInView>
               <div className="inline-block overflow-hidden rounded-xl">
                 <img

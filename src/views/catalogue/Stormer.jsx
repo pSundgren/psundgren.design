@@ -25,6 +25,9 @@ const Stormer = () => {
         desc={page.overview}
         duration={page.duration}
         roles={page.roles}
+        research={page.research}
+        findings={page.findings}
+        result={page.result}
       />
       <Logo type={key} />
       <Typography type={key} />
