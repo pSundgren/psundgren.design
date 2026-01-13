@@ -89,9 +89,13 @@ export const Colors = ({ type }) => {
         <Section p="pb-36">
           <div className="space-y-6">
             <h1 className="text-sm text-neutral-500">Colors</h1>
-            <div className="flex flex-row items-center justify-between">
-              {PROVENTO.map((color) => (
-                <div className={`${color.bg} h-48 w-full flex items-end p-3`}>
+            <div className="flex flex-row gap-x-6 items-center justify-between">
+              {PROVENTO.map((color, index) => (
+                <div
+                  className={`${color.bg} ${
+                    index % 2 === 0 ? "rotate-1" : "-rotate-1"
+                  } h-48 w-full flex items-end p-3 rounded-xl shadow`}
+                >
                   <p
                     className={`${color.text} text-neutral-50 opacity-70 text-sm`}
                   >
@@ -108,9 +112,13 @@ export const Colors = ({ type }) => {
         <Section p="pb-36">
           <div className="space-y-6">
             <h1 className="text-sm text-neutral-500">Colors</h1>
-            <div className="flex flex-row items-center justify-between">
-              {WP_TECH.map((color) => (
-                <div className={`${color.bg} h-48 w-full flex items-end p-3`}>
+            <div className="flex flex-row gap-x-6 items-center justify-between">
+              {WP_TECH.map((color, index) => (
+                <div
+                  className={`${color.bg} ${
+                    index % 2 === 0 ? "rotate-1" : "-rotate-1"
+                  } h-48 w-full flex items-end p-3 rounded-xl shadow`}
+                >
                   <p
                     className={`${color.text} text-neutral-50 opacity-70 text-sm`}
                   >
@@ -200,9 +208,9 @@ export const Logo = ({ type }) => {
     case "provento":
       return (
         <Section p="pb-36">
-          <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Logotype</h1>
-            <RevealEqualInView>
+          <div className="space-y-6 flex flex-col gap-x-6 items-center">
+            <h1 className="font-secondary text-neutral-500">Logotype</h1>
+            <RevealEqualInView motionClass="flex justify-center">
               <ProventoLogo />
             </RevealEqualInView>
           </div>
@@ -211,9 +219,9 @@ export const Logo = ({ type }) => {
     case "wp_tech":
       return (
         <Section p="pb-36">
-          <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Logotype</h1>
-            <RevealEqualInView>
+          <div className="space-y-6 flex flex-col gap-x-6 items-center">
+            <h1 className="font-secondary text-neutral-500">Logotype</h1>
+            <RevealEqualInView motionClass="flex justify-center">
               <WPTechLogo />
             </RevealEqualInView>
           </div>
@@ -240,9 +248,9 @@ export const Typography = ({ type }) => {
     case "provento":
       return (
         <Section p="pb-36">
-          <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Typography</h1>
-            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
+          <div className="space-y-6 flex flex-col gap-x-6 items-center">
+            <h1 className="font-secondary text-neutral-500">Typography</h1>
+            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 justify-center items-center">
               <p className="text-3xl text-neutral-700 font-dm-sans font-medium">
                 Typeface — DM Sans
               </p>
@@ -256,9 +264,9 @@ export const Typography = ({ type }) => {
     case "wp_tech":
       return (
         <Section p="pb-36">
-          <div className="space-y-6">
-            <h1 className="text-sm text-neutral-500">Typography</h1>
-            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 items-center">
+          <div className="space-y-6 flex flex-col gap-x-6 items-center">
+            <h1 className="font-secondary text-neutral-500">Typography</h1>
+            <RevealEqualInView motionClass="space-y-0 flex flex-row gap-x-6 justify-center items-center">
               <p className="text-3xl text-neutral-700">
                 Typeface — GT Walsheim
               </p>
@@ -354,31 +362,31 @@ export const Mockups = ({ type }) => {
     case "provento":
       return (
         <Section p="pb-36">
-          <h1 className="text-neutral-500 text-sm mb-6">Mockups</h1>
-          <div className="space-y-0">
-            <RevealStaggeredInView motionClass="flex flex-col justify-center items-center">
-              <div className="inline-block overflow-hidden">
+          <h1 className="text-neutral-500 font-secondary mb-6">Mockups</h1>
+          <div className="space-y-8">
+            <RevealStaggeredInView motionClass="flex flex-col justify-center items-center gap-y-6">
+              <div className="inline-block overflow-hidden rounded-xl shadow rotate-1">
                 <img
                   src={provento_mockup_1}
                   alt="Provento Mockup"
                   className="scale-125 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
-              <div className="inline-block overflow-hidden -translate-y-2">
+              <div className="inline-block overflow-hidden rounded-xl shadow -rotate-1">
                 <img
                   src={provento_mockup_2}
                   alt="Provento Mockup"
                   className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
-              <div className="inline-block overflow-hidden -translate-y-4">
+              <div className="inline-block overflow-hidden rounded-xl shadow rotate-1">
                 <img
                   src={provento_mockup_3}
                   alt="Provento Mockup"
                   className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
-              <div className="inline-block overflow-hidden -translate-y-8">
+              <div className="inline-block overflow-hidden rounded-xl shadow -rotate-1">
                 <img
                   src={provento_mockup_4}
                   alt="Provento Mockup"
@@ -394,15 +402,15 @@ export const Mockups = ({ type }) => {
         <Section p="pb-36">
           <h1 className="text-neutral-500 text-sm mb-6">Mockups</h1>
           <div className="space-y-0">
-            <RevealStaggeredInView motionClass="flex flex-col justify-center items-center">
-              <div className="inline-block overflow-hidden">
+            <RevealStaggeredInView motionClass="flex flex-col justify-center items-center gap-y-6">
+              <div className="inline-block overflow-hidden rounded-xl">
                 <img
                   src={wp_tech_mockup_2}
                   alt="WP Appen Mockup"
                   className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
-              <div className="inline-block overflow-hidden -translate-y-2">
+              <div className="inline-block overflow-hidden rounded-xl">
                 <img
                   src={wp_tech_mockup_1}
                   alt="WP Appen Mockup"
@@ -419,7 +427,7 @@ export const Mockups = ({ type }) => {
           <h1 className="text-neutral-500 text-sm mb-6">Mockups</h1>
           <div className="space-y-36">
             <RevealEqualInView>
-              <div className="inline-block overflow-hidden">
+              <div className="inline-block overflow-hidden rounded-xl">
                 <img
                   src={wp_appen_mockup}
                   alt="WP Appen Mockup"
@@ -433,7 +441,7 @@ export const Mockups = ({ type }) => {
               <img src={phone_three} alt="Mockup" className="w-[300px]" />
             </RevealStaggeredInView>
             <RevealEqualInView>
-              <div className="inline-block overflow-hidden">
+              <div className="inline-block overflow-hidden rounded-xl">
                 <img
                   src={wp_appen_mockup_2}
                   alt="WP Appen Mockup"
@@ -447,17 +455,17 @@ export const Mockups = ({ type }) => {
     case "time_log":
       return (
         <Section p="pb-36">
-          <h1 className="text-neutral-500 text-sm mb-6">Mockups</h1>
-          <div className="space-y-0">
-            <RevealStaggeredInView motionClass="flex flex-col justify-center items-center">
-              <div className="inline-block overflow-hidden">
+          <h1 className="text-neutral-500 font-secondary mb-6">Mockups</h1>
+          <div className="space-y-8">
+            <RevealStaggeredInView motionClass="flex flex-col justify-center items-center gap-y-6">
+              <div className="inline-block overflow-hidden rounded-xl">
                 <img
                   src={time_log_mockup_1}
                   alt="WP Appen Mockup"
                   className="scale-150 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
-              <div className="inline-block overflow-hidden -translate-y-2">
+              <div className="inline-block overflow-hidden rounded-xl">
                 <img
                   src={time_log_mockup_2}
                   alt="WP Appen Mockup"
@@ -488,7 +496,7 @@ export const Mockups = ({ type }) => {
           <div className="space-y-6">
             <h1 className="text-neutral-500 text-sm">Mockups</h1>
             <RevealEqualInView>
-              <div className="inline-block overflow-hidden">
+              <div className="inline-block overflow-hidden rounded-xl">
                 <img
                   src={stormer_mockup}
                   alt="WP Appen Mockup"

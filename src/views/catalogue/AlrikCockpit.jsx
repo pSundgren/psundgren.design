@@ -1,9 +1,9 @@
 import React from "react";
 
 /* DATA IMPORT */
-import data from "./catalogue_data/AlrikDrive.json";
+import data from "./catalogue_data/AlrikCockpit.json";
+import alrik_drive_data from "../catalogue/catalogue_data/AlrikDrive.json";
 import wp_appen from "../catalogue/catalogue_data/WPAppen.json";
-import alrik_cockpit from "../catalogue/catalogue_data/AlrikCockpit.json";
 
 /* COMPONENTS */
 import { CatalogueHero } from "../sections/Hero";
@@ -13,11 +13,11 @@ import { Logo, Colors, Mockups, Typography } from "../sections/Presentations";
 import Section from "../../components/common/Section";
 import { CreativeCatalogueFrament } from "../sections/CreativeCatalogue";
 
-const AlrikDrive = () => {
+const AlrikCockpit = () => {
   const { page } = data;
   const key = "alrik-drive";
 
-  const arr = [wp_appen.fragment, alrik_cockpit.fragment];
+  const arr = [wp_appen.fragment, alrik_drive_data.fragment];
 
   return (
     <section id={key}>
@@ -42,4 +42,4 @@ const AlrikDrive = () => {
   );
 };
 
-export default AlrikDrive;
+export default AlrikCockpit;

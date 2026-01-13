@@ -24,7 +24,7 @@ export const Hero = () => {
     <Section id="hero" p="pt-[196px] pb-36">
       <div className="flex flex-row justify-center w-fill my-[120px]">
         <div className="flex flex-col items-center justify-center">
-          <p className="text-neutral-500">Hello there,</p>
+          <p className="text-neutral-500 font-secondary">Hello there,</p>
           <div className="flex flex-row items-center justify-center text-neutral-900 text-4xl">
             {"I'm a "}
             <AnimatePresence mode="wait">
@@ -61,7 +61,7 @@ export const Hero = () => {
   );
 };
 
-export const CatalogueHero = ({ title, desc, roles }) => {
+export const CatalogueHero = ({ title, desc, roles, img }) => {
   return (
     <Section p="pt-[196px] pb-36">
       <RevealStaggeredInView motionClass="flex flex-col text-center w-full items-center justify-center space-y-6">

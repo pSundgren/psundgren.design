@@ -9,7 +9,7 @@ module.exports = {
       fontFamily: {
         primary: "Aeonik-Regular",
         bold: "Aeonik-Bold",
-        secondary: "Playfair Display",
+        secondary: "Gloria Hallelujah",
         "sf-pro-regular": "SF-Pro-Regular",
         "sf-pro-semibold": "SF-Pro-Semibold",
         inter: "Inter",

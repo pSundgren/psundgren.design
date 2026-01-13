@@ -17,6 +17,7 @@ import Timelog from "./views/catalogue/Timelog";
 import Stormer from "./views/catalogue/Stormer";
 import Provento from "./views/catalogue/Provento";
 import AlrikDrive from "./views/catalogue/AlrikDrive";
+import AlrikCockpit from "./views/catalogue/AlrikCockpit";
 
 const router = createBrowserRouter([
   {
@@ -87,7 +88,7 @@ const router = createBrowserRouter([
     path: "/alrik-connect",
     element: (
       <App>
-        <AlrikDrive />
+        <AlrikCockpit />
       </App>
     ),
   },

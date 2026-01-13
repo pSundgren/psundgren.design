@@ -3,8 +3,8 @@ import React from "react";
 export const WPTechLogo = () => {
   return (
     <svg
-      width="276"
-      height="74"
+      width="550"
+      height="auto"
       viewBox="0 0 138 37"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -95,8 +95,8 @@ export const TwicemeLogo = () => {
 export const ProventoLogo = () => {
   return (
     <svg
-      width="482"
-      height="128"
+      width="550"
+      height="auto"
       viewBox="0 0 482 128"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

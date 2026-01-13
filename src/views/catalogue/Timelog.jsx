@@ -2,22 +2,20 @@ import React from "react";
 
 /* DATA IMPORT */
 import data from "./catalogue_data/Timelog.json";
-import provento_data from "../catalogue/catalogue_data/Provento.json";
-import wp_tech_data from "../catalogue/catalogue_data/WPTech.json";
+import alrik_drive_data from "../catalogue/catalogue_data/AlrikDrive.json";
+import alrik_cockpit from "../catalogue/catalogue_data/AlrikCockpit.json";
 
 /* COMPONENTS */
 import { CatalogueHero } from "../sections/Hero";
 import { CreativeCatalogueFrament } from "../sections/CreativeCatalogue";
 import { ProjectDescription } from "../sections/ProjectDescription";
-import { Colors, Icons, Mockups, Typography } from "../sections/Presentations";
+import { Mockups } from "../sections/Presentations";
 
 const Timelog = () => {
   const { page } = data;
   const key = "time_log";
 
-  const arr = [provento_data.fragment, wp_tech_data.fragment];
-
-  console.log(arr);
+  const arr = [alrik_drive_data.fragment, alrik_cockpit.fragment];
 
   return (
     <section id={key}>
@@ -26,10 +24,10 @@ const Timelog = () => {
         desc={page.overview}
         duration={page.duration}
         roles={page.roles}
+        research={page.research}
+        findings={page.findings}
+        result={page.result}
       />
-      <Colors type={key} />
-      <Typography type={key} />
-      <Icons type={key} />
       <Mockups type={key} />
       <CreativeCatalogueFrament projectList={arr} />
     </section>

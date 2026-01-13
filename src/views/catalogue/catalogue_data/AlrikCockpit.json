@@ -1,0 +1,20 @@
+{
+  "fragment": {
+    "id": "alrik-cockpit",
+    "title": "Alrik Cockpit - a new way for a TMS to scale with expontential customer growth",
+    "desc": "Alrik started small, with customers that handled around 10 orders daily. As the compant grew, so did the amount of orders the customers needed to handle. This is the project that made Alrik adapt to that growth. And introduce AI to construction logistics.",
+    "role": "Design Engineer",
+    "link": "/alrik-cockpit"
+  },
+  "page": {
+    "title": "Alrik Cockpit - a new way for a TMS to scale with expontential customer growth",
+    "desc": "Alrik started small, with customers that handled around 10 orders daily. As the compant grew, so did the amount of orders the customers needed to handle. This is the project that made Alrik adapt to that growth. And introduce AI to construction logistics.",
+    "overview": "Provento works as a facility solution provider. Meaning, their work consist of creating custom solutions for customers who require facility services. As they aimed for a break on the marked they found themselves in need of a visual revision.",
+    "roles": [
+      "Reaserch",
+      "Usability Testing",
+      "UX & UI Design",
+      "Front-end Development"
+    ]
+  }
+}

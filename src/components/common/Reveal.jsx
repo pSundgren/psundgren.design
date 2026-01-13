@@ -64,6 +64,7 @@ export const RevealStaggeredInView = ({ children, motionClass, stagger }) => {
       y: 0,
       filter: "blur(0px)",
     },
+    exit: { opacity: 0, y: 10, filter: "blur(8px)" },
   };
 
   return (

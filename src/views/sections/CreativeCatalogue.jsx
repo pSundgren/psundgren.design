@@ -9,6 +9,7 @@ import {
 } from "../../components/common/Reveal";
 
 /* DATA IMPORT */
+import alrik_connect_data from "../catalogue/catalogue_data/AlrikCockpit.json";
 import alrik_drive_data from "../catalogue/catalogue_data/AlrikDrive.json";
 import time_log_data from "../catalogue/catalogue_data/Timelog.json";
 import provento_data from "../catalogue/catalogue_data/Provento.json";
@@ -26,6 +27,7 @@ import wp_tech_image from "../../assets/images/project_images/wp_tech.jpeg";
 import twiceme_image from "../../assets/images/project_images/twiceme.jpg";
 import stormer_image from "../../assets/images/project_images/stormer/stormer_mockup.jpeg";
 import wp_appen_image from "../../assets/images/project_images/wp_appen.jpeg";
+import alrik_drive_image from "../../assets/images/project_images/alrik-drive.jpg";
 
 /*
  * Main section component
@@ -33,11 +35,12 @@ import wp_appen_image from "../../assets/images/project_images/wp_appen.jpeg";
 
 export const CreativeCatalogue = () => {
   const LIST = [
+    alrik_connect_data.fragment,
     alrik_drive_data.fragment,
-    time_log_data.fragment,
     wp_appen_data.fragment,
     provento_data.fragment,
     wp_tech_data.fragment,
+    time_log_data.fragment,
     stormer_data.fragment,
   ];
 
@@ -45,7 +48,7 @@ export const CreativeCatalogue = () => {
     <Section p="pt-0 pb-48">
       <div className="flex flex-col gap-14">
         <RevealStaggeredInView motionClass="space-y-6">
-          <h1 className="text-sm text-gray-500">My works</h1>
+          <h1 className="font-secondary text-gray-500">My works</h1>
           <h2 className="text-3xl text-gray-700">
             Take part of my{" "}
             <span className="font-secondary italic">creative catalogue</span>
@@ -78,7 +81,7 @@ export const CreativeCatalogueFrament = ({ projectList }) => {
           <h1 className="text-sm text-gray-500">Want to see more?</h1>
           <h2 className="text-3xl text-gray-700">
             Check out some of my{" "}
-            <span className="font-secondary italic">other works</span>
+            <span className="font-secondary italic">other work</span>
           </h2>
         </RevealStaggeredInView>
         {projectList && (
@@ -145,6 +148,19 @@ const ProjectImage = ({ id, role, index }) => {
   const img_styling =
     "aspect-auto object-cover object-left-top transition-all duration-500 ease-out lg:group-hover:scale-105";
   switch (id) {
+    case "alrik-drive":
+      return (
+        <div className={img_container}>
+          <img
+            src={alrik_drive_image ? alrik_drive_image : placeholder_image}
+            alt="Tech angency rebranding project"
+            className={alrik_drive_image ? img_styling : null}
+          />
+          <h1 className="absolute rounded-md bottom-4 left-4 py-2.5 px-2 text-xs bg-neutral-700/20 text-neutral-50">
+            {role}
+          </h1>
+        </div>
+      );
     case "provento":
       return (
         <div className={img_container}>

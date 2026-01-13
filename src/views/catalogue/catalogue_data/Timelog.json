@@ -9,16 +9,58 @@
   "page": {
     "title": "Time logging app — efficient time logging and absence management for seamless workplace administration",
     "desc": "With capability gaps with external products, a company decided to develop the product themselves. An app for employees to log and manage their work hours, sick leave, and vacation.",
-    "overview": "Optimize workplace productivity. WP Appen is a user—friendly application that simplifies time tracking and absence management for office employees, ideal for remote work. Managers receive real—time information about employees' worked time and location, consolidated in a web—based system that provides an overview of total work hours and valuable notes from the employees. The app sends automatic notifications to the user, ensuring that no time is ever lost.",
-    "research": "awdawdawd",
-    "results": "",
-    "duration": "2 months",
+    "overview": "Time log is a user—friendly application that simplifies time tracking and absence management for office employees. Managers receive real—time information about employees' worked time and location, providing an overview of total work hours and valuable notes from the employees. The app sends automatic notifications to the user whenever the user have forgotten to stop their timer, when they arrive at work, or when their shift is about to start to ensuring that no time is ever lost.",
     "roles": [
+      "Reaserch",
+      "Usability Testing",
       "UX & UI Design",
-      "Design System",
-      "Design Strategy",
-      "UX Copy",
-      "Development"
+      "Front-end Development"
+    ],
+    "research": [
+      {
+        "title": "User interviews was done to collect data on positive, and negative, experiences with the previous app",
+        "desc": "Interview was made with both employees and managers to investigate both user types."
+      },
+      {
+        "title": "Usability testing was made with users to gain insights on how users navigate the previous app",
+        "desc": "Users were asked to perform tasks while talking out loud on their thought process."
+      }
+    ],
+    "findings": [
+      {
+        "title": "The previous app did not have any way for users to correct their mistakes",
+        "desc": "This caused a lot of manual work for managers and employees."
+      },
+      {
+        "title": "The previous app did not have a way to report absence or sick leave for employees",
+        "desc": "This made total working time for employees out of sync whenever they were absent or sick."
+      },
+      {
+        "title": "Low visibility of active / inactive employees for managers",
+        "desc": "With remote work becoming more common, managers wanted more overview of their employees' activity and place of work."
+      },
+      {
+        "title": "Unintuitive navigation for employees",
+        "desc": "The previous app had a lot of navigation options, which made it difficult for employees to find what they were looking for."
+      }
+    ],
+    "result": [
+      {
+        "title": "Allowing users to report absence or sick leave",
+        "desc": ""
+      },
+      {
+        "title": "Adding error handling for users when they make mistakes",
+        "desc": ""
+      },
+      {
+        "title": "Keep navigation simple, no unnecessary navbar",
+        "desc": ""
+      },
+      {
+        "title": "Add interface for managers to see employees' status",
+        "desc": ""
+      }
     ]
   }
 }
