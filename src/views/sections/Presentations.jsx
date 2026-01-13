@@ -41,7 +41,8 @@ import provento_mockup_4 from "../../assets/images/project_images/provento/prove
 
 /* ALRIK MOCKUP IMAGES */
 import alrik_mockup_1 from "../../assets/images/project_images/alrik_cockpit.jpg";
-import alrik_mockup_2 from "../../assets/images/project_images/alrik_cockpit/alrik-cockpit-map.jpg";
+import alrik_mockup_2 from "../../assets/images/project_images/alrik_cockpit/dispatch-decision.jpeg";
+import alrik_mockup_3 from "../../assets/images/project_images/alrik_cockpit/alrik-cockpit-map.jpg";
 
 /* PROJECT COLORS */
 const WP_TECH = [
@@ -410,13 +411,20 @@ export const Mockups = ({ type }) => {
               <div className="inline-block overflow-hidden rounded-xl shadow rotate-1">
                 <img
                   src={alrik_mockup_1}
-                  alt="Alrik Cockpit Mockup"
+                  alt="Alrik Cockpit Mockup #1"
                   className="scale-125 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
               <div className="inline-block overflow-hidden rounded-xl shadow -rotate-1">
                 <img
                   src={alrik_mockup_2}
+                  alt="Alrik Cockpit Mockup"
+                  className="scale-125 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
+              <div className="inline-block overflow-hidden rounded-xl shadow -rotate-1">
+                <img
+                  src={alrik_mockup_3}
                   alt="Alrik Cockpit Mockup"
                   className="scale-125 lg:scale-100 transition-all duration-500 ease-out"
                 />

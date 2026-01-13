@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Section from "../../components/common/Section";
 import FAB from "../../components/common/FAB";
 
@@ -6,6 +6,15 @@ import { RevealStaggeredInView } from "../../components/common/Reveal";
 
 const About = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsOpen((prevIsOpen) => !prevIsOpen);
+    }, 10000);
+    // Clean up interval on unmount
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Section p="pt-32 pb-64 items-center">
       <RevealStaggeredInView

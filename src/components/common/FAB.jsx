@@ -30,7 +30,7 @@ const FAB = ({ label, onClick, isOpen }) => {
         <AnimatePresence mode="wait">
           {isOpen && (
             <motion.div
-              className="bg-teal-700 rounded-lg shadow h-[52px] w-[52px] flex justify-center items-center"
+              className="bg-teal-600 rounded-lg shadow h-[52px] w-[52px] flex justify-center items-center"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: -10 }}
               exit={{ opacity: 0, x: 20 }}
@@ -48,7 +48,7 @@ const FAB = ({ label, onClick, isOpen }) => {
         <AnimatePresence mode="wait">
           {isOpen && (
             <motion.div
-              className="bg-teal-700 rounded-lg shadow"
+              className="bg-teal-600 rounded-lg shadow"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 10 }}
               exit={{ opacity: 0, x: -20 }}
