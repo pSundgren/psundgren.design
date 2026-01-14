@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 /* Styling */
 import "./index.css";
+import "./assets/fonts/Aeonik-Regular.ttf";
 
 /* Wrapper view */
 import App from "./App";
