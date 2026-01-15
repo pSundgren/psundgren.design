@@ -25,12 +25,12 @@ export const Hero = () => {
       <div className="flex flex-row justify-center w-fill my-[120px]">
         <div className="flex flex-col items-center justify-center">
           <p className="text-neutral-500 font-secondary">Hello there,</p>
-          <div className="flex flex-row items-center justify-center text-neutral-900 text-4xl">
+          <div className="flex flex-row items-center justify-center text-neutral-900 text-2xl md:text-3xl lg:text-4xl">
             {"I'm a "}
             <AnimatePresence mode="wait">
               <motion.p
                 key={words[index]}
-                className="w-[160px] max-w-[160px] mx-2 flex justify-center font-secondary text-teal-700"
+                className="w-[108px] md:w-[160px] lg:w-[180px] max-w-[180px] mx-2 flex justify-center font-secondary text-teal-700"
                 initial={{ opacity: 0, y: -20, filter: "blur(10px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 exit={{ opacity: 0, y: 20, filter: "blur(10px)" }}
