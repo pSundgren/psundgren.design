@@ -43,6 +43,12 @@ import provento_mockup_4 from "../../assets/images/project_images/provento/prove
 import alrik_mockup_1 from "../../assets/images/project_images/alrik_cockpit.jpg";
 import alrik_mockup_2 from "../../assets/images/project_images/alrik_cockpit/dispatch-decision.jpeg";
 import alrik_mockup_3 from "../../assets/images/project_images/alrik_cockpit/alrik-cockpit-map.jpg";
+import alrik_mockup_4 from "../../assets/images/project_images/alrik_cockpit/alrik-cockpit-w-old.jpeg";
+
+/* ALRIK DRIVE MOCKUP IMAGES */
+import alrik_drive_mockup_1 from "../../assets/images/project_images/alrik-drive.jpeg";
+import alrik_drive_mockup_2 from "../../assets/images/project_images/alrik_drive/alrik-drive-dark-mode.jpeg";
+import alrik_drive_mockup_3 from "../../assets/images/project_images/alrik_drive/alrik-drive-side-by-side.jpeg";
 
 /* PROJECT COLORS */
 const WP_TECH = [
@@ -400,6 +406,39 @@ export const Role = ({ role }) => {
 
 export const Mockups = ({ type }) => {
   switch (type) {
+    case "alrik-drive":
+      return (
+        <Section p="pb-36">
+          <h1 className="text-neutral-500 font-secondary mb-6 text-center">
+            Mockups
+          </h1>
+          <div className="space-y-8">
+            <RevealStaggeredInView motionClass="flex flex-col justify-center items-center gap-y-6">
+              <div className="inline-block overflow-hidden rounded-xl shadow rotate-1">
+                <img
+                  src={alrik_drive_mockup_1}
+                  alt="Alrik Drive Mockup"
+                  className="scale-125 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
+              <div className="inline-block overflow-hidden rounded-xl shadow -rotate-1">
+                <img
+                  src={alrik_drive_mockup_2}
+                  alt="Alrik Cockpit Mockup"
+                  className="lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
+              <div className="inline-block overflow-hidden rounded-xl shadow rotate-1">
+                <img
+                  src={alrik_drive_mockup_3}
+                  alt="Alrik Cockpit Mockup"
+                  className="scale-125 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
+            </RevealStaggeredInView>
+          </div>
+        </Section>
+      );
     case "alrik-cockpit":
       return (
         <Section p="pb-36">
@@ -411,7 +450,7 @@ export const Mockups = ({ type }) => {
               <div className="inline-block overflow-hidden rounded-xl shadow rotate-1">
                 <img
                   src={alrik_mockup_1}
-                  alt="Alrik Cockpit Mockup #1"
+                  alt="Alrik Cockpit Mockup"
                   className="scale-125 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
@@ -422,11 +461,18 @@ export const Mockups = ({ type }) => {
                   className="scale-125 lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
-              <div className="inline-block overflow-hidden rounded-xl shadow -rotate-1">
+              <div className="inline-block overflow-hidden rounded-xl shadow rotate-1">
                 <img
                   src={alrik_mockup_3}
                   alt="Alrik Cockpit Mockup"
                   className="scale-125 lg:scale-100 transition-all duration-500 ease-out"
+                />
+              </div>
+              <div className="inline-block overflow-hidden rounded-xl shadow -rotate-1">
+                <img
+                  src={alrik_mockup_4}
+                  alt="Alrik Cockpit Mockup"
+                  className="lg:scale-100 transition-all duration-500 ease-out"
                 />
               </div>
             </RevealStaggeredInView>

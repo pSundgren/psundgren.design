@@ -47,19 +47,19 @@
     "result": [
       {
         "title": "Allowing users to report absence or sick leave",
-        "desc": ""
+        "desc": "Make's it easier for managers to see who is absent and when."
       },
       {
         "title": "Adding error handling for users when they make mistakes",
-        "desc": ""
+        "desc": "Forgot to stop logging the time? No problem, error handling algorithms made it easy to correct mistakes by saving timestamps and data on when the error most likely occured. If the algorithm is wrong the users simply imputs the correct time themselves."
       },
       {
         "title": "Keep navigation simple, no unnecessary navbar",
-        "desc": ""
+        "desc": "No need for a navbar when the app only has one screen + some action sheets."
       },
       {
         "title": "Add interface for managers to see employees' status",
-        "desc": ""
+        "desc": "Managers accessed this via the home screen, which made it easy to see all the employees' status."
       }
     ]
   }

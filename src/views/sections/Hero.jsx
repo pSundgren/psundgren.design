@@ -18,7 +18,7 @@ export const Hero = () => {
     }, 3000);
     // Clean up interval on unmount
     return () => clearInterval(interval);
-  }, []);
+  }, [words.length]);
 
   return (
     <Section id="hero" p="pt-[196px] pb-36">
