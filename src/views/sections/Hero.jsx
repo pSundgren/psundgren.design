@@ -30,7 +30,7 @@ export const Hero = () => {
             <AnimatePresence mode="wait">
               <motion.p
                 key={words[index]}
-                className="w-[108px] md:w-[160px] lg:w-[180px] max-w-[180px] mx-2 flex justify-center font-secondary text-teal-700"
+                className="w-[102px] md:w-[160px] lg:w-[180px] max-w-[180px] mx-2 flex justify-center font-secondary text-teal-700"
                 initial={{ opacity: 0, y: -20, filter: "blur(10px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 exit={{ opacity: 0, y: 20, filter: "blur(10px)" }}
