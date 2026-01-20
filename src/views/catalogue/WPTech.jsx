@@ -27,6 +27,7 @@ const WPTech = () => {
         research={page.research}
         findings={page.findings}
         result={page.result}
+        hideThings={true}
       />
       <Logo type={key} />
       <Typography type={key} />
