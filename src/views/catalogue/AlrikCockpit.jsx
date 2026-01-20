@@ -8,7 +8,7 @@ import wp_appen from "../catalogue/catalogue_data/WPAppen.json";
 /* COMPONENTS */
 import { CatalogueHero } from "../sections/Hero";
 import { ProjectDescription } from "../sections/ProjectDescription";
-import { Colors, Mockups, Typography } from "../sections/Presentations";
+import { Mockups } from "../sections/Presentations";
 import { CreativeCatalogueFrament } from "../sections/CreativeCatalogue";
 
 const AlrikCockpit = () => {

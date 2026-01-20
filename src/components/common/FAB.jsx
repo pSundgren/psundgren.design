@@ -4,8 +4,7 @@ import linkedin from "../../assets/svgs/linkedin-in.svg";
 import mail from "../../assets/svgs/envelope.svg";
 
 /* Components */
-import SVG from "../../assets/svgs/SVG";
-import { RevealEqualInView, RevealStaggeredInView } from "./Reveal";
+import { RevealEqualInView } from "./Reveal";
 
 const FAB = ({ label, onClick, isOpen }) => {
   return (
