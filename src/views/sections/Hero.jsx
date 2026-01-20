@@ -25,7 +25,7 @@ export const Hero = () => {
       <div className="flex flex-row justify-center w-fill my-[120px]">
         <div className="flex flex-col items-center justify-center">
           <p className="text-neutral-500 font-secondary">Hello there,</p>
-          <div className="flex flex-row items-center justify-center text-neutral-900 text-2xl md:text-3xl lg:text-4xl">
+          <div className="flex flex-row items-center justify-center text-neutral-900 text-xl md:text-3xl lg:text-4xl">
             {"I'm a "}
             <AnimatePresence mode="wait">
               <motion.p
