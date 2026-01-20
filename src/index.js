@@ -1,9 +1,10 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
+import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 /* Styling */
 import "./index.css";
+import "./assets/fonts/Aeonik-Regular.ttf";
 
 /* Wrapper view */
 import App from "./App";
@@ -16,6 +17,8 @@ import Twiceme from "./views/catalogue/Twiceme";
 import Timelog from "./views/catalogue/Timelog";
 import Stormer from "./views/catalogue/Stormer";
 import Provento from "./views/catalogue/Provento";
+import AlrikDrive from "./views/catalogue/AlrikDrive";
+import AlrikCockpit from "./views/catalogue/AlrikCockpit";
 
 const router = createBrowserRouter([
   {
@@ -71,6 +74,22 @@ const router = createBrowserRouter([
     element: (
       <App>
         <Stormer />
+      </App>
+    ),
+  },
+  {
+    path: "/alrik-drive",
+    element: (
+      <App>
+        <AlrikDrive />
+      </App>
+    ),
+  },
+  {
+    path: "/alrik-cockpit",
+    element: (
+      <App>
+        <AlrikCockpit />
       </App>
     ),
   },

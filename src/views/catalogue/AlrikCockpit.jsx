@@ -1,21 +1,21 @@
 import React from "react";
 
 /* DATA IMPORT */
-import data from "./catalogue_data/WPTech.json";
+import data from "./catalogue_data/AlrikCockpit.json";
 import alrik_drive_data from "../catalogue/catalogue_data/AlrikDrive.json";
-import alrik_cockpit from "../catalogue/catalogue_data/AlrikCockpit.json";
+import wp_appen from "../catalogue/catalogue_data/WPAppen.json";
 
 /* COMPONENTS */
 import { CatalogueHero } from "../sections/Hero";
 import { ProjectDescription } from "../sections/ProjectDescription";
-import { Logo, Colors, Mockups, Typography } from "../sections/Presentations";
+import { Mockups } from "../sections/Presentations";
 import { CreativeCatalogueFrament } from "../sections/CreativeCatalogue";
 
-const WPTech = () => {
+const AlrikCockpit = () => {
   const { page } = data;
-  const key = "wp_tech";
+  const key = "alrik-cockpit";
 
-  const arr = [alrik_drive_data.fragment, alrik_cockpit.fragment];
+  const arr = [wp_appen.fragment, alrik_drive_data.fragment];
 
   return (
     <section id={key}>
@@ -28,13 +28,10 @@ const WPTech = () => {
         findings={page.findings}
         result={page.result}
       />
-      <Logo type={key} />
-      <Typography type={key} />
-      <Colors type={key} />
       <Mockups type={key} />
       <CreativeCatalogueFrament projectList={arr} />
     </section>
   );
 };
 
-export default WPTech;
+export default AlrikCockpit;

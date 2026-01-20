@@ -3,15 +3,65 @@
     "id": "wp_tech",
     "title": "WP Tech — a revisit of a tech agency's visual identity",
     "desc": "A complete rebranding of a full—solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
-    "role": "Visual Design Lead",
+    "intro": "As a newly formed tech agency was looking to make a break on the tech market, they were looking to rebrand themselves and update their visual identity. The goal with the project was to create a new logotype, website, create templates for social media posts, and to structure a visual identity that aligned with the tech agencys' mission.\n\nThe design process was conducted according to a competitive design process and the design was examined and approved by the shareholders of the company. The final design was approved after 3 iterations (4 design alternatives).",
+    "role": "Company Branding",
     "link": "/wp_tech"
   },
   "page": {
     "title": "WP Tech — a revisit of a tech agency's visual identity",
     "desc": "A complete rebranding of a full—solution tech agency. The project covered setting up a visual identity for the agency, logo and graphical design, UX/UI design for a new website.",
-    "overview": "As a newly formed tech agency was looking to make a break on the tech market, they were looking to rebrand themselves and update their visual identity. The goal with the project was to create a new logotype, website, create templates for social media posts, and to structure a visual identity that aligned with the tech agencys' mission.\n\nThe design process was conducted according to a competitive design process and the design was examined and approved by the shareholders of the company. The final design was approved after 3 iterations (4 design alternatives).",
-    "duration": "2 months",
-    "role": "Visual & Web Designer",
-    "roles": ["UX Design", "Development", "Design Strategy", "Animations"]
+    "overview": "As a newly formed tech agency was looking to make a break on the tech market, they were looking to rebrand themselves and update their visual identity. The goal with the project was to create a new logotype, website, create templates for social media posts, and to structure a visual identity that aligned with the tech agencys' mission.",
+    "roles": [
+      "Reaserch",
+      "Usability Testing",
+      "UX & UI Design",
+      "Front-end Development"
+    ],
+    "research": [
+      {
+        "title": "User interviews was done to collect data on positive, and negative, experiences with the previous app",
+        "desc": "Interview was made with both employees and managers to investigate both user types."
+      },
+      {
+        "title": "Usability testing was made with users to gain insights on how users navigate the previous app",
+        "desc": "Users were asked to perform tasks while talking out loud on their thought process."
+      }
+    ],
+    "findings": [
+      {
+        "title": "The previous app did not have any way for users to correct their mistakes",
+        "desc": "This caused a lot of manual work for managers and employees."
+      },
+      {
+        "title": "The previous app did not have a way to report absence or sick leave for employees",
+        "desc": "This made total working time for employees out of sync whenever they were absent or sick."
+      },
+      {
+        "title": "Low visibility of active / inactive employees for managers",
+        "desc": "With remote work becoming more common, managers wanted more overview of their employees' activity and place of work."
+      },
+      {
+        "title": "Unintuitive navigation for employees",
+        "desc": "The previous app had a lot of navigation options, which made it difficult for employees to find what they were looking for."
+      }
+    ],
+    "result": [
+      {
+        "title": "Allowing users to report absence or sick leave",
+        "desc": ""
+      },
+      {
+        "title": "Adding error handling for users when they make mistakes",
+        "desc": ""
+      },
+      {
+        "title": "Keep navigation simple, no unnecessary navbar",
+        "desc": ""
+      },
+      {
+        "title": "Add interface for managers to see employees' status",
+        "desc": ""
+      }
+    ]
   }
 }

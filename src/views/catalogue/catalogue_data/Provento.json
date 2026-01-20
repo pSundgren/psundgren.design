@@ -3,20 +3,65 @@
     "id": "provento",
     "title": "Provento — a facility solution providers' new visual identity for a push on the market",
     "desc": "As a facility solutions provider wants to make a push on the market they were looking for a fresh and modern look to their visual identity. The revision included an complete redesign of all visual elements of the company.",
-    "role": "Visual Design Lead",
+    "role": "Company Branding",
     "link": "/provento"
   },
   "page": {
     "title": "Provento — a facility solution providers' new visual identity for a push on the market",
     "desc": "As a facility solutions provider wants to make a push on the market they were looking for a fresh and modern look to their visual identity. The revision included an complete redesign of all visual elements of the company.",
-    "overview": "Provento works as a facility solution provider. Meaning, their work consist of creating custom solutions for customers who require facility services. As they aimed for a break on the marked they found themselves in need of a visual revision. The logo was designed based on the company. The logo resembles the character P at the same time as it encompasses several layers. These layers represent the daughter companies that Provento work with to deliver their services.",
-    "duration": "2 weeks",
+    "overview": "Provento works as a facility solution provider. Meaning, their work consist of creating custom solutions for customers who require facility services. As they aimed for a break on the marked they found themselves in need of a visual revision.",
+
     "roles": [
-      "Visual Identity",
-      "Website Design",
-      "Web Content",
-      "Web Copy",
-      "Logotype"
+      "Reaserch",
+      "Usability Testing",
+      "UX & UI Design",
+      "Front-end Development"
+    ],
+    "research": [
+      {
+        "title": "User interviews was done to collect data on positive, and negative, experiences with the previous app",
+        "desc": "Interview was made with both employees and managers to investigate both user types."
+      },
+      {
+        "title": "Usability testing was made with users to gain insights on how users navigate the previous app",
+        "desc": "Users were asked to perform tasks while talking out loud on their thought process."
+      }
+    ],
+    "findings": [
+      {
+        "title": "The previous app did not have any way for users to correct their mistakes",
+        "desc": "This caused a lot of manual work for managers and employees."
+      },
+      {
+        "title": "The previous app did not have a way to report absence or sick leave for employees",
+        "desc": "This made total working time for employees out of sync whenever they were absent or sick."
+      },
+      {
+        "title": "Low visibility of active / inactive employees for managers",
+        "desc": "With remote work becoming more common, managers wanted more overview of their employees' activity and place of work."
+      },
+      {
+        "title": "Unintuitive navigation for employees",
+        "desc": "The previous app had a lot of navigation options, which made it difficult for employees to find what they were looking for."
+      }
+    ],
+    "result": [
+      {
+        "title": "Allowing users to report absence or sick leave",
+        "desc": ""
+      },
+      {
+        "title": "Adding error handling for users when they make mistakes",
+        "desc": ""
+      },
+      {
+        "title": "Keep navigation simple, no unnecessary navbar",
+        "desc": ""
+      },
+      {
+        "title": "Add interface for managers to see employees' status",
+        "desc": ""
+      }
     ]
   }
 }

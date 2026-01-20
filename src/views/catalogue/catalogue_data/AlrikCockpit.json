@@ -1,0 +1,82 @@
+{
+  "fragment": {
+    "id": "alrik-cockpit",
+    "title": "Alrik Cockpit - a new way for a TMS to scale with expontential customer growth",
+    "desc": "Alrik started small, with customers that handled around 10 orders daily. As the compant grew, so did the amount of orders the customers needed to handle. This is the project that made Alrik adapt to that growth.",
+    "role": "Design Engineer",
+    "link": "/alrik-cockpit"
+  },
+  "page": {
+    "title": "Alrik Cockpit - a new way for a TMS to scale with expontential customer growth",
+    "desc": "Alrik started small, with customers that handled around 10 orders daily. As the compant grew, so did the amount of orders the customers needed to handle. This is the project that made Alrik adapt to that growth.",
+    "overview": "The project was based on usability tesing and interviews with logistics planenrs to understand the planning process and the needs of the planners. The result was a completely new interface as the data showed that the current interface was not enough to show the big picture of the orders and routes. After the new interface was implemented, almost 90% of orders planned are made from the new interface.",
+    "roles": [
+      "Reaserch",
+      "Usability Testing",
+      "UX & UI Design",
+      "Front-end Development"
+    ],
+    "research": [
+      {
+        "title": "Unsupervised usability testing was done with logistics planners",
+        "desc": "This to learn and understand the process for planning deliveries, and understand the key data points that decides who and when an order should be delivered."
+      },
+      {
+        "title": "Interviews with logistics planners",
+        "desc": "Interviews were conducted to learn more about logistics planners dream functions and process. And to gain qualitative insights that the usability testing was missing."
+      },
+      {
+        "title": "Grooming meetings with tech team at Alrik",
+        "desc": "In a dream scenario, everything is possible to develop. However in the real world, there can be mant restrictions in the data. Several meetings to groom the ideas were conducted to align the team in what the end goal of the product should be."
+      }
+    ],
+    "findings": [
+      {
+        "title": "Planners need to be able to see the big picture of their orders",
+        "desc": "Kanban view used before only shows a couple of orders at a time and seeing orders that can be delivered in the same delivery route is impossible."
+      },
+      {
+        "title": "No feedback on the progress on the delivery drivers progress",
+        "desc": "Where are my drivers right now? Are they gonna deliver on time? Is there anyone available at the moment? There were a lot of questions unanswered for planners to optimize their deliveries."
+      },
+      {
+        "title": "Planners had no idea if the routes they planned were optimized or inefficient",
+        "desc": "A lot of planners needed to use third party services to check addresses in order to get an understanding if the delivery route was good, or bad."
+      },
+      {
+        "title": "Theres was a need to filter and sort orders",
+        "desc": "From customers ERP's — orders were often divided into different categories. And there was no functionality for users to filter and sort orders in the interface other than using ⌘ + F."
+      },
+      {
+        "title": "Logistic planners have a lot of different dispatching options, but the only one they had available in the system was their internal fleet",
+        "desc": "Logistic planners often have internal fleet, external fleet (couriers), other branches within their company, and Alrik even offer a dispatching marketplace."
+      }
+    ],
+    "result": [
+      {
+        "title": "Switching from a kanban style view to a table style view for all orders and active routes",
+        "desc": "From testing it was clear that table views were dominant in showing a lot of information in a compact way. Meaning we allowed planners to see the big picture of their orders and routes."
+      },
+      {
+        "title": "Adding search, filtering, sort, and custom columns to all table views",
+        "desc": "Other than the filtering and sorting functionality, it was made clear that many planners operate in many different ways. Hence the need for customizability in each table."
+      },
+      {
+        "title": "A map was added to show selected routes, drivers, other branches, and where they hade unhandled orders",
+        "desc": "All symbols where togglable to not made the map messy for users with a high volume of drivers, orders, routes, and branches."
+      },
+      {
+        "title": "A driver status was implemented to show the status of all active dispatching methods",
+        "desc": "This status was added to all dispatching methods (internal, external, Alrik marketplace) in both the table and the map."
+      },
+      {
+        "title": "Adding all dispatching methods to the tour planner",
+        "desc": "We didn't want the planner to have to switch for their different dispatching methods. Hence the tour planner was added to the system, all in one place."
+      },
+      {
+        "title": "Route Optimizer was added to the system",
+        "desc": "A Google API for being able to bulk plan delivery routes by selecting multiple orders, selecting vehicles, and then receiving an optimized set of routes was a real win for planners."
+      }
+    ]
+  }
+}

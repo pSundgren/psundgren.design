@@ -10,14 +10,48 @@
     "title": "WP Appen — internal service management app for field workers",
     "desc": "Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
     "overview": "To facilitate communication between field workers and a ROT & RUT business. A business development and policy was implemented with a CRM system that communicates with an iOS & Android app. Field workers use the app to accept, confirm, conduct, and complete service requests such as home cleaning or moving services. The app supports everything from auditing information to sending invoices to customers to allow the field workers to go from a problematic to a streamlined process.",
-    "duration": "3 months",
-    "role": "Product Designer & Developer",
-    "roles": [
-      "UX & UI Design",
-      "Design System",
-      "Development",
-      "Prototype",
-      "UX Copy"
+    "roles": ["Research", "Usability Testing", "UX & UI Design"],
+    "research": [
+      {
+        "title": "Interviews with managers was done in order to understand the correct work process for field workers",
+        "desc": "Since there was a trend that fields workers conducted their work with a lot of errors, it was important to understand the correct work process for field workers. It was emphaized that the app should be used by field workers to conduct their work and not by managers."
+      }
+    ],
+    "findings": [
+      {
+        "title": "Field workers were very prone to errors in their work process",
+        "desc": "This caused a lot of extra work to correct mistakes."
+      },
+      {
+        "title": "Both field workers and managers relied heavily on external communication",
+        "desc": "Emails, phone calls, and text messages were used to communicate with each other."
+      },
+      {
+        "title": "Customers and managers never got feedback when a work orders was going to be conducted",
+        "desc": "There were processes in place to communicate with customers and managers about the work orders but they were often ignored."
+      },
+      {
+        "title": "Scheduling was a nightmare due to external spreadsheets",
+        "desc": "Initial schedule when field workers could work and changes in the schedule was communicated all over the place."
+      },
+      {
+        "title": "Field workers could often not communicate about invoicing which made the customer often unhappy and reluctant to pay",
+        "desc": "Customer had major mistrust when the person conducting the work was not able to communicate with the customer."
+      }
+    ],
+    "result": [
+      {
+        "title": "Added a step-by-step guide for field workers to conduct their work",
+        "desc": "The app was also designed to only allow field workers to perform actions that are relevant for the step they're at. Including calling the customers before arriving."
+      },
+      {
+        "title": "Created a ciew for communication between field workers and managers that also logged events from the work process",
+        "desc": "This to make is easy for the field workers to see what has happened and who has done what in every work order."
+      },
+      {
+        "title": "Field workers were given an interface to set their availablilty for the next month",
+        "desc": "This data was the reported to the scheduling office and they were able to easily manage field workers availability."
+      }
     ]
   }
 }

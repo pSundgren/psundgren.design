@@ -1,0 +1,66 @@
+{
+  "fragment": {
+    "id": "alrik-drive",
+    "title": "Alrik Drive - a mobile app for construction logistics drivers for a TMS company",
+    "desc": "As the TMS company Alrik is expanding their users and services, they needed to replace a third-party app for drivers to fully manage the data and be able to improve usability and increase use range of the app.",
+    "role": "Design Engineer",
+    "link": "/alrik-drive"
+  },
+  "page": {
+    "title": "Alrik Drive - a mobile app for construction logistics drivers for a TMS company",
+    "desc": "As the TMS company Alrik is expanding their users and services, they needed to replace a third-party app for drivers to fully manage the data and be able to improve usability and increase use range of the app.",
+    "overview": "Service downtime, user feedback, feature requests, and messy UX were the main reasons for the decision to replace a third—party app with an in—house app for Alrik. The app was designed to make construction logistic drivers daily routes more efficient and the result of the app was an overwealming stream of positive feedback from drivers. Going from being used by a handful of drivers to being used by +2000 drivers daily.",
+    "roles": [
+      "Reaserch",
+      "Usability Testing",
+      "UX & UI Design",
+      "App Development"
+    ],
+    "research": [
+      {
+        "title": "Driver got to show how they use the app in their day-to-day",
+        "desc": "I took an afternoon to join a driver for their delivery route, which not only gave me insights on how the previous app worked but also got to a relaxed and casual conversation on a users perspective."
+      },
+      {
+        "title": "Did a delivery route myself",
+        "desc": "Tried using the previous app first hand in a short, mock—delivery route. I was able to get a feel for the app."
+      },
+      {
+        "title": "Usability testing with drivers at each iteration of the design phase",
+        "desc": "Many drivers were excited to try out the new app, meaning that many drivers were keen to participate in the usability testing."
+      }
+    ],
+    "findings": [
+      {
+        "title": "Drivers are reluctant to change and especially to use technology",
+        "desc": "If the drivers doesn't like the product, they're just not gonna use it. Despite it being a mandatory requirement from their superiors."
+      },
+      {
+        "title": "Drivers should not be forced to use the app at every stop",
+        "desc": "Having drivers to use the once they arrive and departure collects good data, but it's a nuisance for the drivers as they constantly have to pull out their phone."
+      },
+      {
+        "title": "Missing undo action",
+        "desc": "We're only human and mistakes happen. And when doing construction deliveries it's cruital for the organisation that data is correct. So when an error occurs, the drivers need to have an undo action."
+      },
+      {
+        "title": "Drivers should not be locked out of the app",
+        "desc": "In the previous app, when a delivery route was started, the drivers were locked to that route only. This meant that the drivers STILL had to use external communication to get an understanding of upcoming routes, stops, whatever."
+      }
+    ],
+    "result": [
+      {
+        "title": "Made the primary workflow of the app color coded",
+        "desc": "For drivers to complete their tours and days, just follow the green button whenever they need to do something. This way the flow of the app is clear and easy to follow."
+      },
+      {
+        "title": "Automate events in the app, the app is a tool for the drivers and not a necessity",
+        "desc": "When a driver is arriving at a stop, the app will automatically sense this based on geofencing. This way the drivers don't have to constantly pull out their phone just to click one button."
+      },
+      {
+        "title": "Include ways for drivers to report issues and change their tour themselves",
+        "desc": "Sometimes deliveries are unable to go as planned, and the drivers need a way to report this and also change their tour without having to contact their company planners."
+      }
+    ]
+  }
+}

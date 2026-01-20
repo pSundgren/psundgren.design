@@ -1,0 +1,28 @@
+{
+  "fragment": {
+    "id": "project-id",
+    "title": "Project Title - Some text here",
+    "desc": "Some text here",
+    "role": "A role here",
+    "link": "/alrik-drive"
+  },
+  "page": {
+    "hero": {
+      "title": "Alrik Drive",
+      "timeline": "x months",
+      "team": "1 designer, 3 devs",
+      "impact-summary": "Some text here"
+    },
+    "challenge": "Some text here",
+    "research": {
+      "methods": "User interviews, surveys, ...",
+      "artifacts": "Some text here",
+      "key-insights": [
+        "Some text here",
+        "Some text here",
+        "Some text here",
+        "Some text here"
+      ]
+    }
+  }
+}
