@@ -9,7 +9,7 @@
   "page": {
     "title": "Alrik Cockpit - a new way for a TMS to scale with expontential customer growth",
     "desc": "Alrik started small, with customers that handled around 10 orders daily. As the compant grew, so did the amount of orders the customers needed to handle. This is the project that made Alrik adapt to that growth.",
-    "overview": "The project was based on usability tesing and interviews with logistics planenrs to understand the planning process and the needs of the planners. The result was a completely new interface as the data showed that the current interface was not enough to show the big picture of the orders and routes. After the new interface was implemented, almost 90% of orders planned are made from the new interface.",
+    "overview": "The project was based on usability tesing and interviews with logistics planners to understand the planning process and the needs of the planners. The result was a completely new interface as the data showed that the current interface was not enough to show the big picture of the orders and routes. After the new interface was implemented, almost 90% of orders planned are made from the new interface.",
     "roles": [
       "Reaserch",
       "Usability Testing",
