@@ -20,22 +20,21 @@ const About = () => {
         motionClass={"text-3xl space-y-4 max-w-[900px] mx-auto text-center"}
       >
         <h2 className="font-secondary text-base text-gray-500">About me</h2>
-        {/* <p className="text-2xl text-neutral-700">
-          I'm <span>Pontus Sundgren</span>, a dynamic product designer and
-          front-end developer based in Stockholm. Currently leading the product
-          design for two impactful applications. I bring a diligent approach
-          honed during my master's studies in interaction technology and design.
-          I thrive on diving deep into a product, collaborating seamlessly with
-          teams to enhance and optimize every aspect. As a detail-oriented
-          designer, I find joy in the iterative journey of constant improvement,
-          ensuring products not only meet but exceed market expectations.
-        </p> */}
-        <p className="text-2xl text-neutral-900">
+        {/*<p className="text-2xl text-neutral-900">
           At the core of my passion is <span>design</span> — for web, mobile, or
           desktop platforms, as I also have a liking to developing engaging and
           pretty UI's through front-end development. A good final product
           derives from a good cooperation between design and development. Each
           design should come with its own unique solution and fresh idea.
+        </p>*/}
+        <p className="text-2xl text-neutral-900">
+          Dependable and ownership-driven designer with a proven track record of
+          designing data driven projects, end-to-end ownership, and strong
+          engineer collaboration. Led the design for web-based systems and
+          mobile applications, and am efficient in using AI throughout the
+          design process. My work has contributed to measurable outcomes
+          including a 30% reduction in logistics costs and increasing app
+          effectiveness from ~40% to 97%.
         </p>
         <FAB
           label="Get in touch"
